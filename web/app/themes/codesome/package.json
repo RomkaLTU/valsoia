@@ -1,0 +1,26 @@
+{
+  "name": "sage",
+  "private": true,
+  "browserslist": [
+    "extends @roots/browserslist-config"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "dev": "bud dev",
+    "build": "bud build",
+    "translate": "npm run translate:pot && npm run translate:js",
+    "translate:pot": "wp i18n make-pot . ./resources/lang/sage.pot --ignore-domain --include=\"app,resources\"",
+    "translate:js": "wp i18n make-json ./resources/lang --pretty-print"
+  },
+  "devDependencies": {
+    "@roots/bud": "6.3.0",
+    "@roots/bud-tailwindcss": "6.3.0",
+    "@roots/sage": "6.3.0"
+  },
+  "dependencies": {
+    "alpinejs": "^3.10.2",
+    "browserslist": "^4.21.1"
+  }
+}
