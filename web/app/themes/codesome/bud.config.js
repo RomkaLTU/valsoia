@@ -32,10 +32,10 @@ module.exports = async(app) => {
      *
      * This is your local dev server.
      */
-    .proxy('https://wp.test')
+    .proxy('https://valsoia.test')
 
     /**
      * Development URL
      */
-    .serve('http://wp.test:3000');
+    .serve('http://valsoia.test:3000');
 };

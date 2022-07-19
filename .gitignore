@@ -7,6 +7,10 @@ web/app/upgrade
 web/app/uploads/*
 !web/app/uploads/.gitkeep
 web/app/cache/*
+!web/app/plugins/wpml-string-translation
+!web/app/plugins/sitepress-multilingual-cms
+!web/app/plugins/acfml
+!web/app/plugins/advanced-custom-fields-pro
 
 # WordPress
 web/wp
