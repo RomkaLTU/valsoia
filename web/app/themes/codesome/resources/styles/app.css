@@ -1,11 +1,44 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-/* @import "includes/_variables.css";
-@import "includes/_global.css";
-@import "includes/_utilities.css";
-@import "includes/_fonts.css";
-@import "includes/_typography.css";
-@import "includes/_forms.css";
-@import "includes/_navs.css";
-@import "includes/_sections.css"; */
+
+@import "fonts.css";
+
+.otgs-development-site-front-end {
+  @apply hidden;
+}
+
+.nav-primary {
+  .menu-item a {
+    @apply bg-white px-10 py-3 rounded-full transition-all;
+  }
+
+  .current-menu-item a,
+  .menu-item a:hover {
+    @apply bg-yellow-1 text-white;
+  }
+}
+
+.wpml-ls-legacy-dropdown {
+  width: auto;
+  @apply font-ga text-2xl;
+
+  .js-wpml-ls-item-toggle {
+    border: none;
+
+    &:hover {
+      @apply bg-yellow-1;
+    }
+  }
+}
+
+.wpml-ls-legacy-dropdown a,
+.wpml-ls-sub-menu {
+  border: none !important;
+}
+
+.wpml-ls-legacy-dropdown .wpml-ls-current-language:hover>a,
+.wpml-ls-legacy-dropdown a:focus,
+.wpml-ls-legacy-dropdown a:hover {
+  background: #fff;
+}

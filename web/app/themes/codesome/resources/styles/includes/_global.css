@@ -1,9 +1,0 @@
-.js-email {
-  &:after {
-    content: attr(data-name) attr(data-domain);
-  }
-}
-
-* {
-  -webkit-font-smoothing: antialiased;
-}

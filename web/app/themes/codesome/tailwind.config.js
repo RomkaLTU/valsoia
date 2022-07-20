@@ -1,10 +1,14 @@
 module.exports = {
   content: ['./app/**/*.php', './resources/**/*.{php,vue,js}'],
   theme: {
+    fontFamily: {
+      'ga': ['"Glamour Absolute"', 'sans-serif'],
+      'comf': ['"Comfortaa"', 'sans-serif'],
+    },
     extend: {
       colors: {
-        'primary': {
-          1: '#e3e3e3',
+        'yellow': {
+          1: '#fcaa22',
         }
       },
     },
