@@ -4,6 +4,10 @@
 
 @import "fonts.css";
 
+body {
+  @apply font-comf text-black-1;
+}
+
 .otgs-development-site-front-end {
   @apply hidden;
 }
