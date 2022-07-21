@@ -6,6 +6,9 @@ module.exports = {
       'comf': ['"Comfortaa"', 'sans-serif'],
     },
     extend: {
+      screens: {
+        '2xl': '1536px',
+      },
       colors: {
         'yellow': {
           1: '#fcaa22',
@@ -28,6 +31,7 @@ module.exports = {
         '155px': '9.687rem',
       },
       lineHeight: {
+        '12': '3rem',
         '14': '3.5rem',
       },
     },

@@ -10,7 +10,7 @@
     <?php wp_body_open(); ?>
     <?php do_action('get_header'); ?>
 
-    <div id="app" x-data="app">
+    <div id="app" class="overflow-hidden" x-data="app">
       <?php echo view(app('sage.view'), app('sage.data'))->render(); ?>
     </div>
 
