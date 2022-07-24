@@ -11,6 +11,7 @@ web/app/cache/*
 !web/app/plugins/sitepress-multilingual-cms
 !web/app/plugins/acfml
 !web/app/plugins/advanced-custom-fields-pro
+!web/app/mu-plugins/soil-main
 
 # WordPress
 web/wp
