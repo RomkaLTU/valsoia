@@ -5,7 +5,7 @@
     <div class="hidden lg:block w-full">
       <div
         class="absolute left-0 top-0 w-full h-full bg-no-repeat bg-cover"
-        style="background-image: url(@asset('images/hero-slider-bg.png'))">
+        style="background-image: url(@asset('images/tmp/hero-slider-bg.webp'))">
       </div>
       <div class="w-full max-w-[1640px]">
         <div class="relative z-10 font-ga text-brown-1 max-w-[770px] flex flex-col items-center">
@@ -129,7 +129,7 @@
       </div>
     </div>
     <div class="-mt-[3vw]">
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1921 88">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1921 88">
         <defs>
           <clipPath id="clip-path">
             <rect id="Rectangle_2775" data-name="Rectangle 2775" width="1921" height="88" transform="translate(0 3789)" fill="#fff"/>
