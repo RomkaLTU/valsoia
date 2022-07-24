@@ -1,6 +1,6 @@
-<header class="banner">
+<header id="header" class="relative">
   <div class="w-full max-w-[1640px] mx-auto px-6 py-4">
-    <div class="relative flex items-center justify-center xl:justify-between">
+    <div class="relative xl:static flex items-center justify-center xl:justify-between">
       <a class="brand w-[84px] xl:w-[162px]" title="{!! $siteName !!}" href="{{ home_url('/') }}">
         @include('svg.logo')
       </a>
@@ -14,7 +14,7 @@
             {!! wp_nav_menu([
               'theme_location' => 'primary_navigation',
               'menu_class' => 'nav hidden xl:flex gap-2 uppercase text-2xl font-ga',
-              'echo' => false
+              'echo' => false,
             ]) !!}
           </nav>
         @endif

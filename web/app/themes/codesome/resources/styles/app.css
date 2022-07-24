@@ -3,6 +3,7 @@
 @import "tailwindcss/utilities";
 
 @import "fonts.css";
+@import "header-menu.css";
 
 body {
   @apply font-comf text-black-1;
@@ -10,17 +11,6 @@ body {
 
 .otgs-development-site-front-end {
   @apply hidden;
-}
-
-.nav-primary {
-  .menu-item a {
-    @apply bg-white px-10 py-3 rounded-full transition-all;
-  }
-
-  .current-menu-item a,
-  .menu-item a:hover {
-    @apply bg-yellow-1 text-white;
-  }
 }
 
 .wpml-ls-legacy-dropdown {

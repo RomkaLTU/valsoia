@@ -1,0 +1,68 @@
+.nav-primary {
+  .menu-item a {
+    @apply bg-white px-10 py-3 rounded-full transition-all;
+  }
+
+  .current-menu-item a,
+  .menu-item.is-active > a,
+  .menu-item a:hover {
+    @apply bg-yellow-1 text-white;
+  }
+
+  .sub-menu {
+    position: absolute;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 560px;
+    background-color: #fff;
+    z-index: 50;
+    box-shadow: 0 12px 10px 0 rgb(0 0 0 / 30%);
+    margin-top: -100%;
+    @apply gap-20;
+
+    .menu-item {
+      flex: 1;
+      max-width: 386px;
+    }
+
+    a {
+      position: relative;
+      background-color: transparent;
+      height: 386px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+
+      &:hover {
+        background-color: transparent;
+        @apply text-black-1;
+      }
+    }
+
+    a:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-image: url('../images/submenu-shape.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .menu-item.is-active {
+    .sub-menu {
+      margin-top: 5rem;
+    }
+  }
+}
