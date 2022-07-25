@@ -190,5 +190,11 @@
 
   <section class="py-10 bg-yellow-1">
     <h2 class="font-ga text-45px leading-12 lg:text-6xl text-center mb-16 mt-6 lg:mt-0 px-16 lg:px-0">Let's meet in Instragram!</h2>
+
+    <div class="flex justify-center mt-12 mb-10">
+      <a href="https://www.instagram.com/valsoia_lt/" target="_blank" class="block font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] mx-auto lg:mx-0 py-3 rounded-full">
+        {{ __('Follow us on instagram', 'code') }}
+      </a>
+    </div>
   </section>
 @endsection
