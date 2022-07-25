@@ -154,10 +154,10 @@
     <div class="glider-products-container sm:w-[95%] max-w-[1557px] mx-auto sm:px-4">
       <div class="glider-products font-ga text-3xl">
         @foreach($products as $product)
-          <div class="flex flex-col gap-6 items-center">
+          <a href="#" class="flex flex-col gap-6 items-center">
             {!! get_the_post_thumbnail($product, 'large', ['class' => 'w-full h-full object-cover']) !!}
             <h3>{{ $product->post_title }}</h3>
-          </div>
+          </a>
         @endforeach
       </div>
       <button aria-label="Previous" class="glider-prev">
