@@ -76,32 +76,36 @@ const main = async (err) => {
     }));
   });
 
-  const productSlider = new Glider(document.querySelector('.glider-products'), {
-    slidesToShow: 1.3,
-    draggable: true,
-    dragVelocity: 1.5,
-    arrows: {
-      prev: '.glider-prev',
-      next: '.glider-next',
-    },
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2.5,
-        }
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 4,
-        }
-      },
-    ],
-  });
+  const productSliderEl = document.querySelector('.glider-products');
 
-  if (window.innerWidth <= 500) {
-    productSlider.scrollItem(0.8);
+  if (productSliderEl) {
+    const productSlider = new Glider(document.querySelector('.glider-products'), {
+      slidesToShow: 1.3,
+      draggable: true,
+      dragVelocity: 1.5,
+      arrows: {
+        prev: '.glider-prev',
+        next: '.glider-next',
+      },
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2.5,
+          }
+        },
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 4,
+          }
+        },
+      ],
+    });
+
+    if (window.innerWidth <= 500) {
+      productSlider.scrollItem(0.8);
+    }
   }
 
   Alpine.start();
