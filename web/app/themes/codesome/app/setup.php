@@ -132,3 +132,9 @@ add_action('widgets_init', function () {
         'id' => 'sidebar-footer'
     ] + $config);
 });
+
+add_filter('wp_nav_menu_items', function ($items, $args) {
+    ray($items);
+
+    return $items;
+}, 10, 2);
