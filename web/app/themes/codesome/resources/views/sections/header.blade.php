@@ -1,8 +1,8 @@
 <header x-data="{ mobileShow: false }" id="header" class="relative">
-  <div :class="[mobileShow ? 'fixed left-0 top-0 w-full' : 'relative']" class="w-full max-w-[1640px] mx-auto px-6 py-4 z-50">
+  <div :class="[mobileShow ? 'fixed left-0 top-0 w-full' : '']" class="w-full max-w-[1640px] mx-auto px-6 py-4 z-50">
     <div class="relative xl:static flex items-center justify-center xl:justify-between">
       <a class="brand w-[84px] xl:w-[162px]" title="{!! $siteName !!}" href="{{ home_url('/') }}">
-        @include('svg.logo')
+        <img src="@asset('images/logo@2x.webp')" width="254" height="102" alt="{!! $siteName !!}">
       </a>
 
       <div class="flex items-center">
