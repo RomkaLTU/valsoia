@@ -153,12 +153,12 @@
     </h2>
     <div class="glider-products-container sm:w-[95%] max-w-[1557px] mx-auto sm:px-4">
       <div class="glider-products font-ga text-3xl">
-        @for($i=1; $i<=10; $i++)
+        @foreach($products as $product)
           <div class="flex flex-col gap-6 items-center">
-            <img src="https://images.unsplash.com/photo-1581098721508-b9c242bb2e1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=280&q=80" alt="">
-            <h3>Almond Cones</h3>
+            {!! get_the_post_thumbnail($product, 'large', ['class' => 'w-full h-full object-cover']) !!}
+            <h3>{{ $product->post_title }}</h3>
           </div>
-        @endfor
+        @endforeach
       </div>
       <button aria-label="Previous" class="glider-prev">
         <img class="w-[57px]" src="@asset('images/slider-left@2x.webp')" alt="">
