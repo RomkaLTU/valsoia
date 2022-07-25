@@ -36,3 +36,35 @@ body {
 .wpml-ls-legacy-dropdown a:hover {
   background: #fff;
 }
+
+.glider-prev {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto auto 5rem -10px;
+  z-index: 20;
+  display: none;
+
+  @screen lg {
+    display: block;
+    margin: auto auto 11rem -10px;
+  }
+}
+
+.glider-next {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto -10px 5rem auto;
+  z-index: 20;
+  display: none;
+
+  @screen lg {
+    display: block;
+    margin: auto -9px 11rem auto;
+  }
+}
+
+.glider-track {
+  @apply gap-8;
+}

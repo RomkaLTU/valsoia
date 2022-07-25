@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
     <?php wp_head(); ?>
   </head>
 
@@ -15,6 +16,7 @@
     </div>
 
     <?php do_action('get_footer'); ?>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
     <?php wp_footer(); ?>
   </body>
 </html>
