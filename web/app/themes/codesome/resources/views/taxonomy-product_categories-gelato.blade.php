@@ -50,9 +50,9 @@
           </div>
         </div>
       </div>
-      <div class="grid grid-cols-12 gap-14 max-w-[1537px] mx-auto px-4">
-        <div class="lg:col-start-5 xl:col-start-4 2xl:col-start-4 sm:col-span-12 xl:col-span-9 2xl:col-span-8 xl:pl-8 2xl:pl-0">
-          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-14">
+      <div class="grid grid-cols-4 sm:grid-cols-12 gap-14 max-w-[1537px] mx-auto px-4">
+        <div class="lg:col-start-5 xl:col-start-4 2xl:col-start-4 col-span-4 sm:col-span-12 xl:col-span-9 2xl:col-span-9 xl:pl-8 2xl:pl-0">
+          <div class="grid grid-cols-1 md:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-14">
             @while(have_posts()) @php(the_post())
               <a href="{{ get_the_permalink() }}" class="">
                 @php(the_post_thumbnail('large', ['class' => 'h-[279px] 2xl:h-[379px] w-full object-cover']))
