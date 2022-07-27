@@ -15,9 +15,9 @@
     "translate:js": "wp i18n make-json ./resources/lang --pretty-print"
   },
   "devDependencies": {
-    "@roots/bud": "6.3.2",
-    "@roots/bud-tailwindcss": "6.3.2",
-    "@roots/sage": "6.3.2"
+    "@roots/bud": "6.3.4",
+    "@roots/bud-tailwindcss": "6.3.4",
+    "@roots/sage": "6.3.4"
   },
   "dependencies": {
     "alpinejs": "^3.10.3",
