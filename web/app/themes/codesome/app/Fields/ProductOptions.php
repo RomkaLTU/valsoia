@@ -2,6 +2,7 @@
 
 namespace App\Fields;
 
+use App\Fields\Partials\TaxonomyFields;
 use Log1x\AcfComposer\Field;
 use StoutLogic\AcfBuilder\FieldsBuilder;
 
@@ -14,16 +15,9 @@ class ProductOptions extends Field
         $fields
             ->setLocation('taxonomy', '==', 'product_options');
 
-        $fields->addImage('icon', [
-            'label' => 'Icon',
-            'instructions' => '',
-            'multiple' => false,
-            'return_format' => 'id',
-            'library' => 'all',
-            'min_size' => '',
-            'max_size' => '',
-            'mime_types' => '',
-        ]);
+        $fields->addFields(
+            $this->get(TaxonomyFields::class)
+        );
 
         return $fields->build();
     }
