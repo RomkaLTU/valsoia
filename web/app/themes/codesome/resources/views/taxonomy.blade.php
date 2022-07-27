@@ -2,11 +2,11 @@
 
 @section('content')
   <figure>
-    <img src="@asset('images/tmp/gelato-tax.webp')" class="w-full" alt="">
+    <img src="{{ wp_get_attachment_image_url(get_field('background', get_queried_object()), 'full') }}" class="w-full" alt="">
   </figure>
   <header>
     <h1 class="font-ga text-3xl lg:text-6xl text-brown-1 block max-w-[940px] text-center mx-auto mt-10 mb-4">
-      Authentic gelato with a plant-based twist. The true Italian way.
+      {{ get_queried_object()->description }}
     </h1>
   </header>
   <main class="min-h-[26vh] bg-yellow-2 pb-48">
