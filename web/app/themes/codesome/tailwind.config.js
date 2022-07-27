@@ -23,6 +23,9 @@ module.exports = {
         black: {
           1: '#0d1833',
         },
+        gray: {
+          1: '#f3f3f3',
+        },
       },
       fontSize: {
         '25px': '1.562rem',
