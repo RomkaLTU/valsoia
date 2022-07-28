@@ -4,7 +4,7 @@
   <div class="relative lg:flex lg:items-center lg:min-h-[50vw] overflow-hidden">
     <div class="hidden lg:block w-full">
       <div
-        class="absolute left-0 top-0 w-full h-full bg-no-repeat bg-cover"
+        class="absolute left-0 top-0 w-full h-full bg-no-repeat bg-contain"
         style="background-image: url(@asset('images/tmp/hero-slider-bg.webp'))">
       </div>
       <div class="w-full max-w-[1640px]">
@@ -144,7 +144,7 @@
       <div class="glider-products font-ga text-3xl">
         @foreach($products as $product)
           <a href="{{ get_permalink($product) }}" class="flex flex-col gap-6 items-center">
-            {!! get_the_post_thumbnail($product, 'large', ['class' => 'w-full h-full object-cover']) !!}
+            {!! get_the_post_thumbnail($product, 'large', ['class' => 'w-full h-full object-fit']) !!}
             <h3>{{ $product->post_title }}</h3>
           </a>
         @endforeach
