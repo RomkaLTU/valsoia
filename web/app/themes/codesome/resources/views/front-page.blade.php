@@ -144,7 +144,7 @@
       <div class="glider-products font-ga text-3xl">
         @foreach($products as $product)
           <a href="{{ get_permalink($product) }}" class="flex flex-col gap-6 items-center">
-            {!! get_the_post_thumbnail($product, 'large', ['class' => 'w-full h-full object-fit']) !!}
+            {!! get_the_post_thumbnail($product, 'large', ['class' => 'w-full h-full object-contain']) !!}
             <h3>{{ $product->post_title }}</h3>
           </a>
         @endforeach
