@@ -31,7 +31,7 @@
     </div>
   </div>
   <img
-    src="@asset('images/footer-illiustration@2x.webp')"
+    src="@asset('images/footer-illiustration.webp')"
     width="779"
     height="572"
     alt=""
