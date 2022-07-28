@@ -16,15 +16,20 @@ module.exports = {
         },
         'brown': {
           1: '#6c3622',
+          2: '#9d4b19',
         },
         'green': {
           1: '#08a348',
+          2: '#c3b93b',
         },
         black: {
           1: '#0d1833',
         },
         gray: {
           1: '#f3f3f3',
+        },
+        sand: {
+          1: '#fdf7dc',
         },
       },
       fontSize: {

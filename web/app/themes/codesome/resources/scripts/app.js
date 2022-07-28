@@ -77,9 +77,10 @@ const main = async (err) => {
   });
 
   const productSliderEl = document.querySelector('.glider-products');
+  const heroSliderEl = document.querySelector('.glider-hero');
 
   if (productSliderEl) {
-    const productSlider = new Glider(document.querySelector('.glider-products'), {
+    const productSlider = new Glider(productSliderEl, {
       slidesToShow: 1.3,
       draggable: true,
       dragVelocity: 1.5,
@@ -106,6 +107,21 @@ const main = async (err) => {
     if (window.innerWidth <= 500) {
       productSlider.scrollItem(0.8);
     }
+  }
+
+  if (heroSliderEl) {
+    new Glider(heroSliderEl, {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      scrollLock: true,
+      scrollLockDelay: 100,
+      draggable: true,
+      dragVelocity: 1.5,
+      arrows: {
+        prev: '.glider-hero-prev',
+        next: '.glider-hero-next',
+      },
+    });
   }
 
   Alpine.start();

@@ -65,14 +65,16 @@ body {
   }
 }
 
-.glider-track {
-  @apply gap-8;
+.glider-products {
+  .glider-track {
+    @apply gap-8;
 
-  @screen lg {
-    @apply gap-12;
-  }
+    @screen lg {
+      @apply gap-12;
+    }
 
-  @screen 2xl {
-    @apply gap-32;
+    @screen 2xl {
+      @apply gap-32;
+    }
   }
 }
