@@ -16,11 +16,14 @@
   },
   "devDependencies": {
     "@roots/bud": "6.3.5",
+    "@roots/bud-postcss": "6.3.5",
+    "@roots/bud-sass": "^6.3.5",
     "@roots/bud-tailwindcss": "6.3.5",
     "@roots/sage": "6.3.5"
   },
   "dependencies": {
     "alpinejs": "^3.10.3",
-    "browserslist": "^4.21.3"
+    "browserslist": "^4.21.3",
+    "swiper": "^8.3.2"
   }
 }

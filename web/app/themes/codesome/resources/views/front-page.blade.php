@@ -1,105 +1,150 @@
 @extends('layouts.app')
 
 @section('content')
-  <div class="relative glider-hero-container">
-    <div class="glider-hero">
-      <div class="relative lg:flex lg:items-center lg:min-h-[42vw] overflow-hidden">
-        <div class="hidden lg:block w-full">
-          <div
-            class="absolute left-0 top-0 w-full h-full bg-no-repeat bg-contain"
-            style="background-image: url(@asset('images/tmp/hero-slider-bg.webp'))">
-          </div>
-          <div class="w-full max-w-[1640px]">
-            <div class="relative z-10 font-ga text-brown-1 max-w-[770px] flex flex-col items-center">
-              <div class="text-45px leading-14 text-center">
-                Blending <span class="text-70px">Italian</span> tradition<br>
-                and <span class="text-70px">plant-based</span> ingredients to
+  <div class="relative glider-hero-container mb-8 sm:mb-0">
+    <div class="swiper-hero">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide relative lg:flex lg:items-center lg:min-h-[42vw] overflow-hidden">
+          <div class="hidden lg:block w-full">
+            <div
+              class="absolute left-0 top-0 w-full h-full bg-no-repeat bg-contain"
+              style="background-image: url(@asset('images/tmp/hero-slider-bg.webp'))">
+            </div>
+            <div class="w-full max-w-[1640px]">
+              <div class="relative z-10 font-ga text-brown-1 max-w-[770px] flex flex-col items-center lg:pl-4">
+                <div class="text-45px leading-14 text-center">
+                  Blending <span class="text-70px">Italian</span> tradition<br>
+                  and <span class="text-70px">plant-based</span> ingredients to
+                </div>
+                <div class="text-[6.687rem] text-center leading-none">
+                  perfection
+                </div>
+                <a href="#" class="block mt-10 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
+                  {{ __('Read more', 'code') }}
+                </a>
               </div>
-              <div class="text-155px text-center leading-none">
+            </div>
+          </div>
+          <div class="lg:hidden">
+            <div class="font-ga text-brown-1 bg-yellow-1 pt-8">
+              <div class="text-2xl leading-10 text-center">
+                Blending <span class="text-5xl">Italian tradition</span>
+                and <span class="text-5xl">plant-based</span> <span class="text-3xl">ingredients to</span>
+              </div>
+              <div class="text-70px text-center leading-none">
                 perfection
               </div>
-              <a href="#" class="block mt-10 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
-                {{ __('Read more', 'code') }}
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="lg:hidden">
-          <div class="font-ga text-brown-1 bg-yellow-1 pt-8">
-            <div class="text-2xl leading-10 text-center">
-              Blending <span class="text-5xl">Italian tradition</span>
-              and <span class="text-5xl">plant-based</span> <span class="text-3xl">ingredients to</span>
-            </div>
-            <div class="text-70px text-center leading-none">
-              perfection
-            </div>
 
-            <a href="#" class="block mx-auto mt-10 font-ga text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
-              {{ __('Read more', 'code') }}
-            </a>
+              <a href="#" class="block mx-auto mt-10 font-ga text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
+                {{ __('Read more', 'code') }}
+              </a>
 
-            <img class="w-full" src="@asset('images/tmp/hero-slider-bg-m.png')" alt="">
+              <img class="w-full" src="@asset('images/tmp/hero-slider-bg-m.png')" alt="">
+            </div>
           </div>
         </div>
-      </div>
-      <div class="relative lg:flex lg:items-center lg:min-h-[42vw] overflow-hidden">
-        <div class="hidden lg:block w-full">
-          <div
-            class="absolute left-0 top-0 w-full h-full bg-no-repeat bg-contain"
-            style="background-image: url(@asset('images/tmp/la-creme-banner.webp'))">
+        <div class="swiper-slide relative lg:flex lg:items-center lg:min-h-[42vw] overflow-hidden">
+          <div class="hidden lg:block w-full">
+            <div
+              class="absolute left-0 top-0 w-full h-full bg-no-repeat bg-contain"
+              style="background-image: url(@asset('images/tmp/ice-cream-hero.webp'))">
+            </div>
+            <div class="w-full max-w-[1640px]">
+              <div class="relative z-10 font-ga text-brown-1 max-w-[770px] mx-auto flex flex-col items-center">
+                <p class="text-center">
+                  <span class="text-5xl">Authentic</span>
+                  <span class="text-6xl ml-4">Italian<br></span>
+                  <span class="text-8xl">gelato</span>
+                </p>
+                <a href="#" class="block mt-10 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
+                  {{ __('Read more', 'code') }}
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="w-full max-w-[1640px]">
-            <div class="relative z-10 font-ga text-sand-1 max-w-[770px] mx-auto flex flex-col items-center">
-              <div class="text-45px leading-14 text-center">
-                Blending <span class="text-70px">Italian</span> tradition<br>
-                and <span class="text-70px">plant-based</span> ingredients to
+          <div class="lg:hidden">
+            <div class="font-ga text-brown-1 bg-brown-3 pt-8">
+              <p class="text-center">
+                <span class="text-4xl">Authentic</span><br>
+                <span class="text-7xl">Italian</span><br>
+                <span class="text-5xl">gelato</span>
+              </p>
+
+              <a href="#" class="block mx-auto mt-10 font-ga text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
+                {{ __('Read more', 'code') }}
+              </a>
+
+              <img class="w-full" src="@asset('images/tmp/ice-cream-hero-m.webp')" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide relative lg:flex lg:items-center lg:min-h-[42vw] overflow-hidden">
+          <div class="hidden lg:block w-full">
+            <div
+              class="absolute left-0 top-0 w-full h-full bg-no-repeat bg-contain"
+              style="background-image: url(@asset('images/tmp/la-creme-banner.webp'))">
+            </div>
+            <div class="w-full max-w-[1640px]">
+              <div class="relative z-10 font-ga text-sand-1 max-w-[700px] mx-auto flex flex-col items-center">
+                <div class="text-45px leading-14 text-center">
+                  Blending <span class="text-70px">Italian</span> tradition<br>
+                  and <span class="text-70px">plant-based</span> ingredients to
+                </div>
+                <div class="text-[6.687rem] text-center leading-none">
+                  perfection
+                </div>
+                <a href="#" class="block mt-10 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
+                  {{ __('Read more', 'code') }}
+                </a>
               </div>
-              <div class="text-155px text-center leading-none">
-                perfection
+            </div>
+          </div>
+          <div class="lg:hidden">
+            <div class="bg-brown-4">
+              <p class="text-center text-sand-1 font-ga text-3xl pt-10">
+                A perfect<br>
+                <span class="text-5xl">explosion</span> of<br>
+                <span class="text-5xl">creaminess</span><br>
+                and <span class="text-5xl">goodness</span>!
+              </p>
+              <a href="#" class="block mx-auto mt-10 font-ga text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
+                {{ __('Read more', 'code') }}
+              </a>
+              <img class="w-full" src="@asset('images/tmp/la-creme-banner-m.webp')" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide relative lg:flex lg:items-end lg:min-h-[42vw] overflow-hidden">
+          <div class="hidden lg:block w-full">
+            <div
+              class="absolute left-0 top-0 w-full h-full bg-no-repeat bg-contain bg-green-2 sm:bg-transparent"
+              style="background-image: url(@asset('images/tmp/plant-based-banner.webp'));">
+            </div>
+            <div class="w-full max-w-[1640px] mx-auto">
+              <div class="relative z-10 font-ga text-sand-1 max-w-[770px] mx-auto flex flex-col items-center lg:justify-end lg:mb-[6vw]">
+                <p class="text-5xl xl:text-6xl">Plant-based</p>
+                <a href="#" class="block mt-2 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
+                  {{ __('Read more', 'code') }}
+                </a>
               </div>
-              <a href="#" class="block mt-10 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
+            </div>
+          </div>
+          <div class="lg:hidden">
+            <div class="bg-green-2 h-[60vh] flex flex-col items-center justify-center">
+              <img src="@asset('images/tmp/plant-based-banner-m.webp')" alt="">
+              <p class="text-center text-sand-1 font-ga text-5xl">
+                Plant-based
+              </p>
+              <a href="#" class="block mx-auto mt-4 font-ga text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
                 {{ __('Read more', 'code') }}
               </a>
             </div>
           </div>
         </div>
-        <div class="lg:hidden">
-          <div class="bg-white">
-            <img class="w-full" src="@asset('images/tmp/la-creme-banner-m.webp')" alt="">
-            <p class="text-center text-brown-2 font-ga text-3xl mt-6">
-              A perfect explosion
-              of creaminess and goodness!
-            </p>
-            <a href="#" class="block mx-auto mt-10 font-ga text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
-              {{ __('Read more', 'code') }}
-            </a>
-          </div>
-        </div>
       </div>
-      <div class="relative lg:flex lg:items-center lg:min-h-[42vw] overflow-hidden">
-        <div class="w-full h-full self-end mb-12 xl:mb-24">
-          <div
-            class="absolute left-0 top-0 w-full h-full bg-no-repeat bg-contain bg-green-2 sm:bg-transparent"
-            style="background-image: url(@asset('images/tmp/plant-based-banner.webp'))">
-          </div>
-          <div class="w-full max-w-[1640px] mx-auto mt-[32vw]">
-            <div class="relative z-10 font-ga text-sand-1 max-w-[770px] mx-auto flex flex-col items-center">
-              <p class="text-5xl xl:text-6xl">Plant-based</p>
-              <a href="#" class="block mt-2 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
-                {{ __('Read more', 'code') }}
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="absolute w-full h-16 flex items-center justify-between top-0 bottom-0 my-auto z-20">
-      <button aria-label="Previous" class="glider-hero-prev -ml-2">
-        <img class="w-[57px]" src="@asset('images/slider-left@2x.webp')" alt="">
-      </button>
-      <button aria-label="Next" class="glider-hero-next -mr-2">
-        <img class="w-[57px]" src="@asset('images/slider-right@2x.webp')" alt="">
-      </button>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination -mb-10 sm:-mb-6"></div>
     </div>
   </div>
 

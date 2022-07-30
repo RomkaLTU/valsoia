@@ -1,5 +1,9 @@
 import {domReady} from '@roots/sage/client';
 import Alpine from 'alpinejs';
+import Swiper, { Navigation, Pagination, EffectCreative } from 'swiper';
+import '@styles/swiper/swiper.scss';
+import '@styles/swiper/navigation.scss';
+import '@styles/swiper/pagination.scss';
 
 /**
  * app.main
@@ -77,7 +81,6 @@ const main = async (err) => {
   });
 
   const productSliderEl = document.querySelector('.glider-products');
-  const heroSliderEl = document.querySelector('.glider-hero');
 
   if (productSliderEl) {
     const productSlider = new Glider(productSliderEl, {
@@ -109,20 +112,18 @@ const main = async (err) => {
     }
   }
 
-  if (heroSliderEl) {
-    new Glider(heroSliderEl, {
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      scrollLock: true,
-      scrollLockDelay: 100,
-      draggable: true,
-      dragVelocity: 1.5,
-      arrows: {
-        prev: '.glider-hero-prev',
-        next: '.glider-hero-next',
-      },
-    });
-  }
+  new Swiper('.swiper-hero', {
+    modules: [Navigation, Pagination, EffectCreative],
+    autoHeight: true,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
 
   Alpine.start();
 };

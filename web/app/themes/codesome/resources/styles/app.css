@@ -9,6 +9,10 @@ body {
   @apply font-comf text-black-1;
 }
 
+:root {
+  --swiper-pagination-bullet-size: 0.7rem;
+}
+
 .otgs-development-site-front-end {
   @apply hidden;
 }
@@ -77,4 +81,34 @@ body {
       @apply gap-32;
     }
   }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: #fff;
+  width: 45px;
+  height: 45px;
+  display: none;
+
+  @screen sm {
+    display: flex;
+  }
+
+  &:after {
+    font-size: 1rem;
+  }
+}
+
+.swiper-button-next {
+  @apply rounded-l-2xl;
+  margin-right: -1rem;
+}
+
+.swiper-button-prev {
+  @apply rounded-r-2xl;
+  margin-left: -1rem;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets {
+  bottom: 0;
 }
