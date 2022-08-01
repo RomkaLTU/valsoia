@@ -219,7 +219,7 @@
         </div>
         <div class="col-span-2 relative">
           <img src="@asset('images/nuts.webp')" class="max-h-[735px]" alt="" />
-          <a href="https://www.youtube.com/watch?v=fiArfqdLgpI" data-fancybox class="absolute top-0 bottom-0 left-0 right-0 m-auto max-w-[600px] z-10 flex items-center justify-center">
+          <a href="https://youtu.be/tYu3SSsgQHs" data-fancybox class="absolute top-0 bottom-0 left-0 right-0 m-auto max-w-[600px] z-10 flex items-center justify-center">
             <img src="@asset('images/tmp/gelato.webp')" class="lg:max-w-[490px]" alt="" />
             <div class="absolute top-0 bottom-0 left-0 right-0 m-auto w-24 h-24">
               <svg xmlns="http://www.w3.org/2000/svg" class="" width="100" height="100" viewBox="0 0 118 119"><defs><mask id="id4zb" width="2" height="2" x="-1" y="-1"><path fill="#fff" d="M4 1h110v110H4z"/><path d="M4.5 56.38c0-30.099 24.4-54.5 54.5-54.5s54.5 24.401 54.5 54.5c0 30.1-24.4 54.5-54.5 54.5S4.5 86.48 4.5 56.38z"/></mask><filter id="id4za" width="142" height="145" x="-12" y="-15" filterUnits="userSpaceOnUse"><feOffset dy="3" in="SourceGraphic" result="FeOffset1061Out"/><feGaussianBlur in="FeOffset1061Out" result="FeGaussianBlur1062Out" stdDeviation="2.4 2.4"/></filter></defs><g><g><g filter="url(#id4za)"><path fill="none" d="M4.5 56.38c0-30.099 24.4-54.5 54.5-54.5s54.5 24.401 54.5 54.5c0 30.1-24.4 54.5-54.5 54.5S4.5 86.48 4.5 56.38z" mask="url(&quot;#id4zb&quot;)"/><path fill-opacity=".16" d="M4.5 56.38c0-30.099 24.4-54.5 54.5-54.5s54.5 24.401 54.5 54.5c0 30.1-24.4 54.5-54.5 54.5S4.5 86.48 4.5 56.38z"/></g><path fill="#ffbe53" d="M4.5 56.38c0-30.099 24.4-54.5 54.5-54.5s54.5 24.401 54.5 54.5c0 30.1-24.4 54.5-54.5 54.5S4.5 86.48 4.5 56.38z"/></g><g transform="rotate(90 64 55.5)"><path fill="#fff" d="M64.019 40.017l18.134 31.539H45.884z"/></g></g></svg>
@@ -292,6 +292,12 @@
     <h2 class="font-ga text-45px leading-12 lg:text-6xl text-center mb-16 mt-6 lg:mt-0 px-16 lg:px-0">
       {{ __('Let\'s meet in Instragram!', 'code') }}
     </h2>
+
+    @if(shortcode_exists('instagram-feed'))
+      <div>
+        {!! do_shortcode('[instagram-feed feed=1]') !!}
+      </div>
+    @endif
 
     <div class="flex justify-center mt-12 mb-10">
       <a href="https://www.instagram.com/valsoia_lt/" target="_blank" class="block font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] mx-auto lg:mx-0 py-3 rounded-full">
