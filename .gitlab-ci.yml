@@ -14,8 +14,7 @@ stages:
   image: composer:2.3
   before_script:
     - ls -lrat
-    - apt-get update 
-      apt-get install -y nodejs
+    - apk add --update nodejs npm
     - npm install gulp -g
     - npm install yarn -g
     # root composer install 
