@@ -256,7 +256,7 @@
         @foreach($products as $product)
           <a href="{{ get_permalink($product) }}" class="flex flex-col gap-6 items-center">
             {!! get_the_post_thumbnail($product, 'large', ['class' => 'w-full h-full object-contain']) !!}
-            <h3>{{ $product->post_title }}</h3>
+            <h3 class="text-center">{{ $product->post_title }}</h3>
           </a>
         @endforeach
       </div>
