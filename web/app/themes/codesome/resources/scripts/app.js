@@ -1,5 +1,6 @@
 import {domReady} from '@roots/sage/client';
 import Alpine from 'alpinejs';
+import collapse from '@alpinejs/collapse';
 import Swiper, { Navigation, Pagination, EffectCreative } from 'swiper';
 import '@styles/swiper/swiper.scss';
 import '@styles/swiper/navigation.scss';
@@ -125,6 +126,7 @@ const main = async (err) => {
     },
   });
 
+  Alpine.plugin(collapse);
   Alpine.start();
 };
 
