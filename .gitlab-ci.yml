@@ -66,7 +66,7 @@ build-deploy stage:
     # Sync files
     - echo "$SERVER_USER@$SERVER_HOST"
     - sshpass -p $SERVER_PASSWORD ssh -oStrictHostKeyChecking=no $SERVER_USER@$SERVER_HOST "ls -la $REMOTE_FOLDER"
-    - sshpass -p $SERVER_PASSWORD rsync -avz --no-owner --no-group --omit-dir-times  $SERVER_USER@$SERVER_HOST:$REMOTE_FOLDER/
+    - sshpass -p $SERVER_PASSWORD rsync -avz --no-owner --no-group --omit-dir-times ./ $SERVER_USER@$SERVER_HOST:$REMOTE_FOLDER/
 
 ################################################################################
 ### PROD
