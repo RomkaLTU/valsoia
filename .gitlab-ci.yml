@@ -55,19 +55,18 @@ build-deploy stage:
     - apk add --update openssh-client sshpass rsync
 
     - DB_PASSWORD=$(echo $DB_PASSWORD | sed -e 's/\\/\\\\/g; s/\//\\\//g; s/&/\\\&/g')
-    - sed -i'' -e "s/%%DATABASE_PASSWORD%%/$DB_PASSWORD/" docker/config/stage/wp-config.php
-    - cp docker/config/stage/wp-config.php .
+    - sed -i'' -e "s/%%DATABASE_PASSWORD%%/$DB_PASSWORD/" docker/stage/.env
+    - cp docker/stage/.env .
+    - rm -rf docker
 
     # Fix permissions
     - find . -type d -exec chmod 775 {} \;
     - find . -type f -exec chmod 664 {} \;
 
     # Sync files
-    - echo "$SERVER_USER@$SERVER_HOST:wp-content/plugins"
+    - echo "$SERVER_USER@$SERVER_HOST"
     - sshpass -p $SERVER_PASSWORD ssh -oStrictHostKeyChecking=no $SERVER_USER@$SERVER_HOST "ls -la $REMOTE_FOLDER"
-    - sshpass -p $SERVER_PASSWORD scp wp-config.php $SERVER_USER@$SERVER_HOST:$REMOTE_FOLDER/wp-config.php
-    - sshpass -p $SERVER_PASSWORD rsync -avz --no-owner --no-group --omit-dir-times wp-content/plugins/ $SERVER_USER@$SERVER_HOST:$REMOTE_FOLDER/wp-content/plugins
-    - sshpass -p $SERVER_PASSWORD rsync -avz --no-owner --no-group --omit-dir-times wp-content/themes/ $SERVER_USER@$SERVER_HOST:$REMOTE_FOLDER/wp-content/themes
+    - sshpass -p $SERVER_PASSWORD rsync -avz --no-owner --no-group --omit-dir-times  $SERVER_USER@$SERVER_HOST:$REMOTE_FOLDER/
 
 ################################################################################
 ### PROD
