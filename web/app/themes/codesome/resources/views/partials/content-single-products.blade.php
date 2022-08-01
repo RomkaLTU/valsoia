@@ -1,3 +1,11 @@
+@php
+$ingredientsGroup = get_field('ingredients');
+$nutritionGroup = get_field('nutrition');
+$size = get_field('size');
+$temperature = get_field('temperature');
+$badgets = get_field('badgets');
+@endphp
+
 <article @php(post_class())>
   <header class="mt-20">
     <div class="relative">
@@ -12,21 +20,30 @@
 
   <div class="grid grid-cols-2 mt-32">
     <div>
-      
+
     </div>
     <div class="max-w-[590px]">
 
       <div class="grid grid-cols-4 gap-4">
-        <img src="@asset('images/tmp/made-w-oat.webp')" alt="Made width oat">
-        <img src="@asset('images/tmp/dairy-free-big.webp')" alt="Dairy free">
-        <img src="@asset('images/tmp/plant-based-cert.webp')" alt="Certified plant based">
-        <img src="@asset('images/tmp/non-gmo.webp')" alt="Non GMO">
+        @if(in_array('oat', $badgets))
+          <img src="@asset('images/tmp/made-w-oat.webp')" alt="Made width oat">
+        @endif
+        @if(in_array('dairy', $badgets))
+          <img src="@asset('images/tmp/dairy-free-big.webp')" alt="Dairy free">
+        @endif
+        @if(in_array('certified_plant', $badgets))
+          <img src="@asset('images/tmp/plant-based-cert.webp')" alt="Certified plant based">
+        @endif
+        @if(in_array('non_gmo', $badgets))
+          <img src="@asset('images/tmp/non-gmo.webp')" alt="Non GMO">
+        @endif
       </div>
 
-      <p class="font-ga text-25px leading-tight my-7">
-        Loving coffee and chocolate friendship? Espresso cones are made from intense blend of espresso
-        gelato swirled with chocolate and topped with chocolate chips.
-      </p>
+      @if($intro = get_field('intro'))
+        <section class="font-ga text-25px leading-tight my-7">
+          {!! $intro !!}
+        </section>
+      @endif
 
       <div x-data="{
         showIngredients: true,
@@ -63,41 +80,53 @@
           </button>
         </div>
         <div x-show="showIngredients" x-collapse>
-          <h4 class="font-ga text-25px mb-5">Product ingredients</h4>
-          <p class="font-comf text-lg leading-relaxed">
-            OAT MILK (WATER, OAT), SUGAR, COCONUT OIL, GLUCOSE SYRUP, CARAMELIZED HAZELNUTS (ROASTED HAZELNUTS, SUGAR),
-            MALTODEXTRIN, COCOA POWDER (PROCESSED WITH ALKALI), SUNFLOWER OIL, DEXTROSE, WATER, PEA PROTEIN,
-            METHYLCELLULOSE, SOY LECITHIN, SEA SALT, NATURAL FLAVORINGS, ARABIC GUM, CARAMEL (SUGAR, GLUCOSE-FRUCTOSE
-            SYRUP, WATER), BOURBON VANILLA EXTRACT, CAROB BEAN GUM, CARAMEL (COLOR), GUAR GUM, SODIUM ALGINATE. WAFFLE:
-            WHEAT FLOUR, SUGAR, COCONUT OIL, SALT, CARAMELIZED SUGAR, SOY LECITHIN, NATURAL FLAVORING.
-            hazelnuts, coconut, soy and wheat. may contain other tree nuts.
-          </p>
+          @if($ingredientsGroup)
+            <h4 class="font-ga text-25px mb-5">
+              {{ $ingredientsGroup['title'] }}
+            </h4>
+            <div class="font-comf text-lg leading-relaxed">
+              {!! $ingredientsGroup['text'] !!}
+            </div>
+          @endif
+        </div>
+        <div x-show="showNutrition" x-collapse>
+          @if($imageId = $nutritionGroup['image'])
+            <figure>
+              <img src="{{ wp_get_attachment_image_url($imageId, 'large') }}" class="mx-auto" alt="">
+            </figure>
+          @endif
         </div>
       </div>
 
       <div class="grid grid-cols-2 gap-16 my-14">
-        <div class="relative h-[270px]">
-          <img src="@asset('images/options-shape@2x.webp')" class="absolute" alt="">
-          <div class="relative h-full flex flex-col items-center justify-center">
-            <img src="@asset('images/001-jar.webp')" alt="">
-            <p class="relative font-ga text-2xl mt-4 mb-1 text-center leading-none">Size</p>
-            <p class="max-w-[132px] mx-auto text-sm text-center">
-              4 – 4 FL OZ (118 mL)
-              CONES / 16 FL OZ
-              (472 mL)
-            </p>
+        @if($size && ($size['title'] || $size['text']))
+          <div class="relative h-[270px]">
+            <img src="@asset('images/options-shape@2x.webp')" class="absolute" alt="">
+            <div class="relative h-full flex flex-col items-center justify-center">
+              <img src="@asset('images/001-jar.webp')" alt="">
+              <p class="relative font-ga text-2xl mt-4 mb-1 text-center leading-none">
+                {!! $size['title'] !!}
+              </p>
+              <p class="max-w-[132px] mx-auto text-sm text-center">
+                {!! $size['text'] !!}
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="relative h-[270px]">
-          <img src="@asset('images/options-shape@2x.webp')" class="absolute" alt="">
-          <div class="relative h-full flex flex-col items-center justify-center">
-            <img src="@asset('images/002-temperature.webp')" alt="">
-            <p class="relative font-ga text-2xl mt-4 mb-1 text-center leading-none">Storage<br> instructions</p>
-            <p class="max-w-[132px] mx-auto text-sm text-center">
-              Keep frozen
-            </p>
+        @endif
+        @if($temperature && ($temperature['title'] || $temperature['text']))
+          <div class="relative h-[270px]">
+            <img src="@asset('images/options-shape@2x.webp')" class="absolute" alt="">
+            <div class="relative h-full flex flex-col items-center justify-center">
+              <img src="@asset('images/002-temperature.webp')" alt="">
+              <p class="relative font-ga text-2xl mt-4 mb-1 text-center leading-none">
+                {!! $temperature['title'] !!}
+              </p>
+              <p class="max-w-[132px] mx-auto text-sm text-center">
+                {!! $temperature['text'] !!}
+              </p>
+            </div>
           </div>
-        </div>
+        @endif
       </div>
     </div>
   </div>
