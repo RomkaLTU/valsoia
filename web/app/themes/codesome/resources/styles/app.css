@@ -71,7 +71,7 @@ body {
 
 .glider-products {
   .glider-track {
-    @apply gap-8;
+    @apply gap-8 items-baseline;
 
     @screen lg {
       @apply gap-12;
