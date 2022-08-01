@@ -1,0 +1,1 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"><g><g><g transform="rotate(-45 13 13)"><path fill="#0d1833" d="M-3.418 14.081a1 1 0 0 1 0-2h33a1 1 0 0 1 0 2z"/></g><g transform="rotate(-135 13 13)"><path fill="#0d1833" d="M-3.419 14.081a1 1 0 0 1 0-2h33a1 1 0 0 1 0 2z"/></g></g></g></svg>

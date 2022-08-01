@@ -1,0 +1,114 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "fonts.css";
+@import "header-menu.css";
+
+body {
+  @apply font-comf text-black-1;
+}
+
+:root {
+  --swiper-pagination-bullet-size: 0.7rem;
+}
+
+.otgs-development-site-front-end {
+  @apply hidden;
+}
+
+.wpml-ls-legacy-dropdown {
+  width: auto;
+  @apply font-ga text-2xl;
+
+  .js-wpml-ls-item-toggle {
+    border: none;
+
+    &:hover {
+      @apply bg-yellow-1;
+    }
+  }
+}
+
+.wpml-ls-legacy-dropdown a,
+.wpml-ls-sub-menu {
+  border: none !important;
+}
+
+.wpml-ls-legacy-dropdown .wpml-ls-current-language:hover>a,
+.wpml-ls-legacy-dropdown a:focus,
+.wpml-ls-legacy-dropdown a:hover {
+  background: #fff;
+}
+
+.glider-prev {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto auto 5rem -10px;
+  z-index: 20;
+  display: none;
+
+  @screen lg {
+    display: block;
+    margin: auto auto 11rem -10px;
+  }
+}
+
+.glider-next {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto -10px 5rem auto;
+  z-index: 20;
+  display: none;
+
+  @screen lg {
+    display: block;
+    margin: auto -9px 11rem auto;
+  }
+}
+
+.glider-products {
+  .glider-track {
+    @apply gap-8 items-baseline;
+
+    @screen lg {
+      @apply gap-12;
+    }
+
+    @screen 2xl {
+      @apply gap-32;
+    }
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: #fff;
+  width: 45px;
+  height: 45px;
+  display: none;
+
+  @screen sm {
+    display: flex;
+  }
+
+  &:after {
+    font-size: 1rem;
+  }
+}
+
+.swiper-button-next {
+  @apply rounded-l-2xl;
+  margin-right: -1rem;
+}
+
+.swiper-button-prev {
+  @apply rounded-r-2xl;
+  margin-left: -1rem;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets {
+  bottom: 0;
+}
