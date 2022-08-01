@@ -13,7 +13,6 @@ stages:
   stage: build-deploy
   image: composer:2.3
   before_script:
-    - ls -lrat
     - apk add --update nodejs npm
     - npm install gulp -g
     - npm install yarn -g
@@ -25,9 +24,7 @@ stages:
     - yarn && yarn build
     # - gulp build
     # - rm -rf node_modules
-    - ls -lrat
     - popd
-    - ls -lrat
 
 ################################################################################
 ### STAGE
@@ -55,8 +52,7 @@ build-deploy stage:
     - .build
     - .stage
   script:
-    - apt update
-    - apt install -y --no-install-recommends openssh-client sshpass rsync
+    - apk add --update openssh-client sshpass rsync
 
     - DB_PASSWORD=$(echo $DB_PASSWORD | sed -e 's/\\/\\\\/g; s/\//\\\//g; s/&/\\\&/g')
     - sed -i'' -e "s/%%DATABASE_PASSWORD%%/$DB_PASSWORD/" docker/config/stage/wp-config.php
