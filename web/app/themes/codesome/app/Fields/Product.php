@@ -17,13 +17,17 @@ class Product extends Field
             ->setLocation('post_type', '==', 'products');
 
         $product
+            ->addTab('Gallery')
             ->addGallery('gallery', [
+                'label' => '',
                 'min' => 1,
                 'max' => 10,
             ]);
 
         $product
+            ->addTab('Badgets')
             ->addChoiceField('badgets', 'checkbox', [
+                'label' => '',
                 'multiple' => 1,
                 'allow_null' => 1,
                 'choices' => [
@@ -35,8 +39,9 @@ class Product extends Field
             ]);
 
         $product
+            ->addTab('Intro text')
             ->addWysiwyg('intro', [
-                'label' => 'Intro text',
+                'label' => '',
                 'required' => 0,
                 'tabs' => 'all',
                 'media_upload' => 0,
@@ -44,8 +49,9 @@ class Product extends Field
             ]);
 
         $product
+            ->addTab('Ingredients')
             ->addGroup('ingredients', [
-                'label' => 'Ingredients',
+                'label' => '',
                 'tabs' => 'all',
                 'hide_on_load' => 0,
             ])
@@ -54,8 +60,9 @@ class Product extends Field
             ->endGroup();
 
         $product
+            ->addTab('Nutrition')
             ->addGroup('nutrition', [
-                'label' => 'Nutrition',
+                'label' => '',
                 'tabs' => 'all',
                 'hide_on_load' => 0,
             ])
@@ -67,11 +74,13 @@ class Product extends Field
             ->endGroup();
 
         $product
+            ->addTab('Options')
             ->addGroup('size', [
                 'label' => 'Size',
                 'tabs' => 'all',
                 'hide_on_load' => 0,
             ])
+            ->setWrapper(['width' => 50])
             ->addText('title')
             ->addText('text')
             ->endGroup();
@@ -82,6 +91,7 @@ class Product extends Field
                 'tabs' => 'all',
                 'hide_on_load' => 0,
             ])
+            ->setWrapper(['width' => 50])
             ->addText('title')
             ->addText('text')
             ->endGroup();

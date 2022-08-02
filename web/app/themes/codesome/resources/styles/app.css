@@ -109,6 +109,20 @@ body {
   margin-left: -1rem;
 }
 
+.swiper-button-prev-product,
+.swiper-button-next-product {
+  @apply rounded-full shadow-lg m-0;
+  top: 40%;
+}
+
+.swiper-button-prev-product {
+  @apply ml-4;
+}
+
+.swiper-button-next-product {
+  @apply mr-4;
+}
+
 .swiper-horizontal > .swiper-pagination-bullets {
   bottom: 0;
 }
