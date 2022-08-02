@@ -109,6 +109,15 @@ class Product extends Field
             ->addText('text')
             ->endGroup();
 
+        $product
+            ->addTab('Related products')
+            ->addRelationship('related_products', [
+                'label' => '',
+                'post_type' => 'products',
+                'min' => 0,
+                'max' => 20,
+            ]);
+
         return $product->build();
     }
 }

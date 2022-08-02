@@ -288,7 +288,7 @@
     </div>
   </section>
 
-  <section class="py-10 bg-yellow-1">
+  <section class="py-10 pb-24 2xl:pb-52 bg-yellow-1">
     <h2 class="font-ga text-45px leading-12 lg:text-6xl text-center mb-16 mt-6 lg:mt-0 px-16 lg:px-0">
       {{ __('Let\'s meet in Instragram!', 'code') }}
     </h2>

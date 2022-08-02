@@ -102,8 +102,8 @@ $colors = get_field('colors');
       }">
         <div class="grid grid-cols-2 gap-4 lg:gap-16 my-8 lg:my-14">
           @if($ingredientsGroup)
-            <button @click="toggleIngredients()" type="button" class="relative h-[145px] lg:h-[230px] flex flex-col items-center justify-center">
-              <img src="@asset('images/ingredients@2x.webp')" class="absolute" alt="">
+            <button @click="toggleIngredients()" type="button" class="relative min-h-[47vw] xl:min-h-[230px] flex flex-col items-center justify-center">
+              <img src="@asset('images/ingredients@2x.webp')" class="absolute h-auto" alt="">
               <span class="relative font-ga text-white text-2xl lg:text-4xl">
                 {{ __('Ingredients', 'code') }}
               </span>
@@ -113,8 +113,8 @@ $colors = get_field('colors');
             </button>
           @endif
           @if($nutritionGroup)
-            <button @click="toggleNutrition()" type="button" class="relative h-[145px] lg:h-[230px] flex items-center justify-center">
-              <img src="@asset('images/nutritional-values@2x.webp')" class="absolute" alt="">
+            <button @click="toggleNutrition()" type="button" class="relative min-h-[47vw] xl:min-h-[230px] flex items-center justify-center">
+              <img src="@asset('images/nutritional-values@2x.webp')" class="absolute h-auto" alt="">
               <span class="relative font-ga text-white text-2xl lg:text-4xl">
                 {{ __('Nutritional values', 'code') }}
               </span>
@@ -146,7 +146,7 @@ $colors = get_field('colors');
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 my-14">
         @if($size && ($size['title'] || $size['text']))
           <div class="relative h-[270px]">
-            <img src="@asset('images/options-shape@2x.webp')" class="absolute" alt="">
+            <img src="@asset('images/options-shape@2x.webp')" class="absolute h-full left-0 right-0 mx-auto" alt="">
             <div class="relative h-full flex flex-col items-center justify-center">
               <img src="@asset('images/001-jar.webp')" alt="">
               <p class="relative font-ga text-2xl mt-4 mb-1 text-center leading-none">
@@ -160,7 +160,7 @@ $colors = get_field('colors');
         @endif
         @if($temperature && ($temperature['title'] || $temperature['text']))
           <div class="relative h-[270px]">
-            <img src="@asset('images/options-shape@2x.webp')" class="absolute" alt="">
+            <img src="@asset('images/options-shape@2x.webp')" class="absolute h-full left-0 right-0 mx-auto" alt="">
             <div class="relative h-full flex flex-col items-center justify-center">
               <img src="@asset('images/002-temperature.webp')" alt="">
               <p class="relative font-ga text-2xl mt-4 mb-1 text-center leading-none">
