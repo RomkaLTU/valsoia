@@ -75,6 +75,19 @@ class Product extends Field
 
         $product
             ->addTab('Options')
+            ->addSelect('colors', [
+                'label' => 'Colors',
+                'type' => 'select',
+                'multiple' => 0,
+                'allow_null' => 0,
+                'choices' => [
+                    'almond' => 'Almond',
+                    'croccantino' => 'Croccantino',
+                    'pistachio' => 'Pistachio',
+                    'chocolate' => 'Chocolate',
+                    'espresso' => 'Espresso',
+                ],
+            ])
             ->addGroup('size', [
                 'label' => 'Size',
                 'tabs' => 'all',
