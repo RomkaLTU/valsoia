@@ -21,35 +21,39 @@ $gallery = get_field('gallery');
 
   <div class="grid grid-cols-1 xl:grid-cols-2 mt-24 lg:mt-32">
     <div>
-      <div class="swiper-hero relative overflow-hidden pb-8">
-        <div class="swiper-wrapper mb-6">
-          @foreach($gallery as $item)
-            <div class="swiper-slide relative overflow-hidden flex items-center justify-center">
-              <img src="{{ wp_get_attachment_image_url($item['id'], 'large') }}" alt="{{ $item['title'] }}">
-            </div>
-          @endforeach
+      @if($gallery)
+        <div class="swiper-hero relative overflow-hidden pb-8">
+          <div class="swiper-wrapper mb-6">
+            @foreach($gallery as $item)
+              <div class="swiper-slide relative overflow-hidden flex items-center justify-center">
+                <img src="{{ wp_get_attachment_image_url($item['id'], 'large') }}" alt="{{ $item['title'] }}">
+              </div>
+            @endforeach
+          </div>
+          <div class="swiper-button-next swiper-button-next-product"></div>
+          <div class="swiper-button-prev swiper-button-prev-product"></div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-button-next swiper-button-next-product"></div>
-        <div class="swiper-button-prev swiper-button-prev-product"></div>
-        <div class="swiper-pagination"></div>
-      </div>
+      @endif
     </div>
     <div class="xl:max-w-[590px] px-8 xl:px-0 mt-12 xl:mt-0">
 
-      <div class="grid grid-cols-4 gap-4">
-        @if(in_array('oat', $badgets))
-          <img src="@asset('images/tmp/made-w-oat.webp')" alt="Made width oat">
-        @endif
-        @if(in_array('dairy', $badgets))
-          <img src="@asset('images/tmp/dairy-free-big.webp')" alt="Dairy free">
-        @endif
-        @if(in_array('certified_plant', $badgets))
-          <img src="@asset('images/tmp/plant-based-cert.webp')" alt="Certified plant based">
-        @endif
-        @if(in_array('non_gmo', $badgets))
-          <img src="@asset('images/tmp/non-gmo.webp')" alt="Non GMO">
-        @endif
-      </div>
+      @if($badgets)
+        <div class="grid grid-cols-4 gap-4">
+          @if(in_array('oat', $badgets))
+            <img src="@asset('images/tmp/made-w-oat.webp')" alt="Made width oat">
+          @endif
+          @if(in_array('dairy', $badgets))
+            <img src="@asset('images/tmp/dairy-free-big.webp')" alt="Dairy free">
+          @endif
+          @if(in_array('certified_plant', $badgets))
+            <img src="@asset('images/tmp/plant-based-cert.webp')" alt="Certified plant based">
+          @endif
+          @if(in_array('non_gmo', $badgets))
+            <img src="@asset('images/tmp/non-gmo.webp')" alt="Non GMO">
+          @endif
+        </div>
+      @endif
 
       @if($intro = get_field('intro'))
         <section class="font-ga text-xl lg:text-25px leading-tight my-7">
@@ -72,24 +76,28 @@ $gallery = get_field('gallery');
         }
       }">
         <div class="grid grid-cols-2 gap-4 lg:gap-16 my-8 lg:my-14">
-          <button @click="toggleIngredients()" type="button" class="relative h-[145px] lg:h-[230px] flex flex-col items-center justify-center">
-            <img src="@asset('images/ingredients@2x.webp')" class="absolute" alt="">
-            <span class="relative font-ga text-white text-2xl lg:text-4xl">
-              {{ __('Ingredients', 'code') }}
-            </span>
-            <svg x-show="showIngredients" xmlns="http://www.w3.org/2000/svg" class="absolute bottom-0 mb-4 text-white h-8 w-8 lg:h-12 lg:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <button @click="toggleNutrition()" type="button" class="relative h-[145px] lg:h-[230px] flex items-center justify-center">
-            <img src="@asset('images/nutritional-values@2x.webp')" class="absolute" alt="">
-            <span class="relative font-ga text-white text-2xl lg:text-4xl">
-              {{ __('Nutritional values', 'code') }}
-            </span>
-            <svg x-show="showNutrition" xmlns="http://www.w3.org/2000/svg" class="absolute bottom-0 mb-4 text-white h-8 w-8 lg:h-12 lg:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
+          @if($ingredientsGroup)
+            <button @click="toggleIngredients()" type="button" class="relative h-[145px] lg:h-[230px] flex flex-col items-center justify-center">
+              <img src="@asset('images/ingredients@2x.webp')" class="absolute" alt="">
+              <span class="relative font-ga text-white text-2xl lg:text-4xl">
+                {{ __('Ingredients', 'code') }}
+              </span>
+              <svg x-show="showIngredients" xmlns="http://www.w3.org/2000/svg" class="absolute bottom-0 mb-4 text-white h-8 w-8 lg:h-12 lg:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+          @endif
+          @if($nutritionGroup)
+            <button @click="toggleNutrition()" type="button" class="relative h-[145px] lg:h-[230px] flex items-center justify-center">
+              <img src="@asset('images/nutritional-values@2x.webp')" class="absolute" alt="">
+              <span class="relative font-ga text-white text-2xl lg:text-4xl">
+                {{ __('Nutritional values', 'code') }}
+              </span>
+              <svg x-show="showNutrition" xmlns="http://www.w3.org/2000/svg" class="absolute bottom-0 mb-4 text-white h-8 w-8 lg:h-12 lg:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+          @endif
         </div>
         <div x-show="showIngredients" x-collapse>
           @if($ingredientsGroup)
