@@ -47,7 +47,7 @@ $colors = get_field('colors');
   <div class="grid grid-cols-1 xl:grid-cols-2 mt-24 lg:mt-32">
     <div>
       @if($gallery)
-        <div class="swiper-hero relative overflow-hidden pb-8">
+        <div class="swiper-hero relative overflow-hidden pb-8 max-w-[662px] px-20 mx-auto">
           <div class="swiper-wrapper mb-6">
             @foreach($gallery as $item)
               <div class="swiper-slide relative overflow-hidden flex items-center justify-center">
