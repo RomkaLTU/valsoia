@@ -2,7 +2,7 @@
 
 @php
 $colors = get_field('colors');
-$relatedProducts = get_field('related_products');
+$products = get_field('related_products');
 @endphp
 
 @section('content')
@@ -29,25 +29,14 @@ $relatedProducts = get_field('related_products');
       @endif
 
       <div class="absolute top-0 w-full h-full">
-        @if(isset($relatedProducts) && $relatedProducts)
-          <div class="glider-products-container sm:w-[95%] max-w-[1557px] mx-auto sm:px-4 h-full text-white">
-            <h4 class="absolute uppercase font-ga text-center mt-[8vw] sm:mt-[6vw] 2xl:mt-[8vw] left-0 right-0 mx-auto text-4xl xl:text-5xl">
+        @if(isset($products) && $products)
+          <div class="sm:w-[95%] max-w-[1557px] mx-auto sm:px-4 h-full text-white lg:flex lg:flex-col lg:items-center px-4 lg:px-0">
+            <h4 class=" uppercase font-ga text-center mt-[16vw] sm:mt-[8vw] mb-[3vw] left-0 right-0 mx-auto text-4xl xl:text-5xl">
               {{ __('TRY THESE TOO', 'code') }}
             </h4>
-            <div class="glider-products font-ga text-3xl h-full mt-[3vw] flex items-center justify-center">
-              @foreach($relatedProducts as $product)
-                <a href="{{ get_permalink($product) }}" class="flex flex-col gap-6 items-center">
-                  {!! get_the_post_thumbnail($product, 'large', ['class' => 'w-full h-full object-contain']) !!}
-                  <h3 class="text-center">{{ $product->post_title }}</h3>
-                </a>
-              @endforeach
+            <div class="relative mt-16 md:mt-0">
+              @include('partials.product-slider')
             </div>
-            <button aria-label="Previous" class="glider-prev !mb-0">
-              <img class="w-[57px]" src="@asset('images/slider-left@2x.webp')" alt="">
-            </button>
-            <button aria-label="Next" class="glider-next !mb-0">
-              <img class="w-[57px]" src="@asset('images/slider-right@2x.webp')" alt="">
-            </button>
           </div>
         @endif
       </div>

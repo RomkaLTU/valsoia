@@ -89,6 +89,7 @@ body {
   width: 45px;
   height: 45px;
   display: none;
+  top: 36%;
 
   @screen sm {
     display: flex;

@@ -251,22 +251,7 @@
     <h2 class="font-ga text-45px leading-12 lg:text-6xl text-center mb-16 mt-6 lg:mt-0 px-10 sm:px-16 lg:px-0">
       {{ __('Try our authentic Italian gelato', 'code') }}
     </h2>
-    <div class="glider-products-container sm:w-[95%] max-w-[1557px] mx-auto sm:px-4">
-      <div class="glider-products font-ga text-3xl">
-        @foreach($products as $product)
-          <a href="{{ get_permalink($product) }}" class="flex flex-col gap-6 items-center">
-            {!! get_the_post_thumbnail($product, 'large', ['class' => 'w-full h-full object-contain']) !!}
-            <h3 class="text-center">{{ $product->post_title }}</h3>
-          </a>
-        @endforeach
-      </div>
-      <button aria-label="Previous" class="glider-prev">
-        <img class="w-[57px]" src="@asset('images/slider-left@2x.webp')" alt="">
-      </button>
-      <button aria-label="Next" class="glider-next">
-        <img class="w-[57px]" src="@asset('images/slider-right@2x.webp')" alt="">
-      </button>
-    </div>
+    @include('partials.product-slider')
 
     <div class="flex justify-center mt-12 mb-10">
       <a href="{{ get_term_link('gelato', 'product_categories') }}" class="block font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] mx-auto lg:mx-0 py-3 rounded-full">
