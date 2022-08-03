@@ -87,6 +87,7 @@ class Product extends Field
                     'pistachio' => 'Pistachio',
                     'chocolate' => 'Chocolate',
                     'espresso' => 'Espresso',
+                    'spread' => 'Spread (2 lines)',
                 ],
             ])
             ->addGroup('size', [
