@@ -76,6 +76,12 @@ $colors = get_field('colors');
           @if(in_array('almond', $badgets))
             @include('svg.almond')
           @endif
+          @if(in_array('gluten_free', $badgets))
+            @include('svg.gluttenfree')
+          @endif
+          @if(in_array('palm_oil_free', $badgets))
+            @include('svg.palmoilfree')
+          @endif
           @if(in_array('dairy', $badgets))
               @include('svg.dairy-free')
           @endif
