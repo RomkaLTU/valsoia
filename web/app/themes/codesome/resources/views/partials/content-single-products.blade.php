@@ -140,11 +140,14 @@ $colors = get_field('colors');
         </div>
         <div x-show="showIngredients" x-collapse>
           @if($ingredientsGroup)
-            <h4 class="font-ga text-xl lg:text-25px mb-5">
+            <h4 class="font-ga text-xl lg:text-25px mb-5 xl:mb-7">
               {{ $ingredientsGroup['title'] }}
             </h4>
-            <div class="font-comf text-base lg:text-lg leading-relaxed">
-              {!! $ingredientsGroup['text'] !!}
+            <div class="font-comf text-base lg:text-lg leading-relaxed flex">
+              <span class="inline-block w-4 h-4 bg-green-2 rounded-full flex-none mt-1"></span>
+              <div class="ml-3">
+                {!! $ingredientsGroup['text'] !!}
+              </div>
             </div>
           @endif
         </div>
