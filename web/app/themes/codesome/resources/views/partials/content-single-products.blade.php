@@ -55,7 +55,7 @@ $colors = get_field('colors');
         <div class="swiper-hero relative overflow-hidden pb-8 max-w-[662px] px-20 mx-auto">
           <div class="swiper-wrapper mb-6">
             @foreach($gallery as $item)
-              <div class="swiper-slide relative overflow-hidden flex items-center justify-center">
+              <div class="swiper-slide relative overflow-hidden flex items-center justify-center self-center">
                 <img src="{{ wp_get_attachment_image_url($item['id'], 'large') }}" alt="{{ $item['title'] }}">
               </div>
             @endforeach

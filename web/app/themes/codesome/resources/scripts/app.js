@@ -115,7 +115,7 @@ const main = async (err) => {
 
   new Swiper('.swiper-hero', {
     modules: [Navigation, Pagination],
-    autoHeight: true,
+    autoHeight: false,
     spaceBetween: 80,
     loop: true,
     pagination: {
@@ -149,6 +149,7 @@ const main = async (err) => {
       '1024': {
         slidesPerView: '4',
         spaceBetween: 30,
+        autoHeight: false,
       }
     }
   });
