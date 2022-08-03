@@ -66,16 +66,19 @@ $colors = get_field('colors');
       @if($badgets)
         <div class="grid grid-cols-4 gap-4">
           @if(in_array('oat', $badgets))
-            <img src="@asset('images/tmp/made-w-oat.webp')" alt="Made width oat">
+            @include('svg.oat')
           @endif
           @if(in_array('dairy', $badgets))
-            <img src="@asset('images/tmp/dairy-free-big.webp')" alt="Dairy free">
+              @include('svg.dairy-free')
+          @endif
+          @if(in_array('almond', $badgets))
+            @include('svg.almond')
           @endif
           @if(in_array('certified_plant', $badgets))
-            <img src="@asset('images/tmp/plant-based-cert.webp')" alt="Certified plant based">
+              @include('svg.plant-based')
           @endif
           @if(in_array('non_gmo', $badgets))
-            <img src="@asset('images/tmp/non-gmo.webp')" alt="Non GMO">
+              @include('svg.verified')
           @endif
         </div>
       @endif
@@ -137,7 +140,7 @@ $colors = get_field('colors');
         <div x-show="showNutrition" x-collapse>
           @if($imageId = $nutritionGroup['image'])
             <figure>
-              <img src="{{ wp_get_attachment_image_url($imageId, 'large') }}" class="mx-auto" alt="">
+              <img src="{{ wp_get_attachment_image_url($imageId, 'large') }}" class="max-w-[300px] mx-auto" alt="">
             </figure>
           @endif
         </div>
