@@ -73,11 +73,11 @@ $colors = get_field('colors');
           @if(in_array('oat', $badgets))
             @include('svg.oat')
           @endif
-          @if(in_array('dairy', $badgets))
-              @include('svg.dairy-free')
-          @endif
           @if(in_array('almond', $badgets))
             @include('svg.almond')
+          @endif
+          @if(in_array('dairy', $badgets))
+              @include('svg.dairy-free')
           @endif
           @if(in_array('certified_plant', $badgets))
               @include('svg.plant-based')
