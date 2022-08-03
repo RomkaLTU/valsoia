@@ -148,7 +148,7 @@ const main = async (err) => {
       },
       '1024': {
         slidesPerView: '4',
-        spaceBetween: 30,
+        spaceBetween: 60,
         autoHeight: false,
       }
     }
