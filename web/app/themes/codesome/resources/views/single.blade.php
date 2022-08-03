@@ -3,8 +3,6 @@
 @php
 $colors = get_field('colors');
 $relatedProducts = get_field('related_products');
-
-dump($colors);
 @endphp
 
 @section('content')
