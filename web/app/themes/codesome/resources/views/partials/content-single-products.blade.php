@@ -43,7 +43,7 @@ $colors = get_field('colors');
           </svg>
         @endif
       </div>
-      <h1 class="block text-center relative font-ga text-white text-3xl lg:text-6xl pt-14 lg:pt-9">
+      <h1 class="block max-w-[650px] mx-auto text-center relative font-ga text-white text-3xl lg:text-5xl pt-14 lg:pt-9">
         {!! $title !!}
       </h1>
     </div>
