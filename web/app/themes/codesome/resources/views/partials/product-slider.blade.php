@@ -1,4 +1,4 @@
-<div class="swiper-products overflow-hidden sm:w-[95%] max-w-[1557px] mx-auto sm:px-4">
+<div class="swiper-products overflow-hidden relative sm:w-[95%] max-w-[1557px] mx-auto sm:px-4">
   <div class="swiper-wrapper font-ga text-3xl">
     @foreach($products as $product)
       <a href="{{ get_permalink($product) }}" class="swiper-slide flex flex-col gap-6 items-center">
@@ -7,6 +7,6 @@
       </a>
     @endforeach
   </div>
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
 </div>
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
