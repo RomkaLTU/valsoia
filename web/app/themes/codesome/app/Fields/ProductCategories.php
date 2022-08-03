@@ -38,6 +38,11 @@ class ProductCategories extends Field
             'mime_types' => '',
         ]);
 
+        $fields->addTrueFalse('transparent_image_bg', [
+            'label' => 'Transparent image background',
+            'default_value' => 0,
+        ]);
+
         return $fields->build();
     }
 }

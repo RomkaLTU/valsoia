@@ -1,5 +1,10 @@
 @extends('layouts.app')
 
+@php
+$originalTaxonomyId = apply_filters('wpml_object_id', get_queried_object()->term_id, 'product_categories', false, 'en');
+$transparentProdImage = get_field('transparent_image_bg', 'term_' . $originalTaxonomyId);
+@endphp
+
 @section('content')
   <figure>
     <img src="{{ wp_get_attachment_image_url(get_field('background', get_queried_object()), 'full') }}" class="w-full" alt="">
