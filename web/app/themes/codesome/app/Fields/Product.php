@@ -32,6 +32,7 @@ class Product extends Field
                 'allow_null' => 1,
                 'choices' => [
                     'oat' => 'Made with oat',
+                    'almond' => 'Almond',
                     'dairy' => 'Dairy free',
                     'certified_plant' => 'Certified plant based',
                     'non_gmo' => 'Non GMO',
