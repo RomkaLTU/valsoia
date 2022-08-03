@@ -6,6 +6,7 @@ $temperature = get_field('temperature');
 $badgets = get_field('badgets');
 $gallery = get_field('gallery');
 $colors = get_field('colors');
+$infoText = get_field('info_banner_text');
 @endphp
 
 <article @php(post_class())>
@@ -190,6 +191,17 @@ $colors = get_field('colors');
           </div>
         @endif
       </div>
+
+      @if($infoText)
+        <div class="relative -mx-7 sm:mx-0 mb-20">
+          <div class="absolute left-0 right-0 mx-auto max-w-[700px]">
+            @include('svg.info-banner')
+          </div>
+          <div class="text-white text-xs md:text-lg font-ga min-h-[90px] sm:min-h-[150px] w-full max-w-[500px] relative flex items-center pl-20 sm:pl-28 mx-auto">
+            {!! $infoText !!}
+          </div>
+        </div>
+      @endif
     </div>
   </div>
 </article>

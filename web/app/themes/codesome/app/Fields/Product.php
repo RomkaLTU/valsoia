@@ -11,12 +11,12 @@ class Product extends Field
 {
     public function fields(): array
     {
-        $product = new FieldsBuilder('product');
+        $fields = new FieldsBuilder('product');
 
-        $product
+        $fields
             ->setLocation('post_type', '==', 'products');
 
-        $product
+        $fields
             ->addTab('Gallery')
             ->addGallery('gallery', [
                 'label' => '',
@@ -24,7 +24,7 @@ class Product extends Field
                 'max' => 10,
             ]);
 
-        $product
+        $fields
             ->addTab('Badgets')
             ->addChoiceField('badgets', 'checkbox', [
                 'label' => '',
@@ -41,7 +41,7 @@ class Product extends Field
                 ],
             ]);
 
-        $product
+        $fields
             ->addTab('Intro text')
             ->addWysiwyg('intro', [
                 'label' => '',
@@ -51,7 +51,7 @@ class Product extends Field
                 'delay' => 0,
             ]);
 
-        $product
+        $fields
             ->addTab('Ingredients')
             ->addGroup('ingredients', [
                 'label' => '',
@@ -62,7 +62,7 @@ class Product extends Field
                 ->addWysiwyg('text')
             ->endGroup();
 
-        $product
+        $fields
             ->addTab('Nutrition')
             ->addGroup('nutrition', [
                 'label' => '',
@@ -76,7 +76,7 @@ class Product extends Field
                 ])
             ->endGroup();
 
-        $product
+        $fields
             ->addTab('Options')
             ->addSelect('colors', [
                 'label' => 'Colors',
@@ -102,7 +102,7 @@ class Product extends Field
             ->addText('text')
             ->endGroup();
 
-        $product
+        $fields
             ->addGroup('temperature', [
                 'label' => 'Temperature',
                 'tabs' => 'all',
@@ -113,7 +113,7 @@ class Product extends Field
             ->addText('text')
             ->endGroup();
 
-        $product
+        $fields
             ->addTab('Related products')
             ->addRelationship('related_products', [
                 'label' => '',
@@ -122,6 +122,15 @@ class Product extends Field
                 'max' => 20,
             ]);
 
-        return $product->build();
+        $fields
+            ->addTab('Info banner')
+            ->addWysiwyg('info_banner_text', [
+                'label' => '',
+                'tabs' => 'all',
+                'media_upload' => 0,
+                'delay' => 0,
+            ]);
+
+        return $fields->build();
     }
 }
