@@ -62,7 +62,7 @@ $infoText = get_field('info_banner_text');
     </div>
   @endif
 
-  <div class="grid grid-cols-1 xl:grid-cols-2 mt-24 lg:mt-32">
+  <div class="grid grid-cols-1 xl:grid-cols-2 mt-12 lg:mt-32">
     <div>
       @if($gallery)
         <div class="swiper-hero relative overflow-hidden pb-8 max-w-[662px] px-20 mx-auto">
