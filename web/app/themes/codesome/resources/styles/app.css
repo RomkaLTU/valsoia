@@ -4,6 +4,7 @@
 
 @import "fonts.css";
 @import "header-menu.css";
+@import "contact-form.css";
 
 body {
   @apply font-comf text-black-1;
