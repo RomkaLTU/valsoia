@@ -10,7 +10,7 @@ $infoText = get_field('info_banner_text');
 @endphp
 
 <article @php(post_class())>
-  <header class="mt-20">
+  <header class="mt-[7vw]">
     <div class="relative">
       <div class="absolute left-0 right-0 mx-auto flex justify-center">
         @if($colors === 'espresso')
