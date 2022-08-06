@@ -57,7 +57,7 @@ $infoText = get_field('info_banner_text');
   </header>
 
   @if(function_exists('yoast_breadcrumb'))
-    <div class="md:hidden text-center font-ga mt-14">
+    <div class="md:hidden text-center font-ga mt-14 px-4">
       @php(yoast_breadcrumb( '<p id="breadcrumbs">','</p>' ))
     </div>
   @endif
