@@ -50,7 +50,7 @@ $infoText = get_field('info_banner_text');
           </svg>
         @endif
       </div>
-      <h1 class="block max-w-[650px] mx-auto text-center relative font-ga text-white text-3xl lg:text-5xl pt-12 md:pt-14 lg:pt-11">
+      <h1 class="block max-w-[50%] xl:max-w-[650px] mx-auto text-center relative font-ga text-white text-3xl lg:text-5xl pt-12 md:pt-14 lg:pt-11">
         {!! $title !!}
       </h1>
     </div>
