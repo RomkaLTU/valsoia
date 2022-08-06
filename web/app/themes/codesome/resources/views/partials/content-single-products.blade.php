@@ -9,6 +9,12 @@ $colors = get_field('colors');
 $infoText = get_field('info_banner_text');
 @endphp
 
+@if(function_exists('yoast_breadcrumb'))
+  <div class="hidden md:block ml-[10vw] font-ga text-25px">
+    @php(yoast_breadcrumb( '<p id="breadcrumbs">','</p>' ))
+  </div>
+@endif
+
 <article @php(post_class())>
   <header class="mt-[7vw]">
     <div class="relative">
@@ -44,11 +50,17 @@ $infoText = get_field('info_banner_text');
           </svg>
         @endif
       </div>
-      <h1 class="block max-w-[650px] mx-auto text-center relative font-ga text-white text-3xl lg:text-5xl pt-14 lg:pt-11">
+      <h1 class="block max-w-[650px] mx-auto text-center relative font-ga text-white text-3xl lg:text-5xl pt-12 md:pt-14 lg:pt-11">
         {!! $title !!}
       </h1>
     </div>
   </header>
+
+  @if(function_exists('yoast_breadcrumb'))
+    <div class="md:hidden text-center font-ga mt-14">
+      @php(yoast_breadcrumb( '<p id="breadcrumbs">','</p>' ))
+    </div>
+  @endif
 
   <div class="grid grid-cols-1 xl:grid-cols-2 mt-24 lg:mt-32">
     <div>

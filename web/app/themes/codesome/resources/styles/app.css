@@ -9,11 +9,17 @@
 body {
   @apply font-comf text-black-1;
 
-  @screen xl {
-    &.single-products {
-      @apply bg-top bg-no-repeat;
+  &.single-products {
+    @apply bg-top bg-no-repeat;
+    background-size: 102% 3.5%;
+    background-image: url("../images/inner-header-bg.svg");
+
+    @screen md {
+      background-size: 102% 5%;
+    }
+
+    @screen lg {
       background-size: 102% 8%;
-      background-image: url("../images/inner-header-bg.svg");
     }
   }
 }
