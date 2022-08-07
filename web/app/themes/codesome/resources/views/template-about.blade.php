@@ -40,7 +40,7 @@
       <div class="w-full max-w-[1160px] mx-auto">
         <div class="relative pl-8 lg:pl-0 ml-4 lg:ml-0 flex flex-col lg:flex-row gap-12 lg:gap-24 after:absolute lg:after:content-none after:left-0 after:-ml-[7px] after:w-4 after:h-4 after:rounded-full after:bg-black-1 before:absolute lg:before:content-none before:left-0 before:top-0 before:border-black-1 before:border-r-2 before:h-full">
           <div class="relative flex-1 lg:text-right before:absolute before:top-0 before:right-0 before:w-4 before:h-4 before:bg-black-1 before:rounded-full before:-mr-[63px] after:absolute after:top-0 after:right-0 after:h-full after:-mr-14 after:border-black-1 after:border-r-2">
-            <div class="-mt-3 md:-mt-6 lg:mb-12 lg:mb-6">
+            <div class="-mt-3 lg:mb-12 lg:mb-6">
               <p class="font-ga text-3xl md:text-45px">1990</p>
               <p class="font-ga text-25px md:text-3xl">Food for a better living</p>
               <div class="about-timeline text-base md:text-lg">
@@ -65,7 +65,7 @@
         </div>
         <div class="relative pl-8 lg:pl-0 ml-4 lg:ml-0 flex flex-col lg:flex-row-reverse gap-12 lg:gap-24 after:absolute lg:after:content-none after:left-0 after:-ml-[7px] after:w-4 after:h-4 after:rounded-full after:bg-black-1 before:absolute lg:before:content-none before:left-0 before:top-0 before:border-black-1 before:border-r-2 before:h-full">
           <div class="relative flex-1 text-left">
-            <div class="-mt-3 md:-mt-6 lg:mb-12 lg:mb-6">
+            <div class="-mt-3 lg:mb-12 lg:mb-6">
               <p class="font-ga text-3xl md:text-45px">1990</p>
               <p class="font-ga text-25px md:text-3xl">Food for a better living</p>
               <div class="about-timeline text-base md:text-lg">
@@ -90,7 +90,7 @@
         </div>
         <div class="relative pl-8 lg:pl-0 ml-4 lg:ml-0 flex flex-col lg:flex-row gap-12 lg:gap-24 after:absolute lg:after:content-none after:left-0 after:-ml-[7px] after:w-4 after:h-4 after:rounded-full after:bg-black-1 before:absolute lg:before:content-none before:left-0 before:top-0 before:border-black-1 before:border-r-2 before:h-0">
           <div class="relative flex-1 lg:text-right before:absolute before:top-0 before:right-0 before:w-4 before:h-4 before:bg-black-1 before:rounded-full before:-mr-[63px] after:absolute after:top-0 after:right-0 after:h-full after:-mr-14 after:border-black-1 after:border-r-0">
-            <div class="-mt-6 lg:mb-12 lg:mb-6">
+            <div class="-mt-3 lg:mb-12 lg:mb-6">
               <p class="font-ga text-3xl md:text-45px">1990</p>
               <p class="font-ga text-25px md:text-3xl">Food for a better living</p>
               <div class="about-timeline text-base md:text-lg">
