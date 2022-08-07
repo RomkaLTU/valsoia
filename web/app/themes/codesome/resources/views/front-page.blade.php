@@ -10,7 +10,7 @@
               class="absolute left-0 top-0 w-full h-full bg-no-repeat bg-contain"
               style="background-image: url(@asset('images/tmp/hero-slider-bg.webp'))">
             </div>
-            <div class="w-full max-w-[1640px]">
+            <div class="w-full">
               <div class="relative z-10 font-ga text-brown-1 max-w-[770px] flex flex-col items-center lg:pl-4">
                 <div class="text-45px leading-14 text-center">
                   Blending <span class="text-70px">Italian</span> tradition<br>
@@ -49,7 +49,7 @@
               class="absolute left-0 top-0 w-full h-full bg-no-repeat bg-contain"
               style="background-image: url(@asset('images/tmp/ice-cream-hero.webp'))">
             </div>
-            <div class="w-full max-w-[1640px]">
+            <div class="w-full">
               <div class="relative z-10 font-ga text-brown-1 max-w-[770px] mx-auto flex flex-col items-center">
                 <p class="text-center">
                   <span class="text-5xl">Authentic</span>
@@ -84,7 +84,7 @@
               class="absolute left-0 top-0 w-full h-full bg-no-repeat bg-contain"
               style="background-image: url(@asset('images/tmp/la-creme-banner.webp'))">
             </div>
-            <div class="w-full max-w-[1640px]">
+            <div class="w-full">
               <div class="relative z-10 font-ga text-sand-1 max-w-[700px] mx-auto flex flex-col items-center">
                 <div class="text-45px leading-14 text-center">
                   Blending <span class="text-70px">Italian</span> tradition<br>
@@ -120,7 +120,7 @@
               class="absolute left-0 top-0 w-full h-full bg-no-repeat bg-contain bg-green-2 sm:bg-transparent"
               style="background-image: url(@asset('images/tmp/plant-based-banner.webp'));">
             </div>
-            <div class="w-full max-w-[1640px] mx-auto">
+            <div class="w-full mx-auto">
               <div class="relative z-10 font-ga text-sand-1 max-w-[770px] mx-auto flex flex-col items-center lg:justify-end lg:mb-[6vw]">
                 <p class="text-5xl xl:text-6xl">Plant-based</p>
                 <a href="#" class="block mt-2 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
