@@ -147,3 +147,9 @@ body {
 .swiper-horizontal > .swiper-pagination-bullets {
   bottom: 0;
 }
+
+.about-timeline {
+  p {
+    @apply mb-4;
+  }
+}
