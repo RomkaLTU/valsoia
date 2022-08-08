@@ -11,6 +11,10 @@
       />
     <?php endif ?>
 
+    <?php if (is_page_template('template-search.blade.php')) : ?>
+      <script src="https://destinilocators.com/valsoia/site/install/"></script>
+    <?php endif ?>
+
     <?php wp_head(); ?>
   </head>
 
