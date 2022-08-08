@@ -6,8 +6,8 @@
 
 @section('content')
   <main class="relative bg-yellow-1 min-h-[1000px]">
-    <img src="@asset('images/faq-image-l.webp')" class="hidden md:block absolute top-0 left-0 mt-20" alt="">
-    <img src="@asset('images/faq-image-r.webp')" class="hidden md:block absolute top-0 right-0 mt-20" alt="">
+    <img src="@asset('images/faq-image-l.webp')" class="hidden md:block fixed top-0 left-0 mt-48" alt="">
+    <img src="@asset('images/faq-image-r.webp')" class="hidden md:block fixed top-0 right-0 mt-48" alt="">
     <img src="@asset('images/faq-image-b.webp')" class="md:hidden absolute bottom-0 w-full" alt="">
     @while(have_posts()) @php(the_post())
       <div class="h-full">
