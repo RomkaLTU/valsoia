@@ -162,7 +162,7 @@
         {{ __('Our typical Italian story is about combining the pleasures of life with a commitment to improve the quality
         of life through innovation and a little bit of creativity.', 'code') }}
       </p>
-      <a href="#" class="block font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] mx-auto lg:mx-0 py-3 rounded-full">
+      <a href="{{ get_permalink(get_page_by_path('about')) }}" class="block font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] mx-auto lg:mx-0 py-3 rounded-full">
         {{ __('Read more', 'code') }}
       </a>
     </main>
