@@ -37,7 +37,14 @@ $items = get_field('items');
               <div class="bg-white px-8 py-4 rounded-3xl">
                 <button @click="toggleShow({{ $key }})" class="relative block w-full font-ga text-xl sm:text-3xl text-left pr-8">
                   {{ $item['question'] }}
-                  <svg xmlns="http://www.w3.org/2000/svg" :class="show === {{ $key }} ? 'rotate-180' : ''" class="absolute transition-transform right-0 top-0 mt-1 h-6 w-6 sm:h-8 sm:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    :class="show === {{ $key }} ? 'rotate-180' : ''"
+                    class="absolute transition-transform right-0 top-0 mt-1 h-6 w-6 sm:h-8 sm:w-8"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
                   </svg>
                 </button>
