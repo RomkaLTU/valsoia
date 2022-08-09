@@ -154,6 +154,30 @@ const main = async (err) => {
     }
   });
 
+  new Swiper('.swiper-images', {
+    modules: [Navigation],
+    slidesPerView: '1.5',
+    autoHeight: false,
+    spaceBetween: 22,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    'breakpoints': {
+      '500': {
+        slidesPerView: '2.5',
+      },
+      '768': {
+        slidesPerView: '3',
+      },
+      '1024': {
+        slidesPerView: '4',
+        autoHeight: false,
+      }
+    }
+  });
+
   Alpine.plugin(collapse);
   Alpine.start();
 };

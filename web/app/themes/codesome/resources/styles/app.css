@@ -157,3 +157,12 @@ body {
 .section-timeline > div:last-child .section-timeline-text {
   @apply after:border-0;
 }
+
+.wp-block-image-slider {
+  @apply my-10 sm:my-20;
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    box-shadow: 0 5px 15px rgba(13, 24, 51, 0.35);
+  }
+}
