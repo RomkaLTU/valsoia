@@ -28,7 +28,7 @@ $next = get_next_post();
         @endif
       </div>
 
-      <section class="bg-yellow-1 min-h-[700px] pt-20 pb-32">
+      <section class="bg-yellow-1 min-h-[700px] pt-20 pb-[11vw]">
         <img src="@asset('images/shape-1.webp')" class="w-full -mt-20" alt="" />
         <h2 class="font-ga text-45px leading-12 lg:text-6xl text-center mb-10 sm:mb-16 mt-6 lg:mt-0 px-16 lg:px-0">
           {{ __('Our products', 'code') }}
