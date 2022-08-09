@@ -23,6 +23,7 @@ class FrontPage extends Composer
             'post_type' => 'products',
             'post_status' => 'publish',
             'posts_per_page' => 10,
+            'suppress_filters' => false,
         ]);
     }
 }
