@@ -13,5 +13,6 @@
       Valsoia’s distribution network is continually expanding.
       To find the retail outlet nearest you that sells our dairy-free products, just use the handy tool below.
     </p>
+    <div id="destinidiv"></div>
   </main>
 @endsection

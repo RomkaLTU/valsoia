@@ -153,3 +153,7 @@ body {
     @apply mb-4;
   }
 }
+
+.section-timeline > div:last-child .section-timeline-text {
+  @apply after:border-0;
+}

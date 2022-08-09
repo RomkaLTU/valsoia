@@ -11,10 +11,6 @@
       />
     <?php endif ?>
 
-    <?php if (is_page_template('template-search.blade.php')) : ?>
-      <script src="https://destinilocators.com/valsoia/site/install/"></script>
-    <?php endif ?>
-
     <?php wp_head(); ?>
   </head>
 
@@ -30,6 +26,17 @@
 
     <?php if (is_front_page() || is_home() || is_page_template('template-about.blade.php')) : ?>
       <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <?php endif ?>
+
+    <?php if (is_page_template('template-search.blade.php')) : ?>
+      <script src="//destinilocators.com/valsoia/site/install/"></script>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+          destini.init("destinidiv");
+          destini.loadWidget("valsoia");
+        })
+      </script>
     <?php endif ?>
 
     <?php wp_footer(); ?>
