@@ -118,7 +118,7 @@
           <div class="hidden lg:block w-full">
             <div
               class="absolute left-0 top-0 w-full h-full bg-no-repeat bg-contain bg-green-2 sm:bg-transparent"
-              style="background-image: url(@asset('images/tmp/plant-based-banner.webp'));">
+              style="background-image: url(@asset('images/tmp/100-Baneris@2x.webp'));">
             </div>
             <div class="w-full mx-auto">
               <div class="relative z-10 font-ga text-sand-1 max-w-[770px] mx-auto flex flex-col items-center lg:justify-end lg:mb-[6vw]">
@@ -275,7 +275,7 @@
 
   <section class="py-10 pb-24 2xl:pb-52 bg-yellow-1">
     <h2 class="font-ga text-45px leading-12 lg:text-6xl text-center mb-16 mt-6 lg:mt-0 px-16 lg:px-0">
-      {{ __('Let\'s meet in Instragram!', 'code') }}
+      {{ __('Let\'s meet in Instagram!', 'code') }}
     </h2>
 
     @if(shortcode_exists('instagram-feed'))
@@ -285,7 +285,7 @@
     @endif
 
     <div class="flex justify-center mt-12 mb-10">
-      <a href="https://www.instagram.com/valsoia_lt/" target="_blank" class="block font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] mx-auto lg:mx-0 py-3 rounded-full">
+      <a href="https://www.instagram.com/valsoia_international/" target="_blank" class="block font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] mx-auto lg:mx-0 py-3 rounded-full">
         {{ __('Follow us on instagram', 'code') }}
       </a>
     </div>

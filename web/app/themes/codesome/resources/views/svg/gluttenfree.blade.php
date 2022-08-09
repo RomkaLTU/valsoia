@@ -1,9 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="112" height="140" viewBox="0 0 112 140">
-  <defs>
-    <clipPath id="clip-path">
-      <rect id="Rectangle_3099" data-name="Rectangle 3099" width="77.958" height="70.074" fill="none"/>
-    </clipPath>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" class="h-36" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 112 140">
   <g id="gluten_free_text" data-name="gluten free + text" transform="translate(-1403 -508)">
     <text id="Gluten_-_free" data-name="Gluten - free" transform="translate(1408 642)" fill="#0d1833" font-size="19" font-family="GlamourAbsolute-regular, Glamour Absolute"><tspan x="0" y="0">Gluten - free</tspan></text>
     <g id="Gluten_free" data-name="Gluten free" transform="translate(152)">

@@ -1,9 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="111" height="140" viewBox="0 0 111 140">
-  <defs>
-    <clipPath id="clip-path">
-      <rect id="Rectangle_2978" data-name="Rectangle 2978" width="73.658" height="66.288" transform="translate(0 0)" fill="none"/>
-    </clipPath>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="h-36" viewBox="0 0 111 140">
   <g id="Palm_oil_Free" data-name="Palm oil Free" transform="translate(-0.084 0)">
     <text id="Palm_oil_free_" data-name="Palm oil free " transform="translate(3.084 134)" fill="#0d1833" font-size="19" font-family="GlamourAbsolute-regular, Glamour Absolute"><tspan x="0" y="0">Palm oil free </tspan></text>
     <g id="Ellipse_40" data-name="Ellipse 40" transform="translate(0.084 0)" fill="#fff" stroke="#0d1833" stroke-width="3">

@@ -82,27 +82,41 @@ $infoText = get_field('info_banner_text');
     <div class="xl:max-w-[590px] px-8 xl:px-0 mt-12 xl:mt-0">
 
       @if($badgets)
-        <div class="grid grid-cols-4 gap-4">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 items-center justify-center max-w-[350px] md:max-w-full mx-auto">
           @if(in_array('oat', $badgets))
-            @include('svg.oat')
+            <div class="flex justify-center items-center">
+              <img src="@asset('images/prod-icons/made_with_oat@2x.webp')" class="h-32 object-contain" alt="">
+            </div>
           @endif
           @if(in_array('almond', $badgets))
-            @include('svg.almond')
+            <div class="flex justify-center items-center">
+              <img src="@asset('images/prod-icons/made_with_almond@2x.webp')" class="h-32 object-contain" alt="">
+            </div>
           @endif
           @if(in_array('gluten_free', $badgets))
-            @include('svg.gluttenfree')
+            <div class="flex justify-center items-center">
+              <img src="@asset('images/prod-icons/gluten_free_@2x.webp')" class="h-32 object-contain" alt="">
+            </div>
           @endif
           @if(in_array('palm_oil_free', $badgets))
-            @include('svg.palmoilfree')
+            <div class="flex justify-center items-center">
+              <img src="@asset('images/prod-icons/palm_oil_free@2x.webp')" class="h-32 object-contain" alt="">
+            </div>
           @endif
           @if(in_array('dairy', $badgets))
-              @include('svg.dairy-free')
+              <div class="flex justify-center items-center">
+                <img src="@asset('images/prod-icons/dairy_free@2x.webp')" class="h-32 object-contain" alt="">
+              </div>
           @endif
           @if(in_array('certified_plant', $badgets))
-              @include('svg.plant-based')
+              <div class="flex justify-center items-center">
+                <img src="@asset('images/prod-icons/plant_based@2x.webp')" class="h-32 object-contain" alt="">
+              </div>
           @endif
           @if(in_array('non_gmo', $badgets))
-              @include('svg.verified')
+              <div class="flex justify-center items-center">
+                <img src="@asset('images/prod-icons/ver@2x.webp')" class="h-32 object-contain" alt="">
+              </div>
           @endif
         </div>
       @endif

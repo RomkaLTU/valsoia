@@ -1,10 +1,5 @@
-<svg id="PLANT_BASED" data-name="PLANT BASED" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="116.003" height="115.827" viewBox="0 0 116.003 115.827">
-  <defs>
-    <clipPath id="clip-path">
-      <rect id="Rectangle_2751" data-name="Rectangle 2751" width="116.003" fill="none"/>
-    </clipPath>
-  </defs>
-  <g id="Group_777" data-name="Group 777" clip-path="url(#clip-path)">
+<svg id="PLANT_BASED" data-name="PLANT BASED" class="h-32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 116.003 115.827">
+  <g id="Group_777" data-name="Group 777">
     <path id="Path_2300" data-name="Path 2300" d="M275.511,282.4a7.454,7.454,0,0,0,7.536,7.66,7.369,7.369,0,0,0,7.308-7.651,7.428,7.428,0,1,0-14.844-.009" transform="translate(-176.816 -176.291)" fill="#fff"/>
     <path id="Path_2301" data-name="Path 2301" d="M62.441,10.92a51.7,51.7,0,1,0,51.87,51.52,51.755,51.755,0,0,0-51.87-51.52" transform="translate(-7.008 -7.008)" fill="#fff"/>
     <path id="Path_2302" data-name="Path 2302" d="M288.4,278.876a9.891,9.891,0,1,1-9.89-9.589,9.67,9.67,0,0,1,9.89,9.589m-17.308.059a7.454,7.454,0,0,0,7.536,7.66,7.369,7.369,0,0,0,7.308-7.651,7.428,7.428,0,1,0-14.845-.009m5.942,5.026-2.229.008-.033-9.623a19.511,19.511,0,0,1,3.695-.306,5.991,5.991,0,0,1,3.347.692,2.666,2.666,0,0,1,.947,2.109,2.463,2.463,0,0,1-1.988,2.236v.118a2.842,2.842,0,0,1,1.769,2.341,7.374,7.374,0,0,0,.711,2.4l-2.4.008a8.181,8.181,0,0,1-.77-2.345c-.181-1.056-.769-1.522-2-1.518l-1.056,0Zm.041-5.457,1.056,0c1.232,0,2.228-.418,2.224-1.415,0-.88-.651-1.464-2.058-1.46a5.384,5.384,0,0,0-1.232.121Z" transform="translate(-172.399 -172.822)" fill="#046632"/>

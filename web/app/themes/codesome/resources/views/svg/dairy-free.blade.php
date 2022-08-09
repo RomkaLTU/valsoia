@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="111" height="139" viewBox="0 0 111 139">
+<svg xmlns="http://www.w3.org/2000/svg" class="h-36" viewBox="0 0 111 139">
   <g id="Dairy_free" data-name="Dairy free" transform="translate(-0.084 0)">
     <text id="Dairy_free-2" data-name="Dairy free" transform="translate(14.084 134)" fill="#0d1833" font-size="19" font-family="GlamourAbsolute-regular, Glamour Absolute"><tspan x="0" y="0">Dairy free</tspan></text>
     <g id="Ellipse_40" data-name="Ellipse 40" transform="translate(0.084 0)" fill="#fff" stroke="#0d1833" stroke-width="3">

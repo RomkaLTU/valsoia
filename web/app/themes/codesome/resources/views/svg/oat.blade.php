@@ -1,9 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="112" height="160" viewBox="0 0 112 160">
-  <defs>
-    <clipPath id="clip-path">
-      <rect id="Rectangle_2628" data-name="Rectangle 2628" width="52.452" height="62.833" fill="#0d1833"/>
-    </clipPath>
-  </defs>
+<svg class="h-36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 112 160">
   <g id="Made_With_Oat" data-name="Made With Oat" transform="translate(0.442 0)">
     <text id="Made_with_Oat-2" data-name="Made with
 Oat" transform="translate(55.558 134)" fill="#0d1833" font-size="19" font-family="GlamourAbsolute-regular, Glamour Absolute"><tspan x="-43" y="0">Made with</tspan><tspan x="-14" y="21">Oat</tspan></text>

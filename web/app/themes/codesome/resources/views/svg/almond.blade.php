@@ -1,9 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="112" height="160" viewBox="0 0 112 160">
-  <defs>
-    <clipPath id="clip-path">
-      <rect id="Rectangle_2626" data-name="Rectangle 2626" width="54.249" height="54.249" fill="#0d1833"/>
-    </clipPath>
-  </defs>
+<svg class="h-36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 112 160">
   <g id="Made_With_Almond" data-name="Made With Almond" transform="translate(-0.558 0)">
     <text id="Made_with_Almond-2" data-name="Made with
 Almond" transform="translate(56.558 134)" fill="#0d1833" font-size="19" font-family="GlamourAbsolute-regular, Glamour Absolute"><tspan x="-43" y="0">Made with</tspan><tspan x="-32" y="21">Almond</tspan></text>
