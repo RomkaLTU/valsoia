@@ -34,7 +34,7 @@
       <script>
         document.addEventListener('DOMContentLoaded', (event) => {
           destini.init("destinidiv");
-          destini.loadWidget("valsoia");
+          destini.loadWidget("ASSOCIATIONID");
         })
       </script>
     <?php endif ?>

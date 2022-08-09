@@ -46,7 +46,7 @@ $video_url = get_field('video_url');
       </p>
     </section>
 
-    <img src="@asset('images/about-us-sep-1.webp')" alt="">
+    <img src="@asset('images/about-us-sep-1.webp')" class="w-full" alt="">
 
     @if($story)
       <section class="section-timeline w-full max-w-[1160px] mx-auto my-20 px-4 lg:px-0">
