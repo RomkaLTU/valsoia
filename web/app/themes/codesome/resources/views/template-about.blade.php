@@ -69,7 +69,7 @@ $video_url = get_field('video_url');
                       </p>
                     @endif
                     @if($item['story_text'])
-                      <div class="about-timeline text-base md:text-lg">
+                      <div class="about-timeline text-base md:text-lg mb-16">
                         {!! $item['story_text'] !!}
                       </div>
                     @endif
@@ -100,7 +100,7 @@ $video_url = get_field('video_url');
                       </p>
                     @endif
                     @if($item['story_text'])
-                      <div class="about-timeline text-base md:text-lg">
+                      <div class="about-timeline text-base md:text-lg mb-16">
                         {!! $item['story_text'] !!}
                       </div>
                     @endif
