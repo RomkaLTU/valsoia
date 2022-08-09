@@ -50,7 +50,7 @@ $video_url = get_field('video_url');
 
     @if($story)
       <section class="my-20 px-4 lg:px-0">
-        <div class="w-full max-w-[1160px] space-y-8 mx-auto">
+        <div class="w-full max-w-[1160px] mx-auto">
           @foreach($story as $item)
             @php($odd = $loop->index % 2 == 0)
 
