@@ -156,13 +156,13 @@
     </div>
   </div>
 
-  <section class="bg-white text-center lg:text-left py-10 px-8 flex flex-col lg:flex-row-reverse items-center lg:gap-20 max-w-[1110px] mx-auto">
+  <section class="bg-white text-center lg:text-left py-10 pt-18 px-8 flex flex-col lg:flex-row-reverse items-center lg:gap-24 max-w-[1110px] mx-auto">
     <main>
       <header>
         <h2 class="text-6xl font-ga mb-6">
           {{ __('About us', 'code') }}
         </h2>
-        <h4 class="font-ga text-2xl lg:text-3xl mb-6">
+        <h4 class="font-ga text-2xl lg:text-3xl mb-6 max-w-[573px]">
           {{ __('Making delicious Italian goodness that’s indulgent, healthy for you and cares for the planet.', 'code') }}
         </h4>
       </header>
@@ -170,12 +170,12 @@
         {{ __('Our typical Italian story is about combining the pleasures of life with a commitment to improve the quality
         of life through innovation and a little bit of creativity.', 'code') }}
       </p>
-      <a href="{{ get_permalink(get_page_by_path('about')) }}" class="block font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] mx-auto lg:mx-0 py-3 rounded-full">
+      <a href="{{ get_permalink(get_page_by_path('about')) }}" class="block font-ga text-25px bg-green-1 text-white text-center w-full max-w-[297px] h-[60px] mx-auto lg:mx-0 py-3 rounded-full">
         {{ __('Read more', 'code') }}
       </a>
     </main>
     <figure class="mt-12 flex-none">
-      <img src="@asset('images/tmp/valsoia-gamyklos-kadras.webp')" class="w-full" alt="">
+      <img src="@asset('images/tmp/valsoia-gamyklos-kadras.webp')" class="w-full max-w-[406px]" alt="">
     </figure>
   </section>
 
@@ -205,7 +205,7 @@
           </a>
         </div>
         <div class="order-1 lg:order-2">
-          <h2 class="font-ga text-45px leading-12 lg:text-6xl text-center mb-16 mt-24 lg:mt-6 lg:mt-0 px-4 sm:px-16 lg:px-0">
+          <h2 class="font-ga text-45px leading-12 lg:text-6xl text-center mb-16 mt-24 lg:mt-[9vw] lg:mt-0 px-4 sm:px-16 lg:px-0">
             {!! __('Learn more<br> about us!', 'code') !!}
           </h2>
         </div>
