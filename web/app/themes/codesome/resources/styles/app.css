@@ -117,7 +117,22 @@ body {
 
 .home .swiper-button-prev,
 .home .swiper-button-next {
-  top: 36%;
+  top: 50%;
+  width: 60px;
+  height: 70px;
+  box-shadow: 0 5px 15px #0D183359;
+
+  &:after {
+    content: '';
+  }
+}
+
+.home .swiper-button-prev {
+  border-radius: 0 55px 55px 0;
+}
+
+.home .swiper-button-next {
+  border-radius: 55px 0 0 55px;
 }
 
 .swiper-button-next {
@@ -165,4 +180,8 @@ body {
   .swiper-button-prev {
     box-shadow: 0 5px 15px rgba(13, 24, 51, 0.35);
   }
+}
+
+.wpml-ls.wpml-ls-legacy-dropdown span {
+  @apply !text-black-1;
 }
