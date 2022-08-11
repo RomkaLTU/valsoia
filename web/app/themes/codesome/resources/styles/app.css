@@ -185,3 +185,24 @@ body {
 .wpml-ls.wpml-ls-legacy-dropdown span {
   @apply !text-black-1;
 }
+
+.wpml-ls-sub-menu {
+  text-align: center;
+  width: 85% !important;
+  margin: 0 auto;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  @apply shadow-lg bg-white overflow-hidden !pb-3 space-y-2;
+
+  .wpml-ls-flag {
+    @apply hidden;
+  }
+
+  .wpml-ls-link {
+    @apply transition-colors;
+  }
+
+  .wpml-ls-link:hover {
+    @apply bg-yellow-1;
+  }
+}
