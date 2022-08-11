@@ -42,7 +42,8 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-around;
+      @apply text-3xl;
 
       &:hover {
         background-color: transparent;
@@ -50,7 +51,7 @@
       }
 
       & > .menu-image {
-        max-width: 305px;
+        max-width: 260px;
       }
 
       .menu-image-title {
