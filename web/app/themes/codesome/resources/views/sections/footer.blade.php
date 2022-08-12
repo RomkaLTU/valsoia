@@ -2,9 +2,9 @@
   <div class="-mt-[44vw] sm:-mt-[34vw] lg:-mt-[24vw] absolute left-0 right-0 w-full pointer-events-none">
     @include('svg.footer-shape-1')
   </div>
-  <div class="bg-white w-full max-w-[1640px] mx-auto px-6 py-4 mt-32 z-50">
+  <div class="bg-white w-full max-w-[1640px] mx-auto px-6 py-4 mt-24 z-50">
     <div class="lg:absolute mt-4 lg:mt-0 mb-8 lg:mb-0 flex items-center justify-center xl:justify-between">
-      <a class="w-[162px]" title="{!! $siteName !!}" href="{{ home_url('/') }}">
+      <a class="w-[162px] sm:w-[254px]" title="{!! $siteName !!}" href="{{ home_url('/') }}">
         <img src="@asset('images/logo@2x.webp')" width="254" height="102" alt="{!! $siteName !!}">
       </a>
     </div>

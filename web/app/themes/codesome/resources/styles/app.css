@@ -127,6 +127,13 @@ body {
   }
 }
 
+.swiper-products {
+  &.swiper-button-prev,
+  &.swiper-button-next {
+    top: 33%;
+  }
+}
+
 .home .swiper-button-prev {
   border-radius: 0 55px 55px 0;
 }

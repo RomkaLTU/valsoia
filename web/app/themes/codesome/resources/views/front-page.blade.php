@@ -51,10 +51,10 @@
             </div>
             <div class="w-full">
               <div class="relative z-10 font-ga text-brown-1 max-w-[770px] mx-auto flex flex-col items-center">
-                <p class="text-center">
-                  <span class="text-5xl">Authentic</span>
-                  <span class="text-6xl ml-4">Italian<br></span>
-                  <span class="text-8xl">gelato</span>
+                <p class="text-center leading-[5rem]">
+                  <span class="text-6xl">Authentic</span>
+                  <span class="text-[5.937rem] ml-4">Italian<br></span>
+                  <span class="text-[7.5rem]">gelato</span>
                 </p>
                 <a href="#" class="block mt-10 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
                   {{ __('Read more', 'code') }}
@@ -85,14 +85,12 @@
               style="background-image: url(@asset('images/tmp/la-creme-banner.webp'))">
             </div>
             <div class="w-full">
-              <div class="relative z-10 font-ga text-sand-1 max-w-[700px] mx-auto flex flex-col items-center">
-                <div class="text-45px leading-14 text-center">
-                  Blending <span class="text-70px">Italian</span> tradition<br>
-                  and <span class="text-70px">plant-based</span> ingredients to
-                </div>
-                <div class="text-[6.687rem] text-center leading-none">
-                  perfection
-                </div>
+              <div class="relative z-10 font-ga text-sand-1 max-w-[800px] mx-auto flex flex-col items-center">
+                <p class="text-center leading-[5rem]">
+                  <span class="text-[4.5rem]">A</span> <span class="text-[5.937rem]">perfect explosion </span>
+                  <span class="text-5xl mr-4">of</span> <span class="text-[7.5rem]">creaminess</span> <span class="text-5xl ml-4">and</span>
+                  <span class="text-[7.5rem]">goodness</span>
+                </p>
                 <a href="#" class="block mt-10 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
                   {{ __('Read more', 'code') }}
                 </a>
@@ -262,7 +260,7 @@
     @include('partials.product-slider')
 
     <div class="flex justify-center mt-12 mb-10">
-      <a href="{{ get_term_link('gelato', 'product_categories') }}" class="block font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] mx-auto lg:mx-0 py-3 rounded-full">
+      <a href="{{ get_term_link('gelato', 'product_categories') }}" class="block font-ga text-25px bg-green-1 text-white text-center w-full max-w-[296px] h-[60px] mx-auto lg:mx-0 py-3 rounded-full">
         {{ __('All products', 'code') }}
       </a>
     </div>
@@ -287,13 +285,13 @@
     </h2>
 
     @if(shortcode_exists('instagram-feed'))
-      <div>
+      <div class="w-full max-w-[1746px] mx-auto">
         {!! do_shortcode('[instagram-feed feed=1]') !!}
       </div>
     @endif
 
     <div class="flex justify-center mt-12 mb-10">
-      <a href="https://www.instagram.com/valsoia_international/" target="_blank" class="block font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] mx-auto lg:mx-0 py-3 rounded-full">
+      <a href="https://www.instagram.com/valsoia_international/" target="_blank" class="block font-ga text-25px bg-green-1 text-white text-center w-full max-w-[297px] h-[60px] mx-auto lg:mx-0 py-3 rounded-full">
         {{ __('Follow us on instagram', 'code') }}
       </a>
     </div>

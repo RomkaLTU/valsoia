@@ -1,4 +1,7 @@
-<div x-data="{show: false}" :class="[show ? '' : '-ml-[75vw] sm:-ml-[35vw] lg:ml-0']" class="absolute transition-all xl:transition-none z-20 bg-white left-0 top-0 bg-whtie rounded-br-[50px] lg:rounded-r-[50px] p-4 py-6 sm:p-8 shadow-md shadow-yellow-2 w-[75vw] sm:w-[35vw] lg:w-[27vw] sm:max-w-[470px] font-ga">
+<div
+  x-data="{show: false}"
+  :class="[show ? '' : '-ml-[75vw] sm:-ml-[35vw] lg:ml-0']"
+  class="absolute transition-all xl:transition-none z-20 bg-white left-0 top-0 bg-whtie rounded-br-[50px] lg:rounded-r-[50px] p-4 py-6 sm:p-8 w-[75vw] sm:w-[35vw] lg:w-[27vw] sm:max-w-[470px] font-ga" style="box-shadow: 0 5px 20px #C2790059;">
   <div class="flex flex-col space-y-4 sm:space-y-8">
     @foreach(get_terms(['taxonomy' => 'product_categories', 'hide_empty' => false]) as $term)
       <a href="{{ get_term_link($term) }}" class="relative flex items-center gap-6">
@@ -6,7 +9,7 @@
           <img src="@asset('images/filters-shape@2x.webp')" class="absolute left-0 w-20 sm:w-[115px]" alt="">
         @endif
         <span class="relative flex-none w-16 sm:w-[110px] flex items-center justify-center">
-          <img src="{{ wp_get_attachment_image_url(get_field('icon', $term), 'large') }}" class="h-[58px]" alt="" />
+          <img src="{{ wp_get_attachment_image_url(get_field('icon', $term), 'large') }}" class="h-[42px]" alt="" />
         </span>
         <span class="relative flex-none lg:text-xl">
           {{ $term->name }}
