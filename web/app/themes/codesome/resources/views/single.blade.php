@@ -34,7 +34,7 @@ $products = get_field('related_products');
             <h4 class=" uppercase font-ga text-center mt-[16vw] sm:mt-[8vw] mb-[3vw] left-0 right-0 mx-auto text-4xl xl:text-5xl">
               {{ __('TRY THESE TOO', 'code') }}
             </h4>
-            <div class="mt-16 md:mt-0">
+            <div class="single-product-slider mt-16 md:mt-0">
               @include('partials.product-slider')
             </div>
           </div>

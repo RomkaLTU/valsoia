@@ -180,11 +180,11 @@ $infoText = get_field('info_banner_text');
           this.showNutrition = !this.showNutrition;
         }
       }">
-        <div class="grid grid-cols-2 gap-4 lg:gap-16 my-8 lg:my-14">
+        <div class="grid grid-cols-2 gap-4 my-8 lg:my-14 max-w-[523px]">
           @if($ingredientsGroup)
-            <button @click="toggleIngredients()" type="button" class="relative min-h-[47vw] xl:min-h-[230px] flex flex-col items-center justify-center">
+            <button @click="toggleIngredients()" type="button" class="relative min-h-[47vw] xl:min-h-[230px] max-w-[223px] flex flex-col items-center justify-center">
               <img src="@asset('images/ingredients@2x.webp')" class="absolute h-auto" alt="">
-              <span class="relative font-ga text-white text-2xl lg:text-4xl">
+              <span class="relative font-ga text-white text-2xl lg:text-35px">
                 {{ __('Ingredients', 'code') }}
               </span>
               <svg x-show="showIngredients" xmlns="http://www.w3.org/2000/svg" class="absolute bottom-0 mb-4 text-white h-8 w-8 lg:h-12 lg:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -193,9 +193,9 @@ $infoText = get_field('info_banner_text');
             </button>
           @endif
           @if($nutritionGroup)
-            <button @click="toggleNutrition()" type="button" class="relative min-h-[47vw] xl:min-h-[230px] flex items-center justify-center">
+            <button @click="toggleNutrition()" type="button" class="relative min-h-[47vw] xl:min-h-[230px] max-w-[223px] flex items-center justify-center">
               <img src="@asset('images/nutritional-values@2x.webp')" class="absolute h-auto" alt="">
-              <span class="relative font-ga text-white text-2xl lg:text-4xl">
+              <span class="relative font-ga text-white text-2xl lg:text-35px">
                 {{ __('Nutritional values', 'code') }}
               </span>
               <svg x-show="showNutrition" xmlns="http://www.w3.org/2000/svg" class="absolute bottom-0 mb-4 text-white h-8 w-8 lg:h-12 lg:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -226,10 +226,10 @@ $infoText = get_field('info_banner_text');
         </div>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 my-14">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-14 max-w-[587px]">
         @if($size && ($size['title'] || $size['text']))
           <div class="relative h-[270px]">
-            <img src="@asset('images/options-shape@2x.webp')" class="absolute h-full left-0 right-0 mx-auto" alt="">
+            <img src="@asset('images/options-shape@2x.webp')" class="absolute left-0 right-0 top-0 bottom-0 max-w-[223px] m-auto" alt="">
             <div class="relative h-full flex flex-col items-center justify-center">
               <img src="@asset('images/001-jar.webp')" alt="">
               <p class="relative font-ga text-2xl mt-4 mb-1 text-center leading-none">
@@ -243,7 +243,7 @@ $infoText = get_field('info_banner_text');
         @endif
         @if($temperature && ($temperature['title'] || $temperature['text']))
           <div class="relative h-[270px]">
-            <img src="@asset('images/options-shape@2x.webp')" class="absolute h-full left-0 right-0 mx-auto" alt="">
+            <img src="@asset('images/options-shape@2x.webp')" class="absolute left-0 right-0 top-0 bottom-0 max-w-[223px] m-auto" alt="">
             <div class="relative h-full flex flex-col items-center justify-center">
               <img src="@asset('images/002-temperature.webp')" alt="">
               <p class="relative font-ga text-2xl mt-4 mb-1 text-center leading-none">
