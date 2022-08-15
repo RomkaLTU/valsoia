@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "brick/math",
-            "version": "0.10.1",
+            "version": "0.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/brick/math.git",
-                "reference": "de846578401f4e58f911b3afeb62ced56365ed87"
+                "reference": "459f2781e1a08d52ee56b0b1444086e038561e3f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/brick/math/zipball/de846578401f4e58f911b3afeb62ced56365ed87",
-                "reference": "de846578401f4e58f911b3afeb62ced56365ed87",
+                "url": "https://api.github.com/repos/brick/math/zipball/459f2781e1a08d52ee56b0b1444086e038561e3f",
+                "reference": "459f2781e1a08d52ee56b0b1444086e038561e3f",
                 "shasum": ""
             },
             "require": {
@@ -52,7 +52,7 @@
             ],
             "support": {
                 "issues": "https://github.com/brick/math/issues",
-                "source": "https://github.com/brick/math/tree/0.10.1"
+                "source": "https://github.com/brick/math/tree/0.10.2"
             },
             "funding": [
                 {
@@ -60,7 +60,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-08-01T22:54:31+00:00"
+            "time": "2022-08-10T22:54:19+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -1237,16 +1237,16 @@
         },
         {
             "name": "log1x/acf-composer",
-            "version": "v2.0.7",
+            "version": "v2.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Log1x/acf-composer.git",
-                "reference": "a1f2ba4ef8f0876467ed81806721a30a1b186d58"
+                "reference": "541aba111c80cec7f8e648ff21e0bb870e9a6aa5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Log1x/acf-composer/zipball/a1f2ba4ef8f0876467ed81806721a30a1b186d58",
-                "reference": "a1f2ba4ef8f0876467ed81806721a30a1b186d58",
+                "url": "https://api.github.com/repos/Log1x/acf-composer/zipball/541aba111c80cec7f8e648ff21e0bb870e9a6aa5",
+                "reference": "541aba111c80cec7f8e648ff21e0bb870e9a6aa5",
                 "shasum": ""
             },
             "require": {
@@ -1285,7 +1285,7 @@
             "description": "Create fields, blocks, option pages, and widgets using ACF Builder and Sage 10",
             "support": {
                 "issues": "https://github.com/Log1x/acf-composer/issues",
-                "source": "https://github.com/Log1x/acf-composer/tree/v2.0.7"
+                "source": "https://github.com/Log1x/acf-composer/tree/v2.0.8"
             },
             "funding": [
                 {
@@ -1293,7 +1293,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-08-05T07:57:27+00:00"
+            "time": "2022-08-13T10:49:12+00:00"
         },
         {
             "name": "monolog/monolog",
