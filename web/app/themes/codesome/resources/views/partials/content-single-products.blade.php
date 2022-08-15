@@ -183,7 +183,9 @@ $infoText = get_field('info_banner_text');
         <div class="grid grid-cols-2 gap-4 my-8 lg:my-14 max-w-[523px]">
           @if($ingredientsGroup)
             <button @click="toggleIngredients()" type="button" class="relative min-h-[47vw] xl:min-h-[230px] max-w-[223px] flex flex-col items-center justify-center">
-              <img src="@asset('images/ingredients@2x.webp')" class="absolute h-auto" alt="">
+              <img x-show="!showNutrition" src="@asset('images/ingredients@2x.webp')" class="absolute h-auto" alt="">
+              <img x-show="showNutrition" src="@asset('images/nutritional-values@2x.webp')" class="absolute h-auto" alt="">
+              <img x-show="!showNutrition && !showIngredients" src="@asset('images/nutritional-values@2x.webp')" class="absolute h-auto" alt="">
               <span class="relative font-ga text-white text-2xl lg:text-35px">
                 {{ __('Ingredients', 'code') }}
               </span>
@@ -194,7 +196,9 @@ $infoText = get_field('info_banner_text');
           @endif
           @if($nutritionGroup)
             <button @click="toggleNutrition()" type="button" class="relative min-h-[47vw] xl:min-h-[230px] max-w-[223px] flex items-center justify-center">
-              <img src="@asset('images/nutritional-values@2x.webp')" class="absolute h-auto" alt="">
+              <img x-show="!showIngredients" src="@asset('images/ingredients@2x.webp')" class="absolute h-auto" alt="">
+              <img x-show="showIngredients" src="@asset('images/nutritional-values@2x.webp')" class="absolute h-auto" alt="">
+              <img x-show="!showNutrition && !showIngredients" src="@asset('images/nutritional-values@2x.webp')" class="absolute h-auto" alt="">
               <span class="relative font-ga text-white text-2xl lg:text-35px">
                 {{ __('Nutritional values', 'code') }}
               </span>

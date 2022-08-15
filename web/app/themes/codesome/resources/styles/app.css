@@ -28,6 +28,10 @@ body {
   }
 }
 
+.nav-footer a {
+  @apply transition-colors duration-500 hover:text-yellow-1;
+}
+
 :root {
   --swiper-pagination-bullet-size: 0.7rem;
 }

@@ -46,7 +46,7 @@
   }
 
   .wpforms-submit {
-    @apply !bg-green-1 !border-0 !text-white !py-3 font-ga !text-lg;
+    @apply hover:!bg-black-1 transition-colors duration-500 !bg-green-1 !border-0 !text-white !py-3 font-ga !text-lg;
     width: 100% !important;
     max-width: 348px !important;
     border-radius: 30px !important;

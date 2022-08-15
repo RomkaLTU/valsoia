@@ -19,7 +19,7 @@
                 <div class="text-[6.687rem] text-center leading-none">
                   perfection
                 </div>
-                <a href="#" class="block mt-10 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
+                <a href="#" class="block hover:bg-black-1 transition-colors duration-500 mt-10 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
                   {{ __('Read more', 'code') }}
                 </a>
               </div>
@@ -35,7 +35,7 @@
                 perfection
               </div>
 
-              <a href="#" class="block mx-auto mt-10 font-ga text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
+              <a href="#" class="block hover:bg-black-1 transition-colors duration-500 mx-auto mt-10 font-ga text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
                 {{ __('Read more', 'code') }}
               </a>
 
@@ -56,7 +56,7 @@
                   <span class="text-[5.937rem] ml-4">Italian<br></span>
                   <span class="text-[7.5rem]">gelato</span>
                 </p>
-                <a href="#" class="block mt-10 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
+                <a href="#" class="block hover:bg-black-1 transition-colors duration-500 mt-10 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
                   {{ __('Read more', 'code') }}
                 </a>
               </div>
@@ -70,7 +70,7 @@
                 <span class="text-5xl">gelato</span>
               </p>
 
-              <a href="#" class="block mx-auto mt-10 font-ga text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
+              <a href="#" class="block hover:bg-black-1 transition-colors duration-500 mx-auto mt-10 font-ga text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
                 {{ __('Read more', 'code') }}
               </a>
 
@@ -91,7 +91,7 @@
                   <span class="text-5xl mr-4">of</span> <span class="text-[7.5rem]">creaminess</span> <span class="text-5xl ml-4">and</span>
                   <span class="text-[7.5rem]">goodness</span>
                 </p>
-                <a href="#" class="block mt-10 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
+                <a href="#" class="block hover:bg-black-1 transition-colors duration-500 mt-10 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
                   {{ __('Read more', 'code') }}
                 </a>
               </div>
@@ -105,7 +105,7 @@
                 <span class="text-5xl">creaminess</span><br>
                 and <span class="text-5xl">goodness</span>!
               </p>
-              <a href="#" class="block mx-auto mt-10 font-ga text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
+              <a href="#" class="block hover:bg-black-1 transition-colors duration-500 mx-auto mt-10 font-ga text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
                 {{ __('Read more', 'code') }}
               </a>
               <img class="w-full" src="@asset('images/tmp/la-creme-banner-m.webp')" alt="">
@@ -121,7 +121,7 @@
             <div class="w-full mx-auto">
               <div class="relative z-10 font-ga text-sand-1 max-w-[770px] mx-auto flex flex-col items-center lg:justify-end lg:mb-[6vw]">
                 <p class="text-5xl xl:text-6xl">Plant-based</p>
-                <a href="#" class="block mt-2 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
+                <a href="#" class="block hover:bg-black-1 transition-colors duration-500 mt-2 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
                   {{ __('Read more', 'code') }}
                 </a>
               </div>
@@ -133,7 +133,7 @@
               <p class="text-center text-sand-1 font-ga text-5xl">
                 Plant-based
               </p>
-              <a href="#" class="block mx-auto mt-4 font-ga text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
+              <a href="#" class="block hover:bg-black-1 transition-colors duration-500 mx-auto mt-4 font-ga text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
                 {{ __('Read more', 'code') }}
               </a>
             </div>
@@ -168,7 +168,7 @@
         {{ __('Our typical Italian story is about combining the pleasures of life with a commitment to improve the quality
         of life through innovation and a little bit of creativity.', 'code') }}
       </p>
-      <a href="{{ get_permalink(get_page_by_path('about')) }}" class="block font-ga text-25px bg-green-1 text-white text-center w-full max-w-[297px] h-[60px] mx-auto lg:mx-0 py-3 rounded-full">
+      <a href="{{ get_permalink(get_page_by_path('about')) }}" class="block hover:bg-black-1 transition-colors duration-500 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[297px] h-[60px] mx-auto lg:mx-0 py-3 rounded-full">
         {{ __('Read more', 'code') }}
       </a>
     </main>
@@ -260,7 +260,7 @@
     @include('partials.product-slider')
 
     <div class="flex justify-center mt-12 mb-10">
-      <a href="{{ get_term_link('gelato', 'product_categories') }}" class="block font-ga text-25px bg-green-1 text-white text-center w-full max-w-[296px] h-[60px] mx-auto lg:mx-0 py-3 rounded-full">
+      <a href="{{ get_term_link('gelato', 'product_categories') }}" class="block hover:bg-black-1 transition-colors duration-500 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[296px] h-[60px] mx-auto lg:mx-0 py-3 rounded-full">
         {{ __('All products', 'code') }}
       </a>
     </div>
@@ -291,7 +291,7 @@
     @endif
 
     <div class="flex justify-center mt-12 mb-10">
-      <a href="https://www.instagram.com/valsoia_international/" target="_blank" class="block font-ga text-25px bg-green-1 text-white text-center w-full max-w-[297px] h-[60px] mx-auto lg:mx-0 py-3 rounded-full">
+      <a href="https://www.instagram.com/valsoia_international/" target="_blank" class="block hover:bg-black-1 transition-colors duration-500 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[297px] h-[60px] mx-auto lg:mx-0 py-3 rounded-full">
         {{ __('Follow us on instagram', 'code') }}
       </a>
     </div>

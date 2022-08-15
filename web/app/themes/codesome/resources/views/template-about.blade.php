@@ -175,7 +175,7 @@ $video_url = get_field('video_url');
             </div>
           </div>
           <div class="flex justify-center">
-            <a href="{{ get_permalink(get_page_by_path('our-products')) }}" class="block font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] mx-auto lg:mx-0 py-4 rounded-full">
+            <a href="{{ get_permalink(get_page_by_path('our-products')) }}" class="block hover:bg-black-1 transition-colors duration-500 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] mx-auto lg:mx-0 py-4 rounded-full">
               {{ __('Our products', 'code') }}
             </a>
           </div>
