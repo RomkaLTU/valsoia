@@ -21,6 +21,10 @@ body {
     @screen lg {
       background-size: 102% 8%;
     }
+
+    @screen xl {
+      background-size: 102% 10%;
+    }
   }
 }
 
