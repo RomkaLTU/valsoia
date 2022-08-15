@@ -17,7 +17,7 @@
         </h1>
       </div>
 
-      <div class="w-full max-w-[800px] 2xl:max-w-[900px] mx-auto pt-10 md:pt-20 px-4 md:px-0 prose prose-headings:my-2 prose-headings:font-ga prose-p:text-lg">
+      <div class="w-full max-w-[800px] 2xl:max-w-[900px] mx-auto pt-10 md:pt-20 px-4 md:px-0 prose prose-headings:my-2 prose-headings:font-ga prose-headings:text-[1.437rem] prose-p:text-lg">
         @includeFirst(['partials.content-page', 'partials.content'])
       </div>
     </main>
