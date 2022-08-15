@@ -3,6 +3,7 @@
 @php
 $originalTaxonomyId = apply_filters('wpml_object_id', get_queried_object()->term_id, 'product_categories', false, 'en');
 $transparentProdImage = get_field('transparent_image_bg', 'term_' . $originalTaxonomyId);
+$isProdOptions = is_tax('product_options');
 @endphp
 
 @section('content')
@@ -10,14 +11,30 @@ $transparentProdImage = get_field('transparent_image_bg', 'term_' . $originalTax
     <img src="{{ wp_get_attachment_image_url(get_field('background', get_queried_object()), 'full') }}" class="w-full" alt="">
   </figure>
 
-  <header class="relative max-w-[791px] mx-auto">
-    <img src="@asset('images/plant-based-badget-big@2x.webp')" class="hidden md:block absolute bottom-0 right-0 max-w-[166px] -mr-24 -mb-36 xl:-mr-72 xl:-mb-36" alt="">
-    <img src="@asset('images/prod-cat-shape-1@2x.webp')" class="absolute w-full max-w-[90%] sm:max-w-full top-0 bottom-0 left-0 right-0 m-auto" alt="">
-    <h1 class="relative font-ga text-3xl lg:text-6xl text-white block max-w-[940px] text-center mx-auto mt-10">
-      {{ get_queried_object()->description }}
-    </h1>
-  </header>
-  <p class="relative mb-10 sm:mb-44 text-center mt-8 sm:mt-16 text-lg ">You will enjoy these products:</p>
+  <div class="mb-10 sm:mb-44">
+    <header class="relative max-w-[791px] mx-auto">
+      @if($isProdOptions)
+        <img src="@asset('images/plant-based-badget-big@2x.webp')" class="hidden md:block absolute bottom-0 right-0 max-w-[166px] -mr-24 -mb-36 xl:-mr-72 xl:-mb-36" alt="">
+      @endif
+
+      @if($isProdOptions)
+        <img src="@asset('images/prod-cat-shape-1@2x.webp')" class="absolute w-full max-w-[90%] sm:max-w-full top-0 bottom-0 left-0 right-0 m-auto" alt="">
+        <h1 class="relative font-ga text-3xl lg:text-6xl text-white block max-w-[940px] text-center mx-auto mt-10">
+          {{ get_queried_object()->description }}
+        </h1>
+      @else
+        <h1 class="relative font-ga text-3xl lg:text-6xl text-brown-1 block max-w-[940px] text-center mx-auto mt-10">
+          {{ get_queried_object()->description }}
+        </h1>
+      @endif
+    </header>
+
+    @if($isProdOptions)
+      <p class="relative text-center mt-8 sm:mt-16 text-lg ">
+        {{ __('You will enjoy these products:', 'code') }}
+      </p>
+    @endif
+  </div>
 
   <main class="min-h-[26vh] bg-yellow-2 pb-48">
     <svg xmlns="http://www.w3.org/2000/svg" class="w-full -mb-[13rem]">
