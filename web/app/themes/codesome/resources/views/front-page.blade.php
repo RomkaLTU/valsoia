@@ -234,8 +234,8 @@
         </div>
       </div>
     </div>
-    <div class="-mt-[3vw]">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1921 88">
+    <div class="-mt-[7vw]">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1921" height="88" viewBox="0 0 1921 88">
         <defs>
           <clipPath id="clip-path">
             <rect id="Rectangle_2775" data-name="Rectangle 2775" width="1921" height="88" transform="translate(0 3789)" fill="#fff"/>
