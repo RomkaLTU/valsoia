@@ -58,17 +58,17 @@ $video_url = get_field('video_url');
               <div class="section-timeline-text relative flex-1 lg:text-right before:absolute before:top-0 before:right-0 before:w-4 before:h-4 before:bg-black-1 before:rounded-full before:-mr-[63px] after:absolute after:top-0 after:right-0 after:h-full after:-mr-14 after:border-black-1 after:border-r-2">
                 <div class="-mt-3 lg:mb-12 lg:mb-6">
                   @if($item['story_title'])
-                    <p class="font-ga text-3xl md:text-45px">
+                    <p class="font-ga text-3xl md:text-45px mb-2">
                       {{ $item['story_title'] }}
                     </p>
                   @endif
                   @if($item['story_subtitle'])
-                    <p class="font-ga text-25px md:text-3xl">
+                    <p class="font-ga text-25px md:text-3xl my-2">
                       {{ $item['story_subtitle'] }}
                     </p>
                   @endif
                   @if($item['story_text'])
-                    <div class="about-timeline text-base md:text-lg mb-16">
+                    <div class="about-timeline text-base md:text-lg mb-16 leading-[1.625rem]">
                       {!! $item['story_text'] !!}
                     </div>
                   @endif
@@ -89,17 +89,17 @@ $video_url = get_field('video_url');
               <div class="relative flex-1 text-left">
                 <div class="-mt-3 lg:mb-12 lg:mb-6">
                   @if($item['story_title'])
-                    <p class="font-ga text-3xl md:text-45px">
+                    <p class="font-ga text-3xl md:text-45px mb-2">
                       {{ $item['story_title'] }}
                     </p>
                   @endif
                   @if($item['story_subtitle'])
-                    <p class="font-ga text-25px md:text-3xl">
+                    <p class="font-ga text-25px md:text-3xl my-2">
                       {{ $item['story_subtitle'] }}
                     </p>
                   @endif
                   @if($item['story_text'])
-                    <div class="about-timeline text-base md:text-lg mb-16">
+                    <div class="about-timeline text-base md:text-lg mb-16 leading-[1.625rem]">
                       {!! $item['story_text'] !!}
                     </div>
                   @endif

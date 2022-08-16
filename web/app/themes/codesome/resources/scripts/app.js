@@ -116,7 +116,7 @@ const main = async (err) => {
   new Swiper('.swiper-hero', {
     modules: [Navigation, Pagination],
     autoHeight: false,
-    spaceBetween: 80,
+    spaceBetween: 0,
     loop: true,
     pagination: {
       el: '.swiper-pagination',

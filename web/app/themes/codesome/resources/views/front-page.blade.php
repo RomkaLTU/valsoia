@@ -7,7 +7,7 @@
         <div class="swiper-slide relative lg:flex lg:items-center lg:min-h-[42vw] overflow-hidden">
           <div class="hidden lg:block w-full">
             <div
-              class="absolute left-0 top-0 w-full h-full bg-no-repeat bg-contain"
+              class="absolute left-0 top-0 w-full h-full bg-no-repeat bg-cover"
               style="background-image: url(@asset('images/tmp/hero-slider-bg.webp'))">
             </div>
             <div class="w-full">
@@ -46,7 +46,7 @@
         <div class="swiper-slide relative lg:flex lg:items-center lg:min-h-[42vw] overflow-hidden">
           <div class="hidden lg:block w-full">
             <div
-              class="absolute left-0 top-0 w-full h-full bg-no-repeat bg-contain"
+              class="absolute left-0 top-0 w-full h-full bg-no-repeat bg-cover"
               style="background-image: url(@asset('images/tmp/ice-cream-hero.webp'))">
             </div>
             <div class="w-full">
@@ -81,7 +81,7 @@
         <div class="swiper-slide relative lg:flex lg:items-center lg:min-h-[42vw] overflow-hidden">
           <div class="hidden lg:block w-full">
             <div
-              class="absolute left-0 top-0 w-full h-full bg-no-repeat bg-contain"
+              class="absolute left-0 top-0 w-full h-full bg-no-repeat bg-cover"
               style="background-image: url(@asset('images/tmp/la-creme-banner.webp'))">
             </div>
             <div class="w-full">
@@ -115,7 +115,7 @@
         <div class="swiper-slide relative lg:flex lg:items-end lg:min-h-[42vw] overflow-hidden">
           <div class="hidden lg:block w-full">
             <div
-              class="absolute left-0 top-0 w-full h-full bg-no-repeat bg-contain bg-green-2 sm:bg-transparent"
+              class="absolute left-0 top-0 w-full h-full bg-no-repeat bg-cover bg-green-2 sm:bg-transparent"
               style="background-image: url(@asset('images/tmp/100-Baneris@2x.webp'));">
             </div>
             <div class="w-full mx-auto">
@@ -281,7 +281,7 @@
 
   <section class="py-10 pb-24 2xl:pb-52 bg-yellow-1">
     <h2 class="font-ga text-45px leading-12 lg:text-6xl text-center mb-16 mt-6 lg:mt-0 px-16 lg:px-0">
-      {{ __('Let\'s meet in Instagram!', 'code') }}
+      {{ __('Let\'s meet on Instagram!', 'code') }}
     </h2>
 
     @if(shortcode_exists('instagram-feed'))
