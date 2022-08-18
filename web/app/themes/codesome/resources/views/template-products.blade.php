@@ -7,8 +7,9 @@
 @section('content')
   <main class="min-h-[76vh]">
     @while(have_posts()) @php(the_post())
-    <figure>
-      <img src="{{ wp_get_attachment_image_url(get_field('header_bg'), 'full') }}" class="w-full" alt="">
+    <figure class="sm:mb-20 lg:mb-0">
+      <img src="{{ wp_get_attachment_image_url(get_field('header_bg'), 'full') }}" class="hidden sm:block w-full" alt="">
+      <img src="@asset('images/tmp/products-header-bg-m@2x.webp')" class="sm:hidden w-full" alt="">
     </figure>
     <header class="relative">
       <img src="@asset('images/page-title-bg.webp')" class="absolute top-0 bottom-0 left-0 right-0 m-auto" alt="">

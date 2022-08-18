@@ -128,7 +128,7 @@
             </div>
           </div>
           <div class="lg:hidden">
-            <div class="bg-green-2 h-[46vh] flex flex-col items-center justify-center">
+            <div class="bg-green-2 h-[75vh] flex flex-col items-center justify-center">
               <img src="@asset('images/tmp/plant-based-banner-m.webp')" alt="">
               <p class="text-center text-sand-1 font-ga text-5xl">
                 Plant-based
