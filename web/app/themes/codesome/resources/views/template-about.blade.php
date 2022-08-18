@@ -19,7 +19,7 @@ $video_url = get_field('video_url');
 @section('content')
   <main class="relative bg-white min-h-[1000px]">
     <div class="bg-cover bg-bottom pb-[13vw]" style="background-image: url(@asset('images/about-hero-bg.webp'))">
-      <a href="{{ $video_url ?? '#' }}" data-fancybox>
+      <a href="{{ $video_url ?? '#' }}" class="block pt-[10rem] sm:pt-0 px-4" data-fancybox>
         <img src="@asset('images/about-hero-video.webp')" alt="">
       </a>
       <div class="relative relative max-w-[371px] h-[119px] flex items-center justify-center mx-auto mt-12">
@@ -78,7 +78,7 @@ $video_url = get_field('video_url');
                 <div class="-mt-3 md:-mt-6 mb-14">
                   @if($item['story_image'])
                     <figure>
-                      <img src="{{ wp_get_attachment_image_url($item['story_image'], 'large') }}" class="max-w-[345px]" alt="{{ $item['story_title'] }}">
+                      <img src="{{ wp_get_attachment_image_url($item['story_image'], 'large') }}" class="w-full max-w-[345px]" alt="{{ $item['story_title'] }}">
                     </figure>
                   @endif
                 </div>
@@ -108,7 +108,7 @@ $video_url = get_field('video_url');
               <div class="section-timeline-image relative flex-1 flex lg:justify-end before:absolute before:top-0 before:right-0 before:w-4 before:h-4 before:bg-black-1 before:rounded-full before:-mr-[63px] after:absolute after:top-0 after:right-0 after:h-full after:-mr-14 after:border-black-1 after:border-r-2">
                 <div class="-mt-6 mb-14">
                   <figure>
-                    <img src="{{ wp_get_attachment_image_url($item['story_image'], 'large') }}" class="max-w-[345px]" alt="{{ $item['story_title'] }}">
+                    <img src="{{ wp_get_attachment_image_url($item['story_image'], 'large') }}" class="w-full max-w-[345px]" alt="{{ $item['story_title'] }}">
                   </figure>
                 </div>
               </div>

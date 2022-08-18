@@ -105,7 +105,7 @@
                 <span class="text-5xl">creaminess</span><br>
                 and <span class="text-5xl">goodness</span>!
               </p>
-              <a href="#" class="block hover:bg-black-1 transition-colors duration-500 mx-auto mt-10 font-ga text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
+              <a href="#" class="block hover:bg-black-1 transition-colors duration-500 mb-8 mx-auto mt-10 font-ga text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
                 {{ __('Read more', 'code') }}
               </a>
               <img class="w-full" src="@asset('images/tmp/la-creme-banner-m.webp')" alt="">
@@ -128,7 +128,7 @@
             </div>
           </div>
           <div class="lg:hidden">
-            <div class="bg-green-2 h-[60vh] flex flex-col items-center justify-center">
+            <div class="bg-green-2 h-[46vh] flex flex-col items-center justify-center">
               <img src="@asset('images/tmp/plant-based-banner-m.webp')" alt="">
               <p class="text-center text-sand-1 font-ga text-5xl">
                 Plant-based
@@ -137,6 +137,7 @@
                 {{ __('Read more', 'code') }}
               </a>
             </div>
+            <img src="@asset('images/tmp/100-banner-b-m.webp')" alt="">
           </div>
         </div>
       </div>

@@ -115,7 +115,7 @@ const main = async (err) => {
 
   new Swiper('.swiper-hero', {
     modules: [Navigation, Pagination],
-    autoHeight: false,
+    autoHeight: true,
     spaceBetween: 0,
     loop: true,
     pagination: {
@@ -125,11 +125,17 @@ const main = async (err) => {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    'breakpoints': {
+      '500': {
+        autoHeight: false,
+      },
+    }
   });
 
   new Swiper('.swiper-products', {
     modules: [Navigation],
     slidesPerView: '1.5',
+    centeredSlides: true,
     autoHeight: true,
     spaceBetween: 30,
     loop: true,

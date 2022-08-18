@@ -201,6 +201,10 @@ body {
   @apply after:border-0;
 }
 
+.section-timeline > div:last-child:before {
+  content: none;
+}
+
 .wp-block-image-slider {
   @apply my-10 sm:my-20;
 
