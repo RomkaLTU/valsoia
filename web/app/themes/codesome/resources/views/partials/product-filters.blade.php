@@ -41,10 +41,10 @@
     @click="show = !show"
     type="button"
     class="lg:hidden absolute top-0 right-0 w-20 h-16 bg-white rounded-r-[50px] flex items-center justify-center -mr-[5rem]" style="box-shadow: 0 5px 20px #c2790059;">
-      <span class="rounded-full w-8 h-8 p-1 bg-yellow-1 flex items-center justify-center">
-        <img src="{{ wp_get_attachment_image_url(get_field('icon', get_queried_object()), 'large') }}" class="max-h-full" alt="" />
-      </span>
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+    <span class="rounded-full w-8 h-8 p-1 bg-yellow-1 flex items-center justify-center">
+      <img src="{{ wp_get_attachment_image_url(get_field('icon', get_queried_object()), 'large') }}" class="max-h-full" alt="" />
+    </span>
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" :class="show ? '' : 'rotate-180'" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
       <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
     </svg>
   </button>
