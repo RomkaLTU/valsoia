@@ -50,7 +50,7 @@ $infoText = get_field('info_banner_text');
           </svg>
         @endif
       </div>
-      <h1 class="block max-w-[50%] xl:max-w-[650px] mx-auto text-center relative font-ga text-white text-3xl lg:text-5xl pt-12 md:pt-14 lg:pt-11">
+      <h1 class="block max-w-full xl:max-w-[650px] mx-auto text-center relative font-ga text-white text-3xl lg:text-5xl h-[130px] flex justify-center items-center">
         {!! $title !!}
       </h1>
     </div>
@@ -82,10 +82,10 @@ $infoText = get_field('info_banner_text');
     <div class="xl:max-w-[590px] px-8 xl:px-0 mt-12 xl:mt-0">
 
       @if($badgets)
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 items-start justify-center max-w-[350px] md:max-w-full mx-auto">
+        <div class="grid grid-cols-4 gap-4 items-start justify-center max-w-[350px] md:max-w-full mx-auto">
           @if(in_array('oat', $badgets))
             <div class="flex flex-col justify-center items-center space-y-2">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="110" viewBox="0 0 112 110">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="sm:h-[110px]" viewBox="0 0 112 110">
                 <g id="Made_With_Oat" data-name="Made With Oat" transform="translate(0.442 0)">
                   <g id="Ellipse_25" data-name="Ellipse 25" transform="translate(-0.442 0)" fill="#fff" stroke="#0d1833" stroke-width="3">
                     <ellipse cx="56" cy="55.5" rx="56" ry="55.5" stroke="none"/>
@@ -111,27 +111,29 @@ $infoText = get_field('info_banner_text');
                   </g>
                 </g>
               </svg>
-              <p class="font-ga text-xl text-center leading-tight">Made with<br> oat</p>
+              <p class="font-ga text-sm sm:text-xl text-center !leading-none">
+                {!! __('Made with<br> oat', 'code') !!}
+              </p>
             </div>
           @endif
           @if(in_array('almond', $badgets))
             <div class="flex justify-center items-center">
-              <img src="@asset('images/prod-icons/made_with_almond@2x.webp')" class="h-[110px] object-contain" alt="">
+              <img src="@asset('images/prod-icons/made_with_almond@2x.webp')" class="sm:h-[110px] object-contain" alt="">
             </div>
           @endif
           @if(in_array('gluten_free', $badgets))
             <div class="flex justify-center items-center">
-              <img src="@asset('images/prod-icons/gluten_free_@2x.webp')" class="h-[110px] object-contain" alt="">
+              <img src="@asset('images/prod-icons/gluten_free_@2x.webp')" class="sm:h-[110px] object-contain" alt="">
             </div>
           @endif
           @if(in_array('palm_oil_free', $badgets))
             <div class="flex justify-center items-center">
-              <img src="@asset('images/prod-icons/palm_oil_free@2x.webp')" class="h-[110px] object-contain" alt="">
+              <img src="@asset('images/prod-icons/palm_oil_free@2x.webp')" class="sm:h-[110px] object-contain" alt="">
             </div>
           @endif
           @if(in_array('dairy', $badgets))
               <div class="flex flex-col justify-center items-center space-y-2">
-                <svg xmlns="http://www.w3.org/2000/svg" height="110" viewBox="0 0 111 110">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 111 110" class="sm:h-[110px]">
                   <g id="Dairy_free" data-name="Dairy free" transform="translate(-0.084 0)">
                     <g id="Ellipse_40" data-name="Ellipse 40" transform="translate(0.084 0)" fill="#fff" stroke="#0d1833" stroke-width="3">
                       <circle cx="55.5" cy="55.5" r="55.5" stroke="none"/>
@@ -144,17 +146,19 @@ $infoText = get_field('info_banner_text');
                     </g>
                   </g>
                 </svg>
-                <p class="font-ga text-xl text-center leading-tight">Dairy free</p>
+                <p class="font-ga text-sm sm:text-xl text-center !leading-none">
+                  {{ __('Dairy free', 'code') }}
+                </p>
               </div>
           @endif
           @if(in_array('certified_plant', $badgets))
               <div class="flex justify-center items-center">
-                <img src="@asset('images/prod-icons/plant_based@2x.webp')" class="h-[110px] object-contain" alt="">
+                <img src="@asset('images/prod-icons/plant_based@2x.webp')" class="sm:h-[110px] object-contain" alt="">
               </div>
           @endif
           @if(in_array('non_gmo', $badgets))
               <div class="flex justify-center items-center">
-                <img src="@asset('images/prod-icons/ver@2x.webp')" class="h-[110px] object-contain" alt="">
+                <img src="@asset('images/prod-icons/ver@2x.webp')" class="sm:h-[110px] object-contain" alt="">
               </div>
           @endif
         </div>
@@ -230,30 +234,30 @@ $infoText = get_field('info_banner_text');
         </div>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-14 max-w-[587px]">
+      <div class="grid grid-cols-2 gap-4 my-14 max-w-[587px]">
         @if($size && ($size['title'] || $size['text']))
-          <div class="relative h-[270px]">
-            <img src="@asset('images/options-shape@2x.webp')" class="absolute left-0 right-0 top-0 bottom-0 max-w-[223px] m-auto" alt="">
+          <div class="relative h-[160px] sm:h-[270px]">
+            <img src="@asset('images/options-shape@2x.webp')" class="absolute left-0 right-0 top-0 bottom-0 w-full sm:max-w-[223px] m-auto" alt="">
             <div class="relative h-full flex flex-col items-center justify-center">
-              <img src="@asset('images/001-jar.webp')" alt="">
-              <p class="relative font-ga text-2xl mt-4 mb-1 text-center leading-none">
+              <img src="@asset('images/001-jar.webp')" class="h-[35px] sm:h-auto" alt="">
+              <p class="relative font-ga text-base sm:text-2xl mt-4 mb-1 text-center leading-none">
                 {!! $size['title'] !!}
               </p>
-              <p class="max-w-[132px] mx-auto text-sm text-center">
+              <p class="max-w-[132px] mx-auto text-xs sm:text-sm text-center">
                 {!! $size['text'] !!}
               </p>
             </div>
           </div>
         @endif
         @if($temperature && ($temperature['title'] || $temperature['text']))
-          <div class="relative h-[270px]">
-            <img src="@asset('images/options-shape@2x.webp')" class="absolute left-0 right-0 top-0 bottom-0 max-w-[223px] m-auto" alt="">
+          <div class="relative h-[160px] sm:h-[270px]">
+            <img src="@asset('images/options-shape@2x.webp')" class="absolute left-0 right-0 top-0 bottom-0 w-full sm:max-w-[223px] m-auto" alt="">
             <div class="relative h-full flex flex-col items-center justify-center">
-              <img src="@asset('images/002-temperature.webp')" alt="">
-              <p class="relative font-ga text-2xl mt-4 mb-1 text-center leading-none">
+              <img src="@asset('images/002-temperature.webp')" class="h-[35px] sm:h-auto" alt="">
+              <p class="relative font-ga text-base sm:text-2xl mt-4 mb-1 text-center leading-none">
                 {!! $temperature['title'] !!}
               </p>
-              <p class="max-w-[132px] mx-auto text-sm text-center">
+              <p class="max-w-[132px] mx-auto text-xs sm:text-sm text-center">
                 {!! $temperature['text'] !!}
               </p>
             </div>
