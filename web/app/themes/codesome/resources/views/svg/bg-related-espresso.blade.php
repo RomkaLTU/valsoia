@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" class="min-h-[600px]" viewBox="0 0 1920 876">
+<svg xmlns="http://www.w3.org/2000/svg" class="min-w-[1345px] min-w-[1345px] min-h-[600px]" viewBox="0 0 1920 876">
   <defs>
     <clipPath id="a">
       <path data-name="Rectangle 2784" transform="translate(0 2080.002)" fill="#fff" d="M0 0h1920v876H0z"/>
