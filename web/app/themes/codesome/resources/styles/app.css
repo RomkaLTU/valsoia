@@ -238,3 +238,11 @@ body {
     @apply bg-yellow-1;
   }
 }
+
+#sbi_images > div:last-child {
+  display: none !important;
+
+  @screen lg {
+    display: block !important;
+  }
+}

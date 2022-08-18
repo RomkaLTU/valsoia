@@ -1,5 +1,5 @@
 <footer class="relative">
-  <div class="-mt-[44vw] sm:-mt-[34vw] lg:-mt-[24vw] absolute left-0 right-0 w-full pointer-events-none">
+  <div class="-mt-[39vw] sm:-mt-[33vw] lg:-mt-[24vw] absolute left-0 right-0 w-full pointer-events-none">
     @include('svg.footer-shape-1')
   </div>
   <div class="bg-white">
