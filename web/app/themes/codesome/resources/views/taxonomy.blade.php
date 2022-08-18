@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @php
-$originalTaxonomyId = apply_filters('wpml_object_id', get_queried_object()->term_id, 'product_categories', false, 'en');
+$originalTaxonomyId = get_term_by('slug', 'hazelnut-spread', 'product_categories')->term_id;
 $transparentProdImage = get_field('transparent_image_bg', 'term_' . $originalTaxonomyId);
 $isProdOptions = is_tax('product_options');
 @endphp
