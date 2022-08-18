@@ -65,11 +65,11 @@ $infoText = get_field('info_banner_text');
   <div class="grid grid-cols-1 xl:grid-cols-2 mt-12 md:mt-24 lg:mt-32">
     <div>
       @if($gallery)
-        <div class="swiper-hero relative overflow-hidden pb-8 max-w-[662px] overflow-hidden mx-auto">
+        <div class="swiper-hero relative overflow-hidden pb-8 max-w-[662px] overflow-hidden mx-auto px-4 sm:px-0">
           <div class="swiper-wrapper mb-6">
             @foreach($gallery as $item)
               <div class="swiper-slide relative overflow-hidden flex items-center justify-center self-center">
-                <img src="{{ wp_get_attachment_image_url($item['id'], 'large') }}" class="max-w-[460px]" alt="{{ $item['title'] }}">
+                <img src="{{ wp_get_attachment_image_url($item['id'], 'large') }}" class="w-full lg:w-auto h-[310px] lg:h-auto max-w-[460px] object-contain" alt="{{ $item['title'] }}">
               </div>
             @endforeach
           </div>
