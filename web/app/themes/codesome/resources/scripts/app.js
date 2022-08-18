@@ -117,7 +117,7 @@ const main = async (err) => {
     modules: [Navigation, Pagination],
     slidesPerView: 1,
     autoHeight: true,
-    spaceBetween: 0,
+    spaceBetween: 30,
     loop: true,
     pagination: {
       el: '.swiper-pagination',
@@ -136,7 +136,6 @@ const main = async (err) => {
   new Swiper('.swiper-products', {
     modules: [Navigation],
     slidesPerView: '1.5',
-    centeredSlides: true,
     autoHeight: true,
     spaceBetween: 30,
     loop: true,
