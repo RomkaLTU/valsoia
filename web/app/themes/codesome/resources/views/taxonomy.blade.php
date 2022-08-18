@@ -1,8 +1,6 @@
 @extends('layouts.app')
 
 @php
-$originalTaxonomyId = get_term_by('slug', 'hazelnut-spread', 'product_categories')->term_id;
-$transparentProdImage = get_field('transparent_image_bg', 'term_' . $originalTaxonomyId);
 $isProdOptions = is_tax('product_options');
 @endphp
 
@@ -46,6 +44,10 @@ $isProdOptions = is_tax('product_options');
         <div class="lg:col-start-5 xl:col-start-4 2xl:col-start-4 col-span-4 sm:col-span-12 xl:col-span-9 2xl:col-span-9 xl:pl-8 2xl:pl-0 xl:ml-8">
           <div class="grid grid-cols-1 md:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-14">
             @while(have_posts()) @php(the_post())
+              <?php
+              $originalTaxonomyId = apply_filters('wpml_object_id', \Illuminate\Support\Arr::first(get_the_terms(get_the_ID(), 'product_categories'))->term_id, 'product_categories', false, 'en');
+              $transparentProdImage = get_field('transparent_image_bg', 'term_' . $originalTaxonomyId);
+              ?>
               @include('partials.content-product')
             @endwhile
           </div>
