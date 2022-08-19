@@ -260,3 +260,57 @@ body {
     display: block !important;
   }
 }
+
+.wpforms-field-container {
+  .privacy {
+    h4 {
+      @apply text-xl font-bold pl-6;
+    }
+
+    .text-container {
+      @apply text-xl font-bold p-4 mt-1 rounded-lg;
+      background-color: #fff;
+      height: 223px;
+      overflow-y: scroll;
+
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .declaration-data-consent {
+    width: 100%;
+    max-width: 808px;
+    margin: 0 auto !important;
+    margin-top: 0.5rem !important;
+
+    h4 {
+      @apply text-25px font-ga;
+    }
+
+    p {
+      @apply text-lg;
+    }
+  }
+
+  .wpforms-field-radio {
+    li {
+      display: flex;
+      align-items: center;
+    }
+
+    li label {
+      font-size: 1.25rem !important;
+
+      &:hover {
+        cursor: pointer !important;
+      }
+    }
+
+    input {
+      width: 1rem;
+      height: 40px !important;
+    }
+  }
+}

@@ -12,6 +12,9 @@ web/app/cache/*
 !web/app/plugins/acfml
 !web/app/plugins/advanced-custom-fields-pro
 !web/app/mu-plugins/soil-main
+!web/app/plugins/wpforms
+!web/app/plugins/wpml-wpforms
+!web/app/plugins/wp-seo-multilingual
 
 # WordPress
 web/wp
