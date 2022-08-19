@@ -24,6 +24,13 @@ class FrontPage extends Composer
             'post_status' => 'publish',
             'posts_per_page' => 10,
             'suppress_filters' => false,
+            'tax_query' => [
+                [
+                    'taxonomy' => 'product_categories',
+                    'field' => 'slug',
+                    'terms' => 'gelato',
+                ],
+            ],
         ]);
     }
 }
