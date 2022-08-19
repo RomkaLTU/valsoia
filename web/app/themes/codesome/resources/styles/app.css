@@ -53,6 +53,10 @@ body {
   }
 }
 
+.wpml-ls-legacy-dropdown a {
+  padding-right: calc(3px + 1.4em) !important;
+}
+
 .wpml-ls-legacy-dropdown a,
 .wpml-ls-sub-menu {
   border: none !important;
@@ -62,6 +66,16 @@ body {
 .wpml-ls-legacy-dropdown a:focus,
 .wpml-ls-legacy-dropdown a:hover {
   background: #fff;
+}
+
+.wpml-ls-legacy-dropdown a.wpml-ls-item-toggle:after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-width: 0;
+  background-image: url("../images/down.svg");
+  margin-top: -3px;
 }
 
 .glider-prev {

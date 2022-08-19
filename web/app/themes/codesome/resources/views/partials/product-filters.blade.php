@@ -30,7 +30,7 @@
               @if(get_queried_object()->slug === $term->slug)
                 <img src="@asset('images/options-bg.webp')" class="absolute left-0 w-20 sm:w-[115px]" alt="">
               @endif
-              <span class="relative block text-xs sm:text-base sm:leading-tight">{{ $term->name }}</span>
+              <span class="relative block text-xs sm:text-base sm:leading-none">{{ $term->name }}</span>
             </span>
           </a>
         @endforeach
@@ -81,7 +81,7 @@
             @if(get_queried_object()->slug === $term->slug)
               <img src="@asset('images/options-bg.webp')" class="absolute left-0 w-20 sm:w-[115px]" alt="">
             @endif
-            <span class="relative block text-xs sm:text-base sm:leading-tight">{{ $term->name }}</span>
+            <span class="relative block text-xs sm:text-base sm:leading-none">{{ $term->name }}</span>
           </span>
         </a>
       @endforeach

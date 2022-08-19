@@ -34,6 +34,17 @@ class TaxonomyFields extends Partial
             'mime_types' => '',
         ]);
 
+        $fields->addImage('background_m', [
+            'label' => 'Background mobile',
+            'instructions' => '',
+            'multiple' => false,
+            'return_format' => 'id',
+            'library' => 'all',
+            'min_size' => '',
+            'max_size' => '',
+            'mime_types' => '',
+        ]);
+
         return $fields;
     }
 }

@@ -6,7 +6,8 @@ $isProdOptions = is_tax('product_options');
 
 @section('content')
   <figure>
-    <img src="{{ wp_get_attachment_image_url(get_field('background', get_queried_object()), 'full') }}" class="w-full" alt="">
+    <img src="{{ wp_get_attachment_image_url(get_field('background', get_queried_object()), 'full') }}" class="hidden md:block w-full" alt="">
+    <img src="{{ wp_get_attachment_image_url(get_field('background_m', get_queried_object()), 'full') }}" class="md:hidden w-full" alt="">
   </figure>
 
   <div class="mb-10 sm:mb-44">
