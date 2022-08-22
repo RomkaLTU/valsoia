@@ -1,4 +1,4 @@
-<a href="{{ get_the_permalink() }}" class="group flex flex-col justify-between">
+<a href="{{ get_the_permalink() }}" class="group flex flex-col justify-end">
   @if($transparentProdImage)
     @php(the_post_thumbnail('large', ['class' => 'w-full group-hover:-translate-y-6 transition-transform duration-1000']))
   @else
