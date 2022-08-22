@@ -30,7 +30,7 @@ $items = get_field('items');
                 this.show = this.show === id ? null : id;
               }
             }"
-            class="relative w-full max-w-[930px] px-4 lg:px-0 mx-auto mt-14 space-y-4">
+            class="relative w-full max-w-[930px] px-4 lg:px-0 mx-auto mt-14 space-y-4 pb-72 sm:pb-28">
             @foreach($items as $key => $item)
               <div class="bg-white px-8 py-4 rounded-[33px]">
                 <button @click="toggleShow({{ $key }})" class="relative block w-full font-ga text-xl sm:text-3xl text-left pr-8">

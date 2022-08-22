@@ -1,4 +1,4 @@
-<div class="swiper-products overflow-hidden relative sm:w-[95%] max-w-[1557px] mx-auto sm:px-4 py-6">
+<div class="swiper-products overflow-hidden relative sm:w-[95%] max-w-[1557px] mx-auto px-4 py-6">
   <div class="swiper-wrapper items-baseline font-ga text-3xl">
     @foreach($products as $product)
       <?php
