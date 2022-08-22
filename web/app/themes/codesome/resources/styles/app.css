@@ -223,6 +223,13 @@ body {
   @apply mr-4;
 }
 
+.swiper-button-next-product,
+.swiper-button-prev-product {
+  &:after {
+    content: none;
+  }
+}
+
 .swiper-horizontal > .swiper-pagination-bullets {
   bottom: 0;
 }
