@@ -1,5 +1,13 @@
 @extends('layouts.app')
 
+<?php
+$hero = get_field('hero');
+$slide1url = $hero['slide_1']['url'] ?? null;
+$slide2url = $hero['slide_2']['url'] ?? null;
+$slide3url = $hero['slide_3']['url'] ?? null;
+$slide4url = $hero['slide_4']['url'] ?? null;
+?>
+
 @section('content')
   <div class="relative glider-hero-container mb-8 sm:mb-0">
     <div class="swiper-hero">
@@ -19,9 +27,11 @@
                 <div class="text-[6.687rem] text-center leading-none">
                   perfection
                 </div>
-                <a href="#" class="block hover:bg-black-1 transition-colors duration-500 mt-10 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
-                  {{ __('Read more', 'code') }}
-                </a>
+                @if($slide1url)
+                  <a href="{{ $slide1url }}" class="block hover:bg-black-1 transition-colors duration-500 mt-10 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
+                    {{ __('Read more', 'code') }}
+                  </a>
+                @endif
               </div>
             </div>
           </div>
@@ -35,9 +45,11 @@
                 perfection
               </div>
 
-              <a href="#" class="block hover:bg-black-1 transition-colors duration-500 mx-auto mt-10 font-ga text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
-                {{ __('Read more', 'code') }}
-              </a>
+              @if($slide1url)
+                <a href="{{ $slide1url }}" class="block hover:bg-black-1 transition-colors duration-500 mx-auto mt-10 font-ga text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
+                  {{ __('Read more', 'code') }}
+                </a>
+              @endif
 
               <img class="w-full" src="@asset('images/tmp/hero-slider-bg-m.png')" alt="">
             </div>
@@ -56,9 +68,11 @@
                   <span class="text-[5.937rem] ml-4">Italian<br></span>
                   <span class="text-[7.5rem]">gelato</span>
                 </p>
-                <a href="#" class="block hover:bg-black-1 transition-colors duration-500 mt-10 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
-                  {{ __('Read more', 'code') }}
-                </a>
+                @if($slide2url)
+                  <a href="{{ $slide2url }}" class="block hover:bg-black-1 transition-colors duration-500 mt-10 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
+                    {{ __('Read more', 'code') }}
+                  </a>
+                @endif
               </div>
             </div>
           </div>
@@ -70,9 +84,11 @@
                 <span class="text-5xl">gelato</span>
               </p>
 
-              <a href="#" class="block hover:bg-black-1 transition-colors duration-500 mx-auto mt-10 font-ga text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
-                {{ __('Read more', 'code') }}
-              </a>
+              @if($slide2url)
+                <a href="{{ $slide2url }}" class="block hover:bg-black-1 transition-colors duration-500 mx-auto mt-10 font-ga text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
+                  {{ __('Read more', 'code') }}
+                </a>
+              @endif
 
               <img class="w-full" src="@asset('images/tmp/ice-cream-hero-m.webp')" alt="">
             </div>
@@ -91,9 +107,11 @@
                   <span class="text-5xl mr-4">of</span> <span class="text-[7.5rem]">creaminess</span> <span class="text-5xl ml-4">and</span>
                   <span class="text-[7.5rem]">goodness</span>
                 </p>
-                <a href="#" class="block hover:bg-black-1 transition-colors duration-500 mt-10 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
+                @if($slide3url)
+                <a href="{{ $slide3url }}" class="block hover:bg-black-1 transition-colors duration-500 mt-10 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
                   {{ __('Read more', 'code') }}
                 </a>
+                @endif
               </div>
             </div>
           </div>
@@ -105,9 +123,11 @@
                 <span class="text-5xl">creaminess</span><br>
                 and <span class="text-5xl">goodness</span>!
               </p>
-              <a href="#" class="block hover:bg-black-1 transition-colors duration-500 mb-8 mx-auto mt-10 font-ga text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
-                {{ __('Read more', 'code') }}
-              </a>
+              @if($slide3url)
+                <a href="{{ $slide3url }}" class="block hover:bg-black-1 transition-colors duration-500 mb-8 mx-auto mt-10 font-ga text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
+                  {{ __('Read more', 'code') }}
+                </a>
+              @endif
               <img class="w-full" src="@asset('images/tmp/la-creme-banner-m.webp')" alt="">
             </div>
           </div>
@@ -121,9 +141,11 @@
             <div class="w-full mx-auto">
               <div class="relative z-10 font-ga text-sand-1 max-w-[770px] mx-auto flex flex-col items-center lg:justify-end lg:mb-[6vw]">
                 <p class="text-5xl xl:text-6xl">Plant-based</p>
-                <a href="#" class="block hover:bg-black-1 transition-colors duration-500 mt-2 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
-                  {{ __('Read more', 'code') }}
-                </a>
+                @if($slide4url)
+                  <a href="{{ $slide4url }}" class="block hover:bg-black-1 transition-colors duration-500 mt-2 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
+                    {{ __('Read more', 'code') }}
+                  </a>
+                @endif
               </div>
             </div>
           </div>
@@ -133,9 +155,11 @@
               <p class="text-center text-sand-1 font-ga text-5xl">
                 Plant-based
               </p>
-              <a href="#" class="block hover:bg-black-1 transition-colors duration-500 mx-auto mt-4 font-ga text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
-                {{ __('Read more', 'code') }}
-              </a>
+              @if($slide4url)
+                <a href="{{ $slide4url }}" class="block hover:bg-black-1 transition-colors duration-500 mx-auto mt-4 font-ga text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
+                  {{ __('Read more', 'code') }}
+                </a>
+              @endif
             </div>
             <img src="@asset('images/tmp/100-banner-b-m.webp')" alt="">
           </div>

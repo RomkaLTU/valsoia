@@ -2,7 +2,7 @@
   <div class="swiper-wrapper items-baseline font-ga text-3xl">
     @foreach($products as $product)
       <?php
-        $originalTaxonomyId = apply_filters('wpml_object_id', \Illuminate\Support\Arr::first(get_the_terms($product->id, 'product_categories'))->term_id, 'product_categories', false, 'en');
+        $originalTaxonomyId = apply_filters('wpml_object_id', \Illuminate\Support\Arr::first(get_the_terms($product->id, 'product_categories'))?->term_id, 'product_categories', false, 'en');
         $transparentProdImage = get_field('transparent_image_bg', 'term_' . $originalTaxonomyId);
       ?>
       <a href="{{ get_permalink($product) }}" class="swiper-slide group flex flex-col gap-6 items-center">
