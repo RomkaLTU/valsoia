@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Fields;
 
 use Log1x\AcfComposer\Field;
@@ -34,6 +36,11 @@ class ProductCategories extends Field
             'min_size' => '',
             'max_size' => '',
             'mime_types' => '',
+        ]);
+
+        $fields->addTrueFalse('transparent_image_bg', [
+            'label' => 'Transparent image background',
+            'default_value' => 0,
         ]);
 
         return $fields->build();

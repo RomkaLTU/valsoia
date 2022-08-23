@@ -14,7 +14,6 @@ class FrontPage extends Composer
     {
         return [
             'products' => $this->getProducts(),
-            'instagram' => $this->getInstaFeed(),
         ];
     }
 
@@ -22,14 +21,16 @@ class FrontPage extends Composer
     {
         return get_posts([
             'post_type' => 'products',
+            'post_status' => 'publish',
             'posts_per_page' => 10,
+            'suppress_filters' => false,
+            'tax_query' => [
+                [
+                    'taxonomy' => 'product_categories',
+                    'field' => 'slug',
+                    'terms' => 'gelato',
+                ],
+            ],
         ]);
-    }
-
-    public function getInstaFeed(): array
-    {
-        // Get the instagram feed
-
-        return [];
     }
 }

@@ -4,9 +4,32 @@
 
 @import "fonts.css";
 @import "header-menu.css";
+@import "contact-form.css";
 
 body {
   @apply font-comf text-black-1;
+
+  &.single-products {
+    @apply bg-top bg-no-repeat;
+    background-size: 102% 3.5%;
+    background-image: url("../images/inner-header-bg.svg");
+
+    @screen md {
+      background-size: 102% 5%;
+    }
+
+    @screen lg {
+      background-size: 102% 8%;
+    }
+
+    @screen xl {
+      background-size: 102% 10%;
+    }
+  }
+}
+
+.nav-footer a {
+  @apply transition-colors duration-500 hover:text-yellow-1;
 }
 
 :root {
@@ -30,15 +53,51 @@ body {
   }
 }
 
+.wpml-ls-legacy-dropdown a {
+  padding-right: 2rem !important;
+}
+
+.wpml-ls-legacy-dropdown a.wpml-ls-link {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.wpml-ls-legacy-dropdown .wpml-ls-flag+span {
+  margin-left: 0;
+}
+
+.wpml-ls-flag {
+  margin-right: 0.4rem;
+}
+
 .wpml-ls-legacy-dropdown a,
 .wpml-ls-sub-menu {
   border: none !important;
+}
+
+.wpml-ls-sub-menu .wpml-ls-legacy-dropdown a {
+  padding-right: 0 !important;
+}
+
+.wpml-ls-sub-menu {
+  margin-left: 10px !important;
+  width: 90px !important;
 }
 
 .wpml-ls-legacy-dropdown .wpml-ls-current-language:hover>a,
 .wpml-ls-legacy-dropdown a:focus,
 .wpml-ls-legacy-dropdown a:hover {
   background: #fff;
+}
+
+.wpml-ls-legacy-dropdown a.wpml-ls-item-toggle:after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-width: 0;
+  background-image: url("../images/down.svg");
+  margin-top: -3px;
 }
 
 .glider-prev {
@@ -89,6 +148,7 @@ body {
   width: 45px;
   height: 45px;
   display: none;
+  top: 46%;
 
   @screen sm {
     display: flex;
@@ -97,6 +157,46 @@ body {
   &:after {
     font-size: 1rem;
   }
+}
+
+.single-product-slider .swiper-button-prev,
+.single-product-slider .swiper-button-next,
+.home .swiper-button-prev,
+.home .swiper-button-next {
+  top: 50%;
+  width: 60px;
+  height: 70px;
+  box-shadow: 0 5px 15px #0D183359;
+
+  &:after {
+    content: '';
+  }
+}
+
+.swiper-products-buttons {
+  &.swiper-button-prev,
+  &.swiper-button-next {
+    top: 33%;
+
+    &:after {
+      content: '';
+    }
+  }
+}
+
+.single-product-slider .swiper-button-prev,
+.single-product-slider .swiper-button-next {
+  top: 47%;
+}
+
+.single-product-slider .swiper-button-prev,
+.home .swiper-button-prev {
+  border-radius: 0 55px 55px 0;
+}
+
+.single-product-slider .swiper-button-next,
+.home .swiper-button-next {
+  border-radius: 55px 0 0 55px;
 }
 
 .swiper-button-next {
@@ -109,6 +209,137 @@ body {
   margin-left: -1rem;
 }
 
+.swiper-button-prev-product,
+.swiper-button-next-product {
+  @apply rounded-full shadow-lg m-0;
+  top: 40%;
+}
+
+.swiper-button-prev-product {
+  @apply ml-4;
+}
+
+.swiper-button-next-product {
+  @apply mr-4;
+}
+
+.swiper-button-next-product,
+.swiper-button-prev-product {
+  &:after {
+    content: none;
+  }
+}
+
 .swiper-horizontal > .swiper-pagination-bullets {
   bottom: 0;
+}
+
+.about-timeline {
+  p {
+    @apply mb-4;
+  }
+}
+
+.section-timeline > div:last-child .section-timeline-text {
+  @apply after:border-0;
+}
+
+.section-timeline > div:last-child:before {
+  content: none;
+}
+
+.wp-block-image-slider {
+  @apply my-10 sm:my-20;
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    box-shadow: 0 5px 15px rgba(13, 24, 51, 0.35);
+  }
+}
+
+.wpml-ls.wpml-ls-legacy-dropdown span {
+  @apply !text-black-1;
+}
+
+.wpml-ls-sub-menu {
+  text-align: center;
+  width: 85% !important;
+  margin: 0 auto;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  @apply shadow-lg bg-white overflow-hidden !pb-3 space-y-2;
+
+  .wpml-ls-flag {
+    @apply hidden;
+  }
+
+  .wpml-ls-link {
+    @apply transition-colors;
+  }
+
+  .wpml-ls-link:hover {
+    @apply bg-yellow-1;
+  }
+}
+
+#sbi_images > div:last-child {
+  display: none !important;
+
+  @screen lg {
+    display: block !important;
+  }
+}
+
+.wpforms-field-container {
+  .privacy {
+    h4 {
+      @apply text-xl font-bold pl-6;
+    }
+
+    .text-container {
+      @apply text-xl font-bold p-4 mt-1 rounded-lg;
+      background-color: #fff;
+      height: 223px;
+      overflow-y: scroll;
+
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .declaration-data-consent {
+    width: 100%;
+    max-width: 808px;
+    margin: 0 auto !important;
+    margin-top: 0.5rem !important;
+
+    h4 {
+      @apply text-25px font-ga;
+    }
+
+    p {
+      @apply text-lg;
+    }
+  }
+
+  .wpforms-field-radio {
+    li {
+      display: flex;
+      align-items: center;
+    }
+
+    li label {
+      font-size: 1.25rem !important;
+
+      &:hover {
+        cursor: pointer !important;
+      }
+    }
+
+    input {
+      width: 1rem;
+      height: 40px !important;
+    }
+  }
 }

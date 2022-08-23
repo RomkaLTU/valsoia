@@ -1,6 +1,7 @@
 import {domReady} from '@roots/sage/client';
 import Alpine from 'alpinejs';
-import Swiper, { Navigation, Pagination, EffectCreative } from 'swiper';
+import collapse from '@alpinejs/collapse';
+import Swiper, { Navigation, Pagination } from 'swiper';
 import '@styles/swiper/swiper.scss';
 import '@styles/swiper/navigation.scss';
 import '@styles/swiper/pagination.scss';
@@ -113,8 +114,10 @@ const main = async (err) => {
   }
 
   new Swiper('.swiper-hero', {
-    modules: [Navigation, Pagination, EffectCreative],
+    modules: [Navigation, Pagination],
+    slidesPerView: 1,
     autoHeight: true,
+    spaceBetween: 30,
     loop: true,
     pagination: {
       el: '.swiper-pagination',
@@ -123,8 +126,65 @@ const main = async (err) => {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    'breakpoints': {
+      '500': {
+        autoHeight: false,
+      },
+    }
   });
 
+  new Swiper('.swiper-products', {
+    modules: [Navigation],
+    slidesPerView: '1.5',
+    autoHeight: true,
+    spaceBetween: 30,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    'breakpoints': {
+      '500': {
+        slidesPerView: '2.5',
+        spaceBetween: 30,
+      },
+      '768': {
+        slidesPerView: '3',
+        spaceBetween: 30,
+      },
+      '1024': {
+        slidesPerView: '4',
+        spaceBetween: 60,
+        autoHeight: false,
+      }
+    }
+  });
+
+  new Swiper('.swiper-images', {
+    modules: [Navigation],
+    slidesPerView: '1.5',
+    autoHeight: false,
+    spaceBetween: 22,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    'breakpoints': {
+      '500': {
+        slidesPerView: '2.5',
+      },
+      '768': {
+        slidesPerView: '3',
+      },
+      '1024': {
+        slidesPerView: '4',
+        autoHeight: false,
+      }
+    }
+  });
+
+  Alpine.plugin(collapse);
   Alpine.start();
 };
 
