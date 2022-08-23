@@ -36,6 +36,7 @@ module.exports = {
       },
       fontSize: {
         '25px': '1.562rem',
+        '35px': '2.187rem',
         '45px': '2.812rem',
         '50px': '3.125rem',
         '70px': '4.375rem',
@@ -47,5 +48,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 };

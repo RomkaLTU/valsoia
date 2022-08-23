@@ -1,0 +1,58 @@
+.primary-contact-form {
+  @apply !px-4 xl:!px-0;
+  margin-bottom: 5rem !important;
+
+  .wpforms-field {
+    textarea,
+    input {
+      border-radius: 20px !important;
+      height: 45px !important;
+      padding-left: 1.5rem !important;
+
+      @screen sm {
+        height: 69px !important;
+        border-radius: 40px !important;
+      }
+    }
+
+    textarea {
+      height: 223px !important;
+      padding-top: 1.5rem !important;
+    }
+
+    .wpforms-field-label {
+      @apply !text-sm sm:!text-xl;
+      padding-left: 1.5rem !important;
+    }
+  }
+
+  .agreement-controls {
+    padding-left: 1rem !important;
+
+    li {
+      display: flex !important;
+      align-items: center !important;
+      padding-left: 1rem !important;
+
+      input {
+        width: 28px !important;
+      }
+
+      label {
+        @apply !text-sm sm:!text-xl;
+        margin-top: 6px;
+      }
+    }
+  }
+
+  .wpforms-submit {
+    @apply hover:!bg-black-1 transition-colors duration-500 !bg-green-1 !border-0 !text-white !py-3 font-ga !text-lg;
+    width: 100% !important;
+    max-width: 348px !important;
+    border-radius: 30px !important;
+
+    @screen sm {
+      @apply !py-4 !text-25px;
+    }
+  }
+}
