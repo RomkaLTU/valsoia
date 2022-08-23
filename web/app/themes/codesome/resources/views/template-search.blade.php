@@ -36,7 +36,7 @@
           {{ __('We’ve created a handy fact sheet you can give to your local store manager. It provides everything they need to know about how to stock Valsoia on their shelves. Thanks for helping spread the word about Valsoia!', 'code') }}
         </p>
         <div class="flex justify-center">
-          <a href="#" class="block hover:bg-black-1 transition-colors duration-500 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[296px] h-[60px] mx-auto lg:mx-0 py-3 rounded-full">
+          <a href="{{ get_permalink(get_page_by_path('contact')) }}" class="block hover:bg-black-1 transition-colors duration-500 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[296px] h-[60px] mx-auto lg:mx-0 py-3 rounded-full">
             {{ __('Contact us', 'code') }}
           </a>
         </div>
