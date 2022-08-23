@@ -19,7 +19,7 @@
         window.onload = () => {
           destini.init("destinidiv");
           destini.loadWidget("ASSOCIATIONID");
-        })
+        };
       </script>
     </div>
   </main>
