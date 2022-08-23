@@ -36,17 +36,6 @@
       <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <?php endif ?>
 
-    <?php if (is_page_template('template-search.blade.php')) : ?>
-      <script src="//destinilocators.com/valsoia/site/install/"></script>
-
-      <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
-          destini.init("destinidiv");
-          destini.loadWidget("ASSOCIATIONID");
-        })
-      </script>
-    <?php endif ?>
-
     <?php wp_footer(); ?>
   </body>
 </html>

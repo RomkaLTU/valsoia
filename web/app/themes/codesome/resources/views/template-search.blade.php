@@ -13,6 +13,14 @@
       Valsoia’s distribution network is continually expanding.
       To find the retail outlet nearest you that sells our dairy-free products, just use the handy tool below.
     </p>
-    <div id="destinidiv"></div>
+    <div id="destinidiv">
+      <script src="//destinilocators.com/valsoia/site/install/"></script>
+      <script>
+        window.onload = () => {
+          destini.init("destinidiv");
+          destini.loadWidget("ASSOCIATIONID");
+        })
+      </script>
+    </div>
   </main>
 @endsection
