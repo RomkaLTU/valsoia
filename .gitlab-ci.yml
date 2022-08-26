@@ -17,10 +17,10 @@ stages:
     - npm install gulp -g
     - npm install yarn -g
     # root composer install 
-    - composer install
+    - composer install --no-interaction --no-dev --prefer-dist --optimize-autoloader
     # Build theme
     - pushd web/app/themes/codesome/
-    - composer install
+    - composer install --no-interaction --no-dev --prefer-dist --optimize-autoloader
     - yarn && yarn build
     # - gulp build
     # - rm -rf node_modules
