@@ -19,7 +19,7 @@
       />
     <?php endif ?>
 
-    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="d783aaf9-0c37-464d-9498-4a275a7ff940" data-blockingmode="auto" type="text/javascript"></script>
+    <script id=“Cookiebot” src=“https://consent.cookiebot.com/uc.js” data-cbid=“d783aaf9-0c37-464d-9498-4a275a7ff940” data-blockingmode=“auto” type=“text/javascript”></script>
 
     <?php wp_head(); ?>
   </head>
