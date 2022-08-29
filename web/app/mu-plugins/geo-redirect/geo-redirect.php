@@ -16,6 +16,10 @@ use GeoIp2\Database\Reader;
 
 add_action('wp', function () {
 
+    if (is_admin()) {
+        return;
+    }
+
     global $sitepress;
 
     $lang = 'en';
