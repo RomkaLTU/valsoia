@@ -28,6 +28,23 @@ body {
   }
 }
 
+html[lang="en-US"] {
+  .wpml-ls-sub-menu {
+    display: none;
+  }
+
+  .wpml-ls-item-toggle:after {
+    content: "" !important;
+    display: none !important;
+  }
+}
+
+html[lang="en-GB"] {
+  .wpml-ls-item-us {
+    display: none;
+  }
+}
+
 .nav-footer a {
   @apply transition-colors duration-500 hover:text-yellow-1;
 }
