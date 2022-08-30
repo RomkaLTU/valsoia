@@ -44,7 +44,6 @@ stages:
   only:
     refs:
       - stage
-      - feature/enable-cicd
 
 
 build-deploy stage:
@@ -75,7 +74,7 @@ build-deploy stage:
 .prod:
   environment:
     name: prod
-    url: https://www.valsoia.com/new-site/web/
+    url: https://www.valsoia.com/
   variables:
     ENV: prod
     REMOTE_FOLDER: "$PROD_SERVER_PATH"
@@ -86,7 +85,6 @@ build-deploy stage:
   only:
     refs:
       - prod
-      - feature/prod-release
 
 
 build-deploy prod:
