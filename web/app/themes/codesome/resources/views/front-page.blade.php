@@ -36,22 +36,23 @@ $slide4url = $hero['slide_4']['url'] ?? null;
             </div>
           </div>
           <div class="lg:hidden">
-            <div class="font-ga text-brown-1 bg-yellow-1 pt-8">
-              <div class="text-2xl leading-10 text-center">
-                Blending <span class="text-5xl">Italian tradition</span>
-                and <span class="text-5xl">plant-based</span> <span class="text-3xl">ingredients to</span>
-              </div>
-              <div class="text-70px text-center leading-none">
-                perfection
-              </div>
+            <div class="font-ga text-brown-1">
+              <div class="bg-yellow-1 pt-8">
+                <div class="text-2xl leading-10 text-center">
+                  Blending <span class="text-5xl">Italian tradition</span>
+                  and <span class="text-5xl">plant-based</span> <span class="text-3xl">ingredients to</span>
+                </div>
+                <div class="text-70px text-center leading-none">
+                  perfection
+                </div>
 
-              @if($slide1url)
-                <a href="{{ $slide1url }}" class="block hover:bg-black-1 transition-colors duration-500 mx-auto mt-10 font-ga text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
-                  {{ __('Read more', 'code') }}
-                </a>
-              @endif
-
-              <img class="w-full" src="@asset('images/tmp/hero-slider-bg-m.png')" alt="">
+                @if($slide1url)
+                  <a href="{{ $slide1url }}" class="block hover:bg-black-1 transition-colors duration-500 mx-auto mt-10 font-ga text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
+                    {{ __('Read more', 'code') }}
+                  </a>
+                @endif
+              </div>
+              <img class="w-full" src="@asset('images/tmp/hero-slider-bg-m.webp')" alt="">
             </div>
           </div>
         </div>
