@@ -60,7 +60,7 @@ $slide4url = $hero['slide_4']['url'] ?? null;
           <div class="hidden lg:block w-full">
             <div
               class="absolute left-0 top-0 w-full h-full bg-no-repeat bg-cover"
-              style="background-image: url(@asset('images/tmp/ice-cream-hero.webp'))">
+              style="background-image: url(@asset('images/tmp/ice-cream-hero.png'))">
             </div>
             <div class="w-full">
               <div class="relative z-10 font-ga text-brown-1 max-w-[770px] mx-auto flex flex-col items-center">
@@ -78,12 +78,14 @@ $slide4url = $hero['slide_4']['url'] ?? null;
             </div>
           </div>
           <div class="lg:hidden">
-            <div class="font-ga text-brown-1 bg-brown-3 pt-8">
-              <p class="text-center">
-                <span class="text-4xl">Authentic</span><br>
-                <span class="text-7xl">Italian</span><br>
-                <span class="text-5xl">gelato</span>
-              </p>
+            <div>
+              <div class="font-ga text-brown-1 bg-brown-3 pt-8">
+                <p class="text-center">
+                  <span class="text-4xl">{{ __('Authentic', 'code') }}</span><br>
+                  <span class="text-7xl">{{ __('Italian', 'code') }}</span><br>
+                  <span class="text-5xl">{{ __('gelato', 'code') }}</span>
+                </p>
+              </div>
 
               @if($slide2url)
                 <a href="{{ $slide2url }}" class="block hover:bg-black-1 transition-colors duration-500 mx-auto mt-10 font-ga text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
@@ -91,7 +93,7 @@ $slide4url = $hero['slide_4']['url'] ?? null;
                 </a>
               @endif
 
-              <img class="w-full" src="@asset('images/tmp/ice-cream-hero-m.webp')" alt="">
+              <img class="w-full" src="@asset('images/tmp/ice-cream-hero-m.png')" alt="">
             </div>
           </div>
         </div>
