@@ -16,27 +16,28 @@ use GeoIp2\Database\Reader;
 
 add_action('wp', function () {
 
-    if (is_admin()) {
+    if (current_user_can('manage_options')) {
         return;
     }
 
     global $sitepress;
-
-    $lang = 'en';
 
     try {
         $reader = new Reader(__DIR__ . '/GeoLite2-Country.mmdb');
         $record = $reader->country(get_client_ip());
         $countryCode = strtolower($record->country->isoCode);
 
-        if (in_array($countryCode, ['us', 'usa'])) {
+        if (in_array($countryCode, ['us', 'usa', 'ca', 'can'])) {
             $lang = 'us';
+
+            if ($sitepress->get_current_language() !== $lang) {
+                do_action('wpml_switch_language', $lang);
+                wp_redirect(get_permalink());
+            }
         }
     } catch (Exception $e) {
         // handle exception...
     }
-
-    $sitepress->switch_lang($lang);
 });
 
 function get_client_ip(): string
