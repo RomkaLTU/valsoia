@@ -1,11 +1,10 @@
 <?php
 
-use WPML\FP\Obj;
-use WPML\FP\Fns;
-use WPML\FP\Lst;
+use WPML\API\Sanitize;
 use WPML\FP\Maybe;
-use function WPML\FP\partial;
+use WPML\FP\Obj;
 use function WPML\FP\invoke;
+use function WPML\FP\partial;
 
 class WPML_LS_Settings {
 
@@ -626,7 +625,7 @@ class WPML_LS_Settings {
 	public function widget_update_callback_filter( array $instance, array $new_instance, $old_instance, WP_Widget $widget ) {
 
 		if ( strpos( $widget->id_base, WPML_LS_Widget::SLUG ) === 0 ) {
-			$sidebar_id = isset( $_POST['sidebar'] ) ? filter_var( $_POST['sidebar'], FILTER_SANITIZE_STRING ) : false;
+			$sidebar_id =  Sanitize::stringProp( 'sidebar', $_POST );
 			$sidebar_id = $sidebar_id ? $sidebar_id : $this->find_parent_sidebar( $widget->id );
 			if ( $sidebar_id ) {
 				$this->maybe_init_settings();

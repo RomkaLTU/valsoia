@@ -1,9 +1,10 @@
 <?php
 
+use WPML\API\Sanitize;
+use WPML\ATE\Proxies\Widget;
 use WPML\Element\API\Languages;
 use WPML\FP\Fns;
 use WPML\FP\Obj;
-use WPML\ATE\Proxies\Widget;
 
 /**
  * It handles the TM section responsible for displaying the AMS/ATE console.
@@ -176,8 +177,8 @@ class WPML_TM_AMS_ATE_Console_Section implements IWPML_TM_Admin_Section {
 	 * @return bool
 	 */
 	private function is_ate_console_tab() {
-		$sm   = filter_input( INPUT_GET, 'sm', FILTER_SANITIZE_STRING );
-		$page = filter_input( INPUT_GET, 'page', FILTER_SANITIZE_STRING );
+		$sm   = Sanitize::stringProp('sm', $_GET );
+		$page = Sanitize::stringProp( 'page', $_GET );
 
 		return $sm && $page && self::SLUG === $sm && WPML_TM_FOLDER . '/menu/main.php' === $page;
 	}

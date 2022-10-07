@@ -1,10 +1,10 @@
 <?php
 
-use WPML\FP\Obj;
-use WPML\Element\API\Languages;
-use WPML\Setup\Option;
 use WPML\API\PostTypes;
+use WPML\Element\API\Languages;
 use WPML\FP\Lst;
+use WPML\FP\Obj;
+use WPML\Setup\Option;
 
 class WPML_TM_Dashboard_Display_Filter {
 
@@ -131,7 +131,8 @@ class WPML_TM_Dashboard_Display_Filter {
 			<?php
 			$option_status = array(
 				-1                    => esc_html__( 'All translation statuses', 'wpml-translation-management' ),
-				ICL_TM_NOT_TRANSLATED => esc_html__(
+				ICL_TM_NOT_TRANSLATED => esc_html__( 'Not translated', 'wpml-translation-management' ),
+				ICL_TM_NOT_TRANSLATED . '_' . ICL_TM_NEEDS_UPDATE => esc_html__(
 					'Not translated or needs updating',
 					'wpml-translation-management'
 				),

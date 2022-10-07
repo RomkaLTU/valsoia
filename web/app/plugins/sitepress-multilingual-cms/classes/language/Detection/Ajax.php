@@ -2,17 +2,17 @@
 
 namespace WPML\Language\Detection;
 
+use WPML\FP\Fns;
+use WPML\FP\Lst;
 use WPML\FP\Maybe;
 use WPML\FP\Obj;
-use WPML\FP\Lst;
 use WPML\FP\Str;
-use WPML\FP\Fns;
-use \WPML_Request;
+use WPML_Request;
 
 class Ajax extends WPML_Request {
 
 	public function get_requested_lang() {
-		return Maybe::of( $_POST )
+		return Maybe::of( $_REQUEST )
 					->map( Obj::prop( 'lang' ) )
 					->filter( Lst::includes( Fns::__, $this->active_languages ) )
 					->map( 'sanitize_text_field' )

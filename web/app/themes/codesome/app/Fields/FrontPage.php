@@ -25,6 +25,15 @@ class FrontPage extends Field
             ->addLink('slide_4')
             ->endGroup();
 
+        $fields
+            ->addTab('About us')
+            ->addGroup('about')
+            ->addText('title')
+            ->addText('subtitle')
+            ->addWysiwyg('content')
+            ->addLink('link')
+            ->endGroup();
+
         return $fields->build();
     }
 }
