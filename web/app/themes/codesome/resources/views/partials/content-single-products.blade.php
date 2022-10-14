@@ -101,7 +101,7 @@ $infoText = get_field('info_banner_text');
         <div class="grid grid-cols-4 gap-4 items-start justify-center max-w-[350px] md:max-w-full mx-auto">
           @if(in_array('oat', $badgets))
             <div class="flex flex-col justify-center items-center space-y-2">
-              <img src="@asset('images/prod-icons/made_with_almond@2x.webp')" class="sm:h-[110px] object-contain" alt="">
+              <img src="@asset('images/prod-icons/made_w_oat@2x.webp')" class="sm:h-[110px] object-contain" alt="">
               <p class="font-ga text-sm sm:text-xl text-center !leading-none">
                 {!! __('Made with<br> oat', 'code') !!}
               </p>
@@ -109,9 +109,9 @@ $infoText = get_field('info_banner_text');
           @endif
           @if(in_array('almond', $badgets))
             <div class="flex flex-col justify-center items-center space-y-2">
-              <img src="@asset('images/prod-icons/made_w_oat@2x.webp')" class="sm:h-[110px] object-contain" alt="">
+              <img src="@asset('images/prod-icons/made_with_almond@2x.webp')" class="sm:h-[110px] object-contain" alt="">
               <p class="font-ga text-sm sm:text-xl text-center !leading-none">
-                {!! __('Made with<br> Almond', 'code') !!}
+                {!! __('Made with<br> Almonds', 'code') !!}
               </p>
             </div>
           @endif
@@ -191,8 +191,9 @@ $infoText = get_field('info_banner_text');
               <img x-show="!showIngredients" src="@asset('images/ingredients@2x.webp')" class="absolute h-auto" alt="">
               <img x-show="showIngredients" src="@asset('images/nutritional-values@2x.webp')" class="absolute h-auto" alt="">
               <img x-show="!showNutrition && !showIngredients" src="@asset('images/nutritional-values@2x.webp')" class="absolute h-auto" alt="">
-              <span class="relative font-ga text-white text-2xl lg:text-35px">
-                {{ __('Nutritional values', 'code') }}
+              <span class="relative font-ga text-white text-2xl lg:text-35px ">
+                {{ __('Nutrition', 'code') }}<br>
+                {{ __('facts', 'code') }}
               </span>
               <svg x-show="showNutrition" xmlns="http://www.w3.org/2000/svg" class="absolute bottom-0 mb-4 text-white h-8 w-8 lg:h-12 lg:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />

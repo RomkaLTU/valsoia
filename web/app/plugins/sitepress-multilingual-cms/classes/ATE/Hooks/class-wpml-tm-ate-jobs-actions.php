@@ -1,23 +1,21 @@
 <?php
 
+use WPML\API\Sanitize;
+use WPML\Element\API\Languages;
 use WPML\FP\Fns;
 use WPML\FP\Json;
 use WPML\FP\Logic;
 use WPML\FP\Lst;
 use WPML\FP\Obj;
-use WPML\FP\Str;
 use WPML\FP\Relation;
-use WPML\TM\API\Jobs;
 use WPML\FP\Wrapper;
-use WPML\Settings\PostType\Automatic;
 use WPML\Setup\Option;
+use WPML\TM\API\Jobs;
 use WPML\TM\ATE\JobRecords;
-use WPML\TM\ATE\Log\Storage;
 use WPML\TM\ATE\Log\Entry;
+use WPML\TM\ATE\Log\Storage;
 use function WPML\FP\partialRight;
 use function WPML\FP\pipe;
-use WPML\TM\API\ATE\LanguageMappings;
-use WPML\Element\API\Languages;
 
 /**
  * @author OnTheGo Systems
@@ -99,7 +97,7 @@ class WPML_TM_ATE_Jobs_Actions implements IWPML_Action {
 
 					$this->resign_job_on_error( $ate_job_id );
 				}
-				$message = filter_var( $_GET['message'], FILTER_SANITIZE_STRING );
+				$message = Sanitize::stringProp( 'message', $_GET );
 				?>
 
 				<div class="error notice-error notice otgs-notice">
@@ -305,7 +303,9 @@ class WPML_TM_ATE_Jobs_Actions implements IWPML_Action {
 	 * @throws \InvalidArgumentException
 	 */
 	public function get_editor_url( $default_url, $job_id, $return_url = null ) {
-		if ( $this->translator_activation_records->is_current_user_activated() ) {
+		$isUserActivated = $this->translator_activation_records->is_current_user_activated();
+
+		if ( $isUserActivated || is_admin() ) {
 			$ate_job_id = $this->ate_jobs->get_ate_job_id( $job_id );
 			if ( $ate_job_id ) {
 				if ( ! $return_url ) {
@@ -468,7 +468,8 @@ class WPML_TM_ATE_Jobs_Actions implements IWPML_Action {
 
 		foreach ( $jobs as $job ) {
 			/** @var WPML_Element_Translation_Job $translationJob */
-			$translationJob = wpml_tm_load_job_factory()->get_translation_job( $job->source_id, false, 0, true );
+
+			$translationJob = wpml_tm_load_job_factory()->get_translation_job( $job->id, false, 0, true );
 			if ( $translationJob ) {
 
 				if ( ! Obj::prop( 'existing_ate_id', $job ) ) {

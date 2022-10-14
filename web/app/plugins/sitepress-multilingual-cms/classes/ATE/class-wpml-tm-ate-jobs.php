@@ -1,14 +1,14 @@
 <?php
 
 use WPML\FP\Cast;
-use WPML\FP\Maybe;
-use WPML\TM\ATE\JobRecords;
-use function WPML\FP\pipe;
-use function WPML\FP\partialRight;
-use WPML\FP\Obj;
-use WPML\FP\Logic;
 use WPML\FP\Fns;
-use function \WPML\FP\invoke;
+use WPML\FP\Logic;
+use WPML\FP\Maybe;
+use WPML\FP\Obj;
+use WPML\TM\ATE\JobRecords;
+use function WPML\FP\invoke;
+use function WPML\FP\partialRight;
+use function WPML\FP\pipe;
 
 /**
  * @author OnTheGo Systems
@@ -58,35 +58,6 @@ class WPML_TM_ATE_Jobs {
 	 */
 	public function store( $wpml_job_id, $ate_job_data ) {
 		$this->records->store( (int) $wpml_job_id, $ate_job_data );
-	}
-
-	/**
-	 * We update the status from ATE only for non-completed ATE statuses
-	 * in all other cases, we mark the job as completed when we receive it
-	 * from ATE in `WPML_TM_ATE_Jobs::apply` which calls `wpml_tm_save_data`.
-	 *
-	 * @param int $wpml_job_id
-	 * @param int $ate_status
-	 */
-	public function set_wpml_status_from_ate( $wpml_job_id, $ate_status ) {
-		$ate_status = (int) $ate_status;
-
-		switch ( $ate_status ) {
-			case WPML_TM_ATE_AMS_Endpoints::ATE_JOB_STATUS_CREATED:
-				$wpml_status = ICL_TM_WAITING_FOR_TRANSLATOR;
-				break;
-
-			case WPML_TM_ATE_AMS_Endpoints::ATE_JOB_STATUS_TRANSLATING:
-				$wpml_status = ICL_TM_IN_PROGRESS;
-				break;
-
-			default:
-				$wpml_status = null;
-		}
-
-		if ( $wpml_status ) {
-			WPML_TM_Update_Translation_Status::by_job_id( $wpml_job_id, (int) $wpml_status );
-		}
 	}
 
 	/**

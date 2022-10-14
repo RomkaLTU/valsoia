@@ -2,18 +2,17 @@
 
 namespace WPML\Setup\Endpoint;
 
+use WPML\AdminLanguageSwitcher\AdminLanguageSwitcher;
 use WPML\Ajax\IHandler;
-use WPML\API\Settings;
 use WPML\Collect\Support\Collection;
-use WPML\FP\Either;
-use WPML\LIB\WP\User;
-use WPML\TM\ATE\AutoTranslate\Endpoint\EnableATE;
-use WPML\UrlHandling\WPLoginUrlConverter;
-use function WPML\Container\make;
 use WPML\FP\Lst;
 use WPML\FP\Right;
+use WPML\LIB\WP\User;
 use WPML\Setup\Option;
+use WPML\TM\ATE\AutoTranslate\Endpoint\EnableATE;
 use WPML\TM\Menu\TranslationServices\Endpoints\Deactivate;
+use WPML\UrlHandling\WPLoginUrlConverter;
+use function WPML\Container\make;
 
 class FinishStep implements IHandler {
 
@@ -51,7 +50,8 @@ class FinishStep implements IHandler {
 			Option::setTranslateEverything( false );
 		}
 
-		WPLoginUrlConverter::enable();
+		WPLoginUrlConverter::enable( true );
+		AdminLanguageSwitcher::enable();
 
 		return Right::of( true );
 	}
