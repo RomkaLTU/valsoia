@@ -2,8 +2,8 @@
 
 namespace OTGS\Installer\Collect\Support;
 
-use BadMethodCallException;
 use Closure;
+use BadMethodCallException;
 
 trait Macroable {
 	/**

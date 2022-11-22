@@ -1,21 +1,24 @@
 <?php
 
 use WPML\API\Sanitize;
-use WPML\Element\API\Languages;
 use WPML\FP\Fns;
 use WPML\FP\Json;
 use WPML\FP\Logic;
 use WPML\FP\Lst;
 use WPML\FP\Obj;
+use WPML\FP\Str;
 use WPML\FP\Relation;
-use WPML\FP\Wrapper;
-use WPML\Setup\Option;
 use WPML\TM\API\Jobs;
+use WPML\FP\Wrapper;
+use WPML\Settings\PostType\Automatic;
+use WPML\Setup\Option;
 use WPML\TM\ATE\JobRecords;
-use WPML\TM\ATE\Log\Entry;
 use WPML\TM\ATE\Log\Storage;
+use WPML\TM\ATE\Log\Entry;
 use function WPML\FP\partialRight;
 use function WPML\FP\pipe;
+use WPML\TM\API\ATE\LanguageMappings;
+use WPML\Element\API\Languages;
 
 /**
  * @author OnTheGo Systems

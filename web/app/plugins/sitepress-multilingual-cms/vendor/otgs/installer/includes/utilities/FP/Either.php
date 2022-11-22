@@ -3,10 +3,10 @@
 namespace OTGS\Installer\FP;
 
 use OTGS\Installer\Collect\Support\Macroable;
-use OTGS\Installer\FP\Traits\Applicative;
-use OTGS\Installer\FP\Traits\ConstApplicative;
 use OTGS\Installer\FP\Traits\Functor;
 use OTGS\Installer\FP\Traits\Pointed;
+use OTGS\Installer\FP\Traits\ConstApplicative;
+use OTGS\Installer\FP\Traits\Applicative;
 
 /**
  * Class Either

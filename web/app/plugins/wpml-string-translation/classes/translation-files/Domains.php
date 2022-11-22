@@ -5,10 +5,12 @@ namespace WPML\ST\TranslationFile;
 use wpdb;
 use WPML\Collect\Support\Collection;
 use WPML\ST\Package\Domains as PackageDomains;
-use WPML\ST\Shortcode;
 use WPML_Admin_Texts;
+use function wpml_prepare_in;
+use WPML_Slug_Translation;
 use WPML_ST_Blog_Name_And_Description_Hooks;
 use WPML_ST_Translations_File_Dictionary;
+use WPML\ST\Shortcode;
 
 class Domains {
 

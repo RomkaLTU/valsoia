@@ -1,10 +1,10 @@
 <?php
 
 use WPML\API\Sanitize;
-use WPML\ATE\Proxies\Widget;
 use WPML\Element\API\Languages;
 use WPML\FP\Fns;
 use WPML\FP\Obj;
+use WPML\ATE\Proxies\Widget;
 
 /**
  * It handles the TM section responsible for displaying the AMS/ATE console.

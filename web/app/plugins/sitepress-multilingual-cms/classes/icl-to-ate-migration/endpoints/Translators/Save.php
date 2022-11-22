@@ -2,15 +2,22 @@
 
 namespace WPML\ICLToATEMigration\Endpoints\Translators;
 
+use WPML\Ajax\IHandler;
 use WPML\Collect\Support\Collection;
 use WPML\FP\Either;
+
 use WPML\FP\Fns;
+use WPML\FP\Left;
+use WPML\FP\Lst;
 use WPML\FP\Obj;
+use WPML\FP\Logic;
+use WPML\Element\API\Languages;
+
 use WPML\FP\Right;
-use WPML\TranslationRoles\SaveUser;
 use function WPML\Container\make;
 use function WPML\FP\invoke;
 use function WPML\FP\partialRight;
+use WPML\TranslationRoles\SaveUser;
 use function WPML\FP\pipe;
 
 class Save extends SaveUser {

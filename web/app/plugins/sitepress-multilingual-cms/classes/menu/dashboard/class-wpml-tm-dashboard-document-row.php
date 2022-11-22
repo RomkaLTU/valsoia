@@ -1,7 +1,7 @@
 <?php
 
-use WPML\TM\API\Jobs;
 use WPML\TM\Menu\Dashboard\PostJobsRepository;
+use WPML\TM\API\Jobs;
 
 class WPML_TM_Dashboard_Document_Row {
 

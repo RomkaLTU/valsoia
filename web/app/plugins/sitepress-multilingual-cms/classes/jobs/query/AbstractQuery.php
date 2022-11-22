@@ -3,9 +3,9 @@
 namespace WPML\TM\Jobs\Query;
 
 use wpdb;
-use WPML\TM\ATE\Jobs;
 use WPML_TM_Editors;
 use WPML_TM_Jobs_Search_Params;
+use WPML\TM\ATE\Jobs;
 
 abstract class AbstractQuery implements Query {
 	/** @var wpdb */

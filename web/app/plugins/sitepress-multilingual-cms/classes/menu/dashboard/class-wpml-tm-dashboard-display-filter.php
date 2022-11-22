@@ -1,10 +1,10 @@
 <?php
 
-use WPML\API\PostTypes;
-use WPML\Element\API\Languages;
-use WPML\FP\Lst;
 use WPML\FP\Obj;
+use WPML\Element\API\Languages;
 use WPML\Setup\Option;
+use WPML\API\PostTypes;
+use WPML\FP\Lst;
 
 class WPML_TM_Dashboard_Display_Filter {
 

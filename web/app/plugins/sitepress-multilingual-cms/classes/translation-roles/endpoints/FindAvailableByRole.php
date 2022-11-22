@@ -2,9 +2,9 @@
 
 namespace WPML\TranslationRoles;
 
-use WPML\Ajax\IHandler;
 use WPML\API\Sanitize;
 use WPML\Collect\Support\Collection;
+use WPML\Ajax\IHandler;
 use WPML\FP\Either;
 use WPML\FP\Fns;
 use WPML\FP\Lst;

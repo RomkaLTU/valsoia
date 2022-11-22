@@ -1,9 +1,9 @@
 <?php
 namespace WPML\Utilities;
 
-use Psr\Log\InvalidArgumentException;
 use Psr\Log\LoggerInterface;
 use Psr\Log\LogLevel;
+use Psr\Log\InvalidArgumentException;
 
 class Logger implements LoggerInterface
 {

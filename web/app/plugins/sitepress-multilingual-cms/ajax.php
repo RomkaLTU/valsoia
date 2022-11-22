@@ -1,8 +1,8 @@
 <?php
 
-use WPML\AdminLanguageSwitcher\AdminLanguageSwitcher;
 use WPML\Settings\PostType\Automatic;
 use WPML\UrlHandling\WPLoginUrlConverter;
+use WPML\AdminLanguageSwitcher\AdminLanguageSwitcher;
 
 /**
  * @package wpml-core

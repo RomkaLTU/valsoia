@@ -1,6 +1,8 @@
 <?php
 
+use \WPML\FP\Obj;
 use WPML\TM\API\Jobs;
+use WPML\TM\Menu\TranslationQueue\PostTypeFilters;
 
 /**
  * Class WPML_Translation_Job_Factory

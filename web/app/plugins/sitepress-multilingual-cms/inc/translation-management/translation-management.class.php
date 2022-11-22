@@ -124,14 +124,6 @@ class TranslationManagement {
 		if ( is_admin() ) {
 			add_action( 'wpml_config', array( $this, 'wpml_config_action' ), 10, 1 );
 		}
-		if ( User::getCurrent() &&
-			(
-				User::getCurrent()->has_cap('wpml_manage_translation_management') ||
-				User::getCurrent()->has_cap( WPML_Manage_Translations_Role::CAPABILITY )
-			)
-		) {
-			add_action( 'wp_ajax_icl_tm_abort_translation', array( $this, 'abort_translation' ) );
-		}
 	}
 
 	public function load_settings_if_required() {
@@ -1672,6 +1664,11 @@ class TranslationManagement {
 	private function get_translation_job_info( $trid ) {
 		global $wpdb;
 
+		// Cache key must be integer or non-empty string, WP_Object_Cache::get will crash with empty $trid.
+		if( ! $trid ) {
+			return [];
+		}
+
 		$found    = false;
 		$cache    = $this->cache_factory->get( 'TranslationManagement::get_translation_job_id' );
 		$job_info = $cache->get( $trid, $found );
@@ -1823,24 +1820,6 @@ class TranslationManagement {
 		}
 
 		return $error;
-	}
-
-	function abort_translation() {
-		$job_id  = $_POST['job_id'];
-		$message = '';
-
-		$error = $this->remove_translation_job( $job_id, ICL_TM_WAITING_FOR_TRANSLATOR, 0 );
-		if ( ! $error ) {
-			$message = __( 'Job removed', 'sitepress' );
-		}
-
-		echo wp_json_encode(
-			array(
-				'message' => $message,
-				'error'   => $error,
-			)
-		);
-		exit;
 	}
 
 	// $translation_id - int or array

@@ -1,18 +1,18 @@
 <?php
 
-use WPML\Element\API\Languages;
-use WPML\FP\Fns;
 use WPML\FP\Obj;
+use WPML\FP\Fns;
 use WPML\FP\Relation;
-use WPML\TM\API\Basket;
-use WPML\TM\API\Translators;
 use WPML\TM\ATE\AutoTranslate\Endpoint\SyncLock;
 use WPML\TM\ATE\Jobs;
+use WPML\TM\Menu\TranslationQueue\PostTypeFilters;
+use WPML\UIPage;
 use WPML\TM\ATE\Review\ApproveTranslations;
 use WPML\TM\ATE\Review\Cancel;
 use WPML\TM\Jobs\Endpoint\Resign;
-use WPML\TM\Menu\TranslationQueue\PostTypeFilters;
-use WPML\UIPage;
+use WPML\TM\API\Basket;
+use WPML\TM\API\Translators;
+use WPML\Element\API\Languages;
 use function WPML\FP\pipe;
 
 class WPML_TM_Jobs_List_Script_Data {

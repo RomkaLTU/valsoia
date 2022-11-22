@@ -1,5 +1,6 @@
 <?php
 
+use WPML\Convert\Ids;
 use WPML\FP\Obj;
 use WPML\PB\ConvertIds\Helper as ConvertIdsHelper;
 

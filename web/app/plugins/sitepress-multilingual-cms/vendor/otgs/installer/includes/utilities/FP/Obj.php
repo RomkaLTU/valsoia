@@ -2,9 +2,9 @@
 
 namespace OTGS\Installer\FP;
 
-use OTGS\Installer\Collect\Support\Macroable;
 use OTGS\Installer\Collection;
 use OTGS\Installer\NullCollection;
+use OTGS\Installer\Collect\Support\Macroable;
 
 /**
  * @method static callable|mixed prop( ...$key, ...$obj ) - Curried :: string->Collection|array|object->mixed|null
