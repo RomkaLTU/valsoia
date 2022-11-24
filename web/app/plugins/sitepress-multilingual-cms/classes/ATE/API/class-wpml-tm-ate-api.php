@@ -1,22 +1,23 @@
 <?php
 
-use WPML\Element\API\Entity\LanguageMapping;
-use WPML\Element\API\Languages;
-use WPML\FP\Either;
-use WPML\FP\Fns;
-use WPML\FP\Logic;
-use WPML\FP\Lst;
-use WPML\FP\Maybe;
-use WPML\FP\Obj;
-use WPML\FP\Relation;
-use WPML\LIB\WP\WordPress;
-use WPML\TM\ATE\ClonedSites\ApiCommunication as ClonedSitesHandler;
 use WPML\TM\ATE\ClonedSites\FingerprintGenerator;
 use WPML\TM\ATE\Log\Entry;
 use WPML\TM\ATE\Log\EventsTypes;
+use WPML\TM\ATE\ClonedSites\ApiCommunication as ClonedSitesHandler;
+use WPML\FP\Obj;
+use WPML\FP\Fns;
+use WPML\FP\Either;
+use WPML\FP\Lst;
+use WPML\FP\Logic;
+use WPML\FP\Str;
+use WPML\Element\API\Entity\LanguageMapping;
+use WPML\LIB\WP\WordPress;
 use WPML\TM\Editor\ATEDetailedErrorMessage;
 use function WPML\FP\invoke;
 use function WPML\FP\pipe;
+use WPML\Element\API\Languages;
+use WPML\FP\Relation;
+use WPML\FP\Maybe;
 
 /**
  * @author OnTheGo Systems

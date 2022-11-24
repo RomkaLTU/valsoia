@@ -1,16 +1,16 @@
 <?php
 
-use WPML\API\PostTypes;
-use WPML\Element\API\Languages;
-use WPML\FP\Lst;
 use WPML\FP\Maybe;
-use WPML\FP\Obj;
-use WPML\LIB\WP\Post;
 use WPML\Settings\PostType\Automatic;
 use WPML\Setup\Option;
-use WPML\TM\API\ATE\CachedLanguageMappings;
-use WPML\TM\API\Jobs;
 use WPML\TM\ATE\TranslateEverything;
+use WPML\FP\Lst;
+use WPML\FP\Obj;
+use WPML\TM\API\ATE\CachedLanguageMappings;
+use WPML\Element\API\Languages;
+use WPML\LIB\WP\Post;
+use WPML\API\PostTypes;
+use WPML\TM\API\Jobs;
 use function WPML\FP\partial;
 
 class WPML_TM_Translation_Status_Display {

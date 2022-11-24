@@ -6,9 +6,11 @@ use WPML\Ajax\IHandler;
 use WPML\Collect\Support\Collection;
 use WPML\FP\Either;
 use WPML\FP\Fns;
+use WPML\FP\Json;
 use WPML\FP\Logic;
 use WPML\ICLToATEMigration\ICLStatus;
 use WPML\TM\API\TranslationServices;
+use WPML\TM\TranslationProxy\Services\AuthorizationFactory;
 
 class AuthenticateICL implements IHandler {
 

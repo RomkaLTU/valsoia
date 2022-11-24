@@ -21,11 +21,11 @@ $slide4url = $hero['slide_4']['url'] ?? null;
             <div class="w-full">
               <div class="relative z-10 font-ga text-brown-1 max-w-[770px] flex flex-col items-center lg:pl-4">
                 <div class="text-45px leading-14 text-center">
-                  Blending <span class="text-70px">Italian</span> tradition<br>
-                  and <span class="text-70px">plant-based</span> ingredients to
+                  <?php _e('Blending', 'code'); ?> <span class="text-70px"><?php _e('Italian', 'code'); ?></span> <?php _e('tradition', 'code'); ?><br>
+                  <?php _e('and', 'code'); ?> <span class="text-70px"><?php _e('plant-based', 'code'); ?></span> <?php _e('ingredients to', 'code'); ?>
                 </div>
                 <div class="text-[6.687rem] text-center leading-none">
-                  perfection
+                  <?php _e('perfection', 'code'); ?>
                 </div>
                 @if($slide1url)
                   <a href="{{ $slide1url }}" class="block hover:bg-black-1 transition-colors duration-500 mt-10 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
@@ -39,16 +39,16 @@ $slide4url = $hero['slide_4']['url'] ?? null;
             <div class="font-ga text-brown-1">
               <div class="bg-yellow-1 pt-8">
                 <div class="text-2xl leading-10 text-center">
-                  Blending <span class="text-5xl">Italian tradition</span>
-                  and <span class="text-5xl">plant-based</span> <span class="text-3xl">ingredients to</span>
+                  <?php _e('Blending', 'code'); ?> <span class="text-5xl"><?php _e('Italian tradition', 'code'); ?></span>
+                  <?php _e('and', 'code'); ?> <span class="text-5xl"><?php _e('plant-based', 'code'); ?></span> <span class="text-3xl"><?php _e('ingredients to', 'code'); ?></span>
                 </div>
                 <div class="text-70px text-center leading-none">
-                  perfection
+                  <?php _e('perfection', 'code'); ?>
                 </div>
 
                 @if($slide1url)
                   <a href="{{ $slide1url }}" class="block hover:bg-black-1 transition-colors duration-500 mx-auto mt-10 font-ga text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
-                    {{ __('Read more', 'code') }}
+                    <?php _e('Read more', 'code') ?>
                   </a>
                 @endif
               </div>
@@ -65,13 +65,13 @@ $slide4url = $hero['slide_4']['url'] ?? null;
             <div class="w-full">
               <div class="relative z-10 font-ga text-brown-1 max-w-[770px] mx-auto flex flex-col items-center">
                 <p class="text-center leading-[5rem]">
-                  <span class="text-6xl">Authentic</span>
-                  <span class="text-[5.937rem] ml-4">Italian<br></span>
-                  <span class="text-[7.5rem]">gelato</span>
+                  <span class="text-6xl"><?php _e('Authentic', 'code') ?></span>
+                  <span class="text-[5.937rem] ml-4"><?php _e('Italian', 'code') ?><br></span>
+                  <span class="text-[7.5rem]"><?php _e('gelato', 'code') ?></span>
                 </p>
                 @if($slide2url)
                   <a href="{{ $slide2url }}" class="block hover:bg-black-1 transition-colors duration-500 mt-10 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
-                    {{ __('Read more', 'code') }}
+                    <?php _e('Read more', 'code') ?>
                   </a>
                 @endif
               </div>
@@ -81,15 +81,15 @@ $slide4url = $hero['slide_4']['url'] ?? null;
             <div>
               <div class="font-ga text-brown-1 bg-brown-3 pt-8">
                 <p class="text-center">
-                  <span class="text-4xl">{{ __('Authentic', 'code') }}</span><br>
-                  <span class="text-7xl">{{ __('Italian', 'code') }}</span><br>
-                  <span class="text-5xl">{{ __('gelato', 'code') }}</span>
+                  <span class="text-4xl"><?php _e('Authentic', 'code'); ?></span><br>
+                  <span class="text-7xl"><?php _e('Italian', 'code'); ?></span><br>
+                  <span class="text-5xl"><?php _e('gelato', 'code'); ?></span>
                 </p>
               </div>
 
               @if($slide2url)
                 <a href="{{ $slide2url }}" class="block hover:bg-black-1 transition-colors duration-500 mx-auto mt-10 font-ga text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
-                  {{ __('Read more', 'code') }}
+                  <?php _e('Read more', 'code'); ?>
                 </a>
               @endif
 
@@ -106,13 +106,13 @@ $slide4url = $hero['slide_4']['url'] ?? null;
             <div class="w-full">
               <div class="relative z-10 font-ga text-sand-1 max-w-[800px] mx-auto flex flex-col items-center">
                 <p class="text-center leading-[5rem]">
-                  <span class="text-[4.5rem]">A</span> <span class="text-[5.937rem]">perfect explosion </span>
-                  <span class="text-5xl mr-4">of</span> <span class="text-[7.5rem]">creaminess</span> <span class="text-5xl ml-4">and</span>
-                  <span class="text-[7.5rem]">goodness</span>
+                  <span class="text-[4.5rem]"><?php _e('A', 'code'); ?></span> <span class="text-[5.937rem]"><?php _e('perfect explosion', 'code') ?> </span>
+                  <span class="text-5xl mr-4"><?php _e('of', 'code'); ?></span> <span class="text-[7.5rem]"><?php _e('creaminess', 'code'); ?></span> <span class="text-5xl ml-4"><?php _e('and', 'code'); ?></span>
+                  <span class="text-[7.5rem]"><?php _e('goodness', 'code'); ?></span>
                 </p>
                 @if($slide3url)
                 <a href="{{ $slide3url }}" class="block hover:bg-black-1 transition-colors duration-500 mt-10 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
-                  {{ __('Read more', 'code') }}
+                  <?php _e('Read more', 'code') ?>
                 </a>
                 @endif
               </div>
@@ -121,14 +121,14 @@ $slide4url = $hero['slide_4']['url'] ?? null;
           <div class="lg:hidden">
             <div class="bg-brown-4">
               <p class="text-center text-sand-1 font-ga text-3xl pt-10">
-                A perfect<br>
-                <span class="text-5xl">explosion</span> of<br>
-                <span class="text-5xl">creaminess</span><br>
-                and <span class="text-5xl">goodness</span>!
+                <?php _e('A perfect', 'code') ?><br>
+                <span class="text-5xl"><?php _e('explosion', 'code') ?></span> <?php _e('of', 'code') ?><br>
+                <span class="text-5xl"><?php _e('creaminess', 'code') ?></span><br>
+                <?php _e('and', 'code') ?> <span class="text-5xl"><?php _e('goodness', 'code') ?></span>!
               </p>
               @if($slide3url)
                 <a href="{{ $slide3url }}" class="block hover:bg-black-1 transition-colors duration-500 mb-8 mx-auto mt-10 font-ga text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
-                  {{ __('Read more', 'code') }}
+                  <?php _e('Read more', 'code'); ?>
                 </a>
               @endif
               <img class="w-full" src="@asset('images/tmp/la-creme-banner-m.webp')" alt="">
@@ -143,10 +143,10 @@ $slide4url = $hero['slide_4']['url'] ?? null;
             </div>
             <div class="w-full mx-auto">
               <div class="relative z-10 font-ga text-sand-1 max-w-[770px] mx-auto flex flex-col items-center lg:justify-end lg:mb-[6vw]">
-                <p class="text-5xl xl:text-6xl">Plant-based</p>
+                <p class="text-5xl xl:text-6xl"><?php _e('Plant-based', 'code') ?></p>
                 @if($slide4url)
                   <a href="{{ $slide4url }}" class="block hover:bg-black-1 transition-colors duration-500 mt-2 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
-                    {{ __('Read more', 'code') }}
+                    <?php _e('Read more', 'code') ?>
                   </a>
                 @endif
               </div>
@@ -156,11 +156,11 @@ $slide4url = $hero['slide_4']['url'] ?? null;
             <div class="bg-green-2 h-[75vh] flex flex-col items-center justify-center">
               <img src="@asset('images/tmp/plant-based-banner-m.webp')" alt="">
               <p class="text-center text-sand-1 font-ga text-5xl">
-                Plant-based
+                <?php _e('Plant-based', 'code') ?>
               </p>
               @if($slide4url)
                 <a href="{{ $slide4url }}" class="block hover:bg-black-1 transition-colors duration-500 mx-auto mt-4 font-ga text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
-                  {{ __('Read more', 'code') }}
+                  <?php _e('Read more', 'code') ?>
                 </a>
               @endif
             </div>
@@ -211,7 +211,7 @@ $slide4url = $hero['slide_4']['url'] ?? null;
   <section class="bg-yellow-1 min-h-[700px] pt-20 pb-32">
     <img src="@asset('images/shape-1.webp')" class="w-full -mt-20" alt="" />
     <h2 class="font-ga text-45px leading-12 lg:text-6xl text-center mb-16 mt-6 lg:mt-0 px-16 lg:px-0">
-      {{ __('Product categories', 'code') }}
+      <?php _e('Product categories', 'code') ?>
     </h2>
     @include('partials.hero-products')
   </section>
@@ -235,7 +235,7 @@ $slide4url = $hero['slide_4']['url'] ?? null;
         </div>
         <div class="order-1 lg:order-2">
           <h2 class="font-ga text-45px leading-12 lg:text-6xl text-center mb-16 mt-24 lg:mt-[9vw] lg:mt-0 px-4 sm:px-16 lg:px-0">
-            {!! __('Learn more<br> about us!', 'code') !!}
+            <?php _e('Learn more<br> about us!', 'code') ?>
           </h2>
         </div>
       </div>
@@ -251,7 +251,7 @@ $slide4url = $hero['slide_4']['url'] ?? null;
       <div class="relative grid grid-cols-1 lg:grid-cols-3 items-center max-w-[1540px] mx-auto mt-[5vw] px-4">
         <div>
           <h2 class="font-ga text-45px leading-12 lg:text-6xl text-center mb-16 mt-6 lg:mt-0 px-4 sm:px-16 lg:px-0">
-            {!! __('Learn more about our dairy-free gelato!', 'code') !!}
+            <?php _e('Learn more about our dairy-free gelato!', 'code') ?>
           </h2>
         </div>
         <div class="col-span-2 relative">
@@ -278,13 +278,13 @@ $slide4url = $hero['slide_4']['url'] ?? null;
 
   <section class="relative pt-10 bg-yellow-2">
     <h2 class="font-ga text-45px leading-12 lg:text-6xl text-center mb-16 mt-6 lg:mt-0 px-10 sm:px-16 lg:px-0">
-      {{ __('Try our authentic Italian gelato', 'code') }}
+      <?php _e('Try our authentic Italian gelato', 'code') ?>
     </h2>
     @include('partials.product-slider')
 
     <div class="flex justify-center mt-12 mb-10">
       <a href="{{ get_term_link('gelato', 'product_categories') }}" class="block hover:bg-black-1 transition-colors duration-500 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[296px] h-[60px] mx-auto lg:mx-0 py-3 rounded-full">
-        {{ __('All products', 'code') }}
+        <?php _e('All products', 'code') ?>
       </a>
     </div>
 
@@ -304,7 +304,7 @@ $slide4url = $hero['slide_4']['url'] ?? null;
 
   <section class="py-10 pb-24 2xl:pb-52 bg-yellow-1">
     <h2 class="font-ga text-45px leading-12 lg:text-6xl text-center mb-16 mt-6 lg:mt-0 px-16 lg:px-0">
-      {{ __('Let\'s meet on Instagram!', 'code') }}
+      <?php _e('Let\'s meet on Instagram!', 'code'); ?>
     </h2>
 
     @if(shortcode_exists('instagram-feed'))
@@ -315,7 +315,7 @@ $slide4url = $hero['slide_4']['url'] ?? null;
 
     <div class="flex justify-center mt-12 mb-10">
       <a href="https://www.instagram.com/valsoia_international/" target="_blank" class="block hover:bg-black-1 transition-colors duration-500 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[297px] h-[60px] mx-auto lg:mx-0 py-3 rounded-full">
-        {{ __('Follow us on instagram', 'code') }}
+        <?php _e('Follow us on instagram', 'code') ?>
       </a>
     </div>
   </section>

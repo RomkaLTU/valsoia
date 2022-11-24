@@ -4,15 +4,17 @@ namespace WPML\Setup\Endpoint;
 
 use WPML\AdminLanguageSwitcher\AdminLanguageSwitcher;
 use WPML\Ajax\IHandler;
+use WPML\API\Settings;
 use WPML\Collect\Support\Collection;
-use WPML\FP\Lst;
-use WPML\FP\Right;
+use WPML\FP\Either;
 use WPML\LIB\WP\User;
-use WPML\Setup\Option;
 use WPML\TM\ATE\AutoTranslate\Endpoint\EnableATE;
-use WPML\TM\Menu\TranslationServices\Endpoints\Deactivate;
 use WPML\UrlHandling\WPLoginUrlConverter;
 use function WPML\Container\make;
+use WPML\FP\Lst;
+use WPML\FP\Right;
+use WPML\Setup\Option;
+use WPML\TM\Menu\TranslationServices\Endpoints\Deactivate;
 
 class FinishStep implements IHandler {
 

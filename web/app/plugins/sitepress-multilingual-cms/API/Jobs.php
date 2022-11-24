@@ -7,14 +7,15 @@ use WPML\Element\API\PostTranslations;
 use WPML\Element\API\TranslationsRepository;
 use WPML\FP\Fns;
 use WPML\FP\Logic;
-use WPML\FP\Lst;
 use WPML\FP\Maybe;
 use WPML\FP\Obj;
 use WPML\FP\Str;
+use WPML\FP\Lst;
 use WPML\Settings\PostType\Automatic;
 use WPML\TM\API\ATE\LanguageMappings;
 use WPML\TM\API\Job\Map;
 use WPML\TM\Records\UpdateTranslationReviewStatus;
+use function WPML\Container\make;
 use function WPML\FP\curryN;
 use function WPML\FP\pipe;
 

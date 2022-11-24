@@ -1,6 +1,5 @@
 <?php
 
-use WPML\Setup\Option as SetupOptions;
 use WPML\TM\Editor\ClassicEditorActions;
 use WPML\TM\Jobs\Query\CompositeQuery;
 use WPML\TM\Jobs\Query\LimitQueryHelper;
@@ -11,6 +10,7 @@ use WPML\TM\Jobs\Query\QueryBuilder;
 use WPML\TM\Jobs\Query\StringQuery;
 use WPML\TM\Jobs\Query\StringsBatchQuery;
 use function WPML\Container\make;
+use \WPML\Setup\Option as SetupOptions;
 
 if ( ! \WPML\Plugins::isTMActive() && ( ! wpml_is_setup_complete() || false !== SetupOptions::isTMAllowed() ) ) {
 

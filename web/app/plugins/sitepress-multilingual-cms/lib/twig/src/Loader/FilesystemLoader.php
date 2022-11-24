@@ -11,7 +11,7 @@
 namespace WPML\Core\Twig\Loader;
 
 use WPML\Core\Twig\Error\LoaderError;
-
+use WPML\Core\Twig\Source;
 /**
  * Loads template from the filesystem.
  *

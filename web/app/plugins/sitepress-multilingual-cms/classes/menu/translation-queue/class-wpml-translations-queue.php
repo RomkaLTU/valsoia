@@ -1,14 +1,22 @@
 <?php
 
-use WPML\API\PostTypes;
+use WPML\API\Sanitize;
 use WPML\Element\API\Languages;
 use WPML\FP\Fns;
 use WPML\FP\Logic;
 use WPML\FP\Lst;
 use WPML\FP\Obj;
 use WPML\FP\Relation;
+use WPML\Setup\Option;
+use WPML\TM\API\Translators;
+use WPML\TM\ATE\Review\ApproveTranslations;
+use WPML\TM\ATE\Review\Cancel;
+use WPML\TM\ATE\Review\ReviewStatus;
 use WPML\FP\Str;
+use WPML\API\PostTypes;
 use WPML\TM\Editor\Editor;
+use WPML\TM\API\Jobs;
+use WPML\TM\Menu\TranslationQueue\PostTypeFilters;
 use function WPML\FP\pipe;
 
 class WPML_Translations_Queue {

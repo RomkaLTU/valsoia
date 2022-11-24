@@ -2,9 +2,10 @@
 
 namespace WPML\TM\Troubleshooting;
 
-use WPML\Core\WP\App\Resources;
 use WPML\LIB\WP\Nonce;
+use WPML\Core\WP\App\Resources;
 use WPML\TM\ATE\AutoTranslate\Endpoint\CancelJobs;
+use WPML\TM\ATE\Hooks\JobActionsFactory;
 
 class Loader implements \IWPML_Backend_Action {
 

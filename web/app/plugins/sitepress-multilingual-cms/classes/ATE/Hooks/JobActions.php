@@ -2,14 +2,15 @@
 
 namespace WPML\TM\ATE\Hooks;
 
+use function WPML\Container\make;
 use WPML\Element\API\Languages;
 use WPML\FP\Fns;
+use function WPML\FP\invoke;
 use WPML\FP\Lst;
 use WPML\FP\Obj;
-use WPML\Setup\Option;
-use function WPML\Container\make;
-use function WPML\FP\invoke;
 use function WPML\FP\pipe;
+use WPML\FP\Relation;
+use WPML\Setup\Option;
 
 class JobActions implements \IWPML_Action {
 

@@ -4,8 +4,8 @@ namespace WPML\PB\Elementor\Hooks;
 
 use WPML\FP\Obj;
 use WPML\LIB\WP\Hooks;
-use WPML\PB\Helper\LanguageNegotiation;
 use function WPML\FP\spreadArgs;
+use WPML\PB\Helper\LanguageNegotiation;
 
 class DomainsWithMultisite implements \IWPML_Backend_Action {
 

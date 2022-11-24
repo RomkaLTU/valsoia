@@ -1,6 +1,7 @@
 <?php
 
 use WPML\FP\Obj;
+use WPML\LIB\WP\Nonce;
 use WPML\LIB\WP\User;
 use WPML\Media\Option;
 
@@ -73,7 +74,7 @@ class WPML_Media_Attachments_Duplication {
 			|| User::getCurrent()->has_cap( WPML_Manage_Translations_Role::CAPABILITY )
 			)
 		) {
-			add_action('wp_ajax_wpml_media_set_content_defaults', array($this, 'set_content_defaults') );
+			add_action('wp_ajax_wpml_media_set_content_defaults', array($this, 'wpml_media_set_content_defaults') );
 		}
 	}
 
@@ -1363,7 +1364,18 @@ class WPML_Media_Attachments_Duplication {
 		exit;
 	}
 
-	function set_content_defaults() {
+	public function wpml_media_set_content_defaults() {
+		$nonce   = isset( $_POST['nonce'] ) ? sanitize_text_field( $_POST['nonce'] ) : '';
+
+		if ( wp_verify_nonce( $nonce, 'wpml_media_set_content_defaults' )  ) {
+			$this->set_content_defaults();
+		} else {
+			wp_send_json_error( esc_html__( 'Invalid request!', 'sitepress' ) );
+		}
+	}
+
+	private function set_content_defaults() {
+
 		$always_translate_media = $_POST['always_translate_media'];
 		$duplicate_media        = $_POST['duplicate_media'];
 		$duplicate_featured     = $_POST['duplicate_featured'];

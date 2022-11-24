@@ -2,9 +2,9 @@
 
 namespace WPML\Compatibility\Divi;
 
-use WPML\FP\Obj;
 use WPML\LIB\WP\Hooks;
 use function WPML\FP\spreadArgs;
+use WPML\FP\Obj;
 
 class WooShortcodes implements \IWPML_Frontend_Action {
 

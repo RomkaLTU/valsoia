@@ -2,20 +2,20 @@
 
 namespace WPML\Element\API;
 
-use WPML\API\Settings;
 use WPML\Collect\Support\Traits\Macroable;
 use WPML\FP\Fns;
-use WPML\FP\Just;
 use WPML\FP\Logic;
 use WPML\FP\Lst;
 use WPML\FP\Maybe;
-use WPML\FP\Nothing;
 use WPML\FP\Obj;
 use WPML\FP\Relation;
 use WPML\FP\Str;
+use WPML\FP\Nothing;
+use WPML\FP\Just;
 use WPML\LIB\WP\User;
 use function WPML\FP\curryN;
 use function WPML\FP\pipe;
+use WPML\API\Settings;
 
 /**
  * @method static callable|string getCodeByName( ...$name ) - Curried :: string->string

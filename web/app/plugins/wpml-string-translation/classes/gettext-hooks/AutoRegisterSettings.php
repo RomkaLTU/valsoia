@@ -6,8 +6,8 @@ use wpdb;
 use WPML\FP\Obj;
 use WPML\ST\MO\Hooks\PreloadThemeMoFile;
 use WPML\ST\Package\Domains;
-use WPML_ST_Settings;
 use function wpml_collect;
+use WPML_ST_Settings;
 
 class AutoRegisterSettings {
 

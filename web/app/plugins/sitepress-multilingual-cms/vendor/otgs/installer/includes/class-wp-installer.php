@@ -1,12 +1,12 @@
 <?php
 
 use OTGS\Installer\Collection;
-use OTGS\Installer\CommercialTab\SectionsManager;
-use OTGS\Installer\FP\Obj;
-use OTGS\Installer\Recommendations\RecommendationsManager;
-use OTGS\Installer\Recommendations\Storage;
 use OTGS\Installer\Rest\Push;
+use OTGS\Installer\Recommendations\RecommendationsManager;
+use OTGS\Installer\CommercialTab\SectionsManager;
+use OTGS\Installer\Recommendations\Storage;
 use OTGS\Installer\Settings;
+use OTGS\Installer\FP\Obj;
 use OTGS\Installer\Subscription_Warning_Message;
 
 class WP_Installer {

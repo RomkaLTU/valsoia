@@ -5,11 +5,11 @@ namespace WPML\TM\Menu\TranslationQueue;
 use WPML\FP\Either;
 use WPML\FP\Obj;
 use WPML\TM\API\Job\Map;
-use WPML\TM\ATE\JobRecords;
 use WPML_Element_Translation_Job;
-use WPML_TM_ATE_API;
-use WPML_TM_ATE_Jobs;
 use WPML_TM_Editors;
+use WPML_TM_ATE_Jobs;
+use WPML\TM\ATE\JobRecords;
+use WPML_TM_ATE_API;
 
 class CloneJobs {
 	/**

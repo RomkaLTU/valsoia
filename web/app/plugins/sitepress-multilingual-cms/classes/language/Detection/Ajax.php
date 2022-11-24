@@ -2,12 +2,12 @@
 
 namespace WPML\Language\Detection;
 
-use WPML\FP\Fns;
-use WPML\FP\Lst;
 use WPML\FP\Maybe;
 use WPML\FP\Obj;
+use WPML\FP\Lst;
 use WPML\FP\Str;
-use WPML_Request;
+use WPML\FP\Fns;
+use \WPML_Request;
 
 class Ajax extends WPML_Request {
 

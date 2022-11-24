@@ -1,10 +1,10 @@
 <?php
 
-use WPML\FP\Fns;
+use \WPML\FP\Fns;
 use WPML\FP\Obj;
 use WPML\PB\Shortcode\StringCleanUp;
-use function WPML\Container\make;
 use function WPML\FP\invoke;
+use function WPML\Container\make;
 
 /**
  * Class WPML_PB_Integration

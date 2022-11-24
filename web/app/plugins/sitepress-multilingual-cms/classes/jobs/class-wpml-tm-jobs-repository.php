@@ -1,6 +1,7 @@
 <?php
 
-use WPML\TM\Jobs\Query\Query;
+use \WPML\TM\Jobs\Query\Query;
+use WPML\FP\Fns;
 
 class WPML_TM_Jobs_Repository {
 	/** @var wpdb */

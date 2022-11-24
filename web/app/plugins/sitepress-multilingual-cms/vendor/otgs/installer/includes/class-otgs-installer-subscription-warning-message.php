@@ -5,6 +5,7 @@ namespace OTGS\Installer;
 use OTGS\Installer\FP\Obj;
 use OTGS\Installer\FP\Str;
 use OTGS_Installer_Subscription;
+
 use function OTGS\Installer\FP\pipe;
 
 class Subscription_Warning_Message {

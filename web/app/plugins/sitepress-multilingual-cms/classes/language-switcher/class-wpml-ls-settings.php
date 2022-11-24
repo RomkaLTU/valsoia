@@ -1,10 +1,12 @@
 <?php
 
 use WPML\API\Sanitize;
-use WPML\FP\Maybe;
 use WPML\FP\Obj;
-use function WPML\FP\invoke;
+use WPML\FP\Fns;
+use WPML\FP\Lst;
+use WPML\FP\Maybe;
 use function WPML\FP\partial;
+use function WPML\FP\invoke;
 
 class WPML_LS_Settings {
 

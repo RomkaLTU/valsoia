@@ -1,7 +1,10 @@
 <?php
 
 use WPML\Element\API\PostTranslations;
+use WPML\FP\Fns;
 use WPML\FP\Lst;
+use WPML\FP\Obj;
+use WPML\TM\API\Jobs;
 use WPML\TM\ATE\Review\PreviewLink;
 use WPML\TM\ATE\Review\ReviewStatus;
 use WPML\TM\Jobs\Utils\ElementLink;

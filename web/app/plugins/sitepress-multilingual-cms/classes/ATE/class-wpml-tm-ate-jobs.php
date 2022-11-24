@@ -1,14 +1,14 @@
 <?php
 
 use WPML\FP\Cast;
-use WPML\FP\Fns;
-use WPML\FP\Logic;
 use WPML\FP\Maybe;
-use WPML\FP\Obj;
 use WPML\TM\ATE\JobRecords;
-use function WPML\FP\invoke;
-use function WPML\FP\partialRight;
 use function WPML\FP\pipe;
+use function WPML\FP\partialRight;
+use WPML\FP\Obj;
+use WPML\FP\Logic;
+use WPML\FP\Fns;
+use function \WPML\FP\invoke;
 
 /**
  * @author OnTheGo Systems

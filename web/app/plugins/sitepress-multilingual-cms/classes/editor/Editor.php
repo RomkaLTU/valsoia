@@ -18,6 +18,7 @@ use WPML\TM\ATE\Review\ReviewStatus;
 use WPML\TM\ATE\Sync\Trigger;
 use WPML\TM\Jobs\Manual;
 use WPML\TM\Menu\TranslationQueue\CloneJobs;
+use function WPML\Container\make;
 use function WPML\FP\curryN;
 use function WPML\FP\invoke;
 use function WPML\FP\pipe;

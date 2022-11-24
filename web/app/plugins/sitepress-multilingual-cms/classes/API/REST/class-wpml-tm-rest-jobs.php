@@ -5,13 +5,15 @@
  * @package wpml-translation-management
  */
 
+use WPML\FP\Obj;
 use WPML\FP\Fns;
 use WPML\FP\Maybe;
-use WPML\FP\Obj;
 use WPML\LIB\WP\User;
-use function WPML\FP\curryN;
-use function WPML\FP\invoke;
+use WPML\TM\ATE\Review\Cancel;
 use function WPML\FP\pipe;
+use function WPML\FP\partial;
+use function WPML\FP\invoke;
+use function WPML\FP\curryN;
 
 /**
  * Class WPML_TM_REST_Jobs

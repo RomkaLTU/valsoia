@@ -11,6 +11,7 @@ use WPML\LIB\WP\Hooks;
 use WPML\LIB\WP\User;
 use WPML\Setup\Option;
 use WPML\TM\ATE\AutoTranslate\Endpoint\AutoTranslate;
+use WPML\TM\ATE\AutoTranslate\Endpoint\CancelJobs;
 use WPML\TM\ATE\AutoTranslate\Endpoint\EnableATE;
 use WPML\TM\ATE\AutoTranslate\Endpoint\GetATEJobsToSync;
 use WPML\TM\ATE\AutoTranslate\Endpoint\GetCredits;
@@ -96,7 +97,7 @@ class Loader implements \IWPML_Backend_Action {
 			],
 		];
 	}
-
+	
 	/**
 	 * @return string
 	 */

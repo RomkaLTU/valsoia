@@ -5,8 +5,8 @@ namespace WPML\PB\Elementor\Hooks;
 use WPML\FP\Obj;
 use WPML\FP\Relation;
 use WPML\LIB\WP\Hooks;
-use function WPML\FP\pipe;
 use function WPML\FP\spreadArgs;
+use function WPML\FP\pipe;
 
 class LandingPages implements \IWPML_Frontend_Action, \IWPML_Backend_Action, \IWPML_DIC_Action {
 
