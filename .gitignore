@@ -15,7 +15,7 @@ web/app/cache/*
 !web/app/plugins/wpforms
 !web/app/plugins/wpml-wpforms
 !web/app/plugins/wp-seo-multilingual
-!web/app/plugins/geo-redirect
+!web/app/mu-plugins/geo-redirect
 !web/app/plugins/wordpress-importer
 
 # WordPress
