@@ -17,6 +17,7 @@ web/app/cache/*
 !web/app/plugins/wp-seo-multilingual
 !web/app/mu-plugins/geo-redirect
 !web/app/plugins/wordpress-importer
+!web/app/plugins/updraftplus
 
 # WordPress
 web/wp
