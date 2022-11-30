@@ -11,19 +11,19 @@ $isProdOptions = is_tax('product_options');
   </figure>
 
   <div class="mb-10 sm:mb-44">
-    <header class="relative max-w-[791px] mx-auto">
+    <header class="relative mx-auto">
       @if($isProdOptions)
         <img src="@asset('images/plant-based-badget-big@2x.webp')" class="hidden md:block absolute bottom-0 right-0 max-w-[166px] -mr-24 -mb-36 xl:-mr-72 xl:-mb-36" alt="">
       @endif
 
       @if($isProdOptions)
         <img src="@asset('images/prod-cat-shape-1@2x.webp')" class="absolute w-full max-w-[90%] sm:max-w-full top-0 bottom-0 left-0 right-0 m-auto" alt="">
-        <h1 class="relative font-ga text-3xl lg:text-6xl text-white block max-w-[940px] text-center mx-auto mt-10">
-          {{ get_queried_object()->description }}
+        <h1 class="relative font-ga text-3xl lg:text-6xl text-white block !leading-tight text-center mx-auto mt-10">
+          {!! get_field('description', get_queried_object()) !!}
         </h1>
       @else
-        <h1 class="relative font-ga text-3xl lg:text-6xl text-brown-1 block max-w-[940px] text-center mx-auto mt-10">
-          {{ get_queried_object()->description }}
+        <h1 class="relative font-ga text-3xl lg:text-6xl text-brown-1 !leading-tight block text-center mx-auto mt-10">
+          {!! get_field('description', get_queried_object()) !!}
         </h1>
       @endif
     </header>

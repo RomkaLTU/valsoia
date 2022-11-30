@@ -16,6 +16,12 @@ class ProductCategories extends Field
         $fields
             ->setLocation('taxonomy', '==', 'product_categories');
 
+        $fields->addWysiwyg('description', [
+            'label' => 'Description',
+            'instructions' => 'Add a description for this category',
+            'media_upload' => 0,
+        ]);
+
         $fields->addImage('icon', [
             'label' => 'Icon',
             'instructions' => '',
