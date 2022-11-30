@@ -65,7 +65,7 @@ html[lang]:not([lang="en-US"]):not([lang="en-GB"]) {
 
 .wpml-ls-legacy-dropdown {
   width: auto;
-  @apply font-ga text-2xl;
+  @apply font-ga font-bold text-2xl;
 
   .js-wpml-ls-item-toggle {
     border: none;
@@ -338,7 +338,7 @@ html[lang]:not([lang="en-US"]):not([lang="en-GB"]) {
     margin-top: 0.5rem !important;
 
     h4 {
-      @apply text-25px font-ga;
+      @apply text-25px font-ga font-bold;
     }
 
     p {

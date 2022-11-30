@@ -6,7 +6,7 @@
 
 @section('content')
   <main class="relative bg-white min-h-[1000px] pb-[12vw] pt-20">
-    <h1 class="font-ga text-6xl max-w-[800px] mx-auto text-center">
+    <h1 class="font-ga font-bold text-6xl max-w-[800px] mx-auto text-center">
       {{ __('Looking for Valsoia? you’ve come to the right place', 'code') }}
     </h1>
     <p class="text-lg text-center max-w-[900px] mx-auto my-12">
@@ -29,14 +29,14 @@
     </svg>
     <div class="bg-yellow-2 pb-32 -mb-20 lg:pb-40 lg:-mb-40 pt-[20vw]">
       <div class="mt-10 lg:mt-0 px-4 lg:px-0">
-        <h2 class="font-ga text-6xl max-w-[1000px] mx-auto text-center">
+        <h2 class="font-ga font-bold text-6xl max-w-[1000px] mx-auto text-center">
           {{ __('Want your local store to sell Valsoia?', 'code') }}
         </h2>
         <p class="text-lg text-center max-w-[900px] mx-auto my-12">
           {{ __('We’ve created a handy fact sheet you can give to your local store manager. It provides everything they need to know about how to stock Valsoia on their shelves. Thanks for helping spread the word about Valsoia!', 'code') }}
         </p>
         <div class="flex justify-center">
-          <a href="{{ get_permalink(get_page_by_path('contact')) }}" class="block hover:bg-black-1 transition-colors duration-500 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[296px] h-[60px] mx-auto lg:mx-0 py-3 rounded-full">
+          <a href="{{ get_permalink(get_page_by_path('contact')) }}" class="block hover:bg-black-1 transition-colors duration-500 font-ga font-bold text-25px bg-green-1 text-white text-center w-full max-w-[296px] h-[60px] mx-auto lg:mx-0 py-3 rounded-full">
             {{ __('Contact us', 'code') }}
           </a>
         </div>

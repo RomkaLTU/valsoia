@@ -18,11 +18,11 @@ $isProdOptions = is_tax('product_options');
 
       @if($isProdOptions)
         <img src="@asset('images/prod-cat-shape-1@2x.webp')" class="absolute w-full max-w-[90%] sm:max-w-full top-0 bottom-0 left-0 right-0 m-auto" alt="">
-        <h1 class="relative font-ga text-3xl lg:text-6xl text-white block !leading-tight text-center mx-auto mt-10">
+        <h1 class="relative font-ga font-bold text-3xl lg:text-6xl text-white block !leading-tight text-center mx-auto mt-10">
           {!! get_field('description', get_queried_object()) !!}
         </h1>
       @else
-        <h1 class="relative font-ga text-3xl lg:text-6xl text-brown-1 !leading-tight block text-center mx-auto mt-10">
+        <h1 class="relative font-ga font-bold text-3xl lg:text-6xl text-brown-1 !leading-tight block text-center mx-auto mt-10">
           {!! get_field('description', get_queried_object()) !!}
         </h1>
       @endif

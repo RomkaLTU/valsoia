@@ -10,7 +10,7 @@ $infoText = get_field('info_banner_text');
 @endphp
 
 @if(function_exists('yoast_breadcrumb'))
-  <div class="hidden md:block ml-[10vw] font-ga text-25px">
+  <div class="hidden md:block ml-[10vw] font-ga font-bold text-25px">
     @php(yoast_breadcrumb( '<p id="breadcrumbs">','</p>' ))
   </div>
 @endif
@@ -50,14 +50,14 @@ $infoText = get_field('info_banner_text');
           </svg>
         @endif
       </div>
-      <h1 class="block max-w-full xl:max-w-[650px] mx-auto text-center relative font-ga text-white text-3xl lg:text-5xl h-[130px] flex justify-center items-center">
+      <h1 class="block max-w-full xl:max-w-[650px] mx-auto text-center relative font-ga font-bold text-white text-3xl lg:text-5xl h-[130px] flex justify-center items-center">
         {!! $title !!}
       </h1>
     </div>
   </header>
 
   @if(function_exists('yoast_breadcrumb'))
-    <div class="md:hidden text-center font-ga mt-14 px-4">
+    <div class="md:hidden text-center font-ga font-bold mt-14 px-4">
       @php(yoast_breadcrumb( '<p id="breadcrumbs">','</p>' ))
     </div>
   @endif
@@ -98,62 +98,20 @@ $infoText = get_field('info_banner_text');
     <div class="xl:max-w-[590px] px-8 xl:px-0 mt-12 xl:mt-0">
 
       @if($badgets)
-        <div class="grid grid-cols-4 gap-4 items-start justify-center max-w-[350px] md:max-w-full mx-auto">
-          @if(in_array('oat', $badgets))
+        <div class="grid grid-cols-5 gap-0 items-start justify-center max-w-[350px] md:max-w-full mx-auto">
+          @foreach($badgets as $badget)
             <div class="flex flex-col justify-center items-center space-y-2">
-              <img src="@asset('images/prod-icons/made_w_oat@2x.webp')" class="sm:h-[110px] object-contain" alt="">
-              <p class="font-ga text-sm sm:text-xl text-center !leading-none">
-                {!! __('Made with<br> oat', 'code') !!}
+              <img src="{{ wp_get_attachment_image_url(get_field('icon', $badget), 'large') }}" class="sm:w-[92px] object-contain" alt="">
+              <p class="font-ga font-bold text-sm sm:text-base text-center !leading-none">
+                {{ $badget->name }}
               </p>
             </div>
-          @endif
-          @if(in_array('almond', $badgets))
-            <div class="flex flex-col justify-center items-center space-y-2">
-              <img src="@asset('images/prod-icons/made_with_almond@2x.webp')" class="sm:h-[110px] object-contain" alt="">
-              <p class="font-ga text-sm sm:text-xl text-center !leading-none">
-                {!! __('Made with<br> Almonds', 'code') !!}
-              </p>
-            </div>
-          @endif
-          @if(in_array('gluten_free', $badgets))
-            <div class="flex flex-col justify-center items-center space-y-2">
-              <img src="@asset('images/prod-icons/gluten_free@2x.webp')" class="sm:h-[110px] object-contain" alt="">
-              <p class="font-ga text-sm sm:text-xl text-center !leading-none">
-                {!! __('Gluten - free', 'code') !!}
-              </p>
-            </div>
-          @endif
-          @if(in_array('palm_oil_free', $badgets))
-            <div class="flex flex-col justify-center items-center space-y-2">
-              <img src="@asset('images/prod-icons/palm_oil_free@2x.webp')" class="sm:h-[110px] object-contain" alt="">
-              <p class="font-ga text-sm sm:text-xl text-center !leading-none">
-                {!! __('Palm oil free ', 'code') !!}
-              </p>
-            </div>
-          @endif
-          @if(in_array('dairy', $badgets))
-              <div class="flex flex-col justify-center items-center space-y-2">
-                <img src="@asset('images/prod-icons/dairy@2x.webp')" class="sm:h-[110px] object-contain" alt="">
-                <p class="font-ga text-sm sm:text-xl text-center !leading-none">
-                  {{ __('Dairy free', 'code') }}
-                </p>
-              </div>
-          @endif
-          @if(in_array('certified_plant', $badgets))
-              <div class="flex justify-center items-center">
-                <img src="@asset('images/prod-icons/plant_based@2x.webp')" class="sm:h-[110px] object-contain" alt="">
-              </div>
-          @endif
-          @if(in_array('non_gmo', $badgets))
-              <div class="flex justify-center items-center">
-                <img src="@asset('images/prod-icons/ver@2x.webp')" class="sm:h-[110px] object-contain" alt="">
-              </div>
-          @endif
+          @endforeach
         </div>
       @endif
 
       @if($intro = get_field('intro'))
-        <section class="font-ga text-xl lg:text-25px leading-tight my-7">
+        <section class="font-ga font-bold text-xl lg:text-25px leading-tight my-7">
           {!! $intro !!}
         </section>
       @endif
@@ -178,7 +136,7 @@ $infoText = get_field('info_banner_text');
               <img x-show="!showNutrition" src="@asset('images/ingredients@2x.webp')" class="absolute h-auto" alt="">
               <img x-show="showNutrition" src="@asset('images/nutritional-values@2x.webp')" class="absolute h-auto" alt="">
               <img x-show="!showNutrition && !showIngredients" src="@asset('images/nutritional-values@2x.webp')" class="absolute h-auto" alt="">
-              <span class="relative font-ga text-white text-2xl lg:text-35px">
+              <span class="relative font-ga font-bold text-white text-2xl lg:text-35px">
                 {{ __('Ingredients', 'code') }}
               </span>
               <svg x-show="showIngredients" xmlns="http://www.w3.org/2000/svg" class="absolute bottom-0 mb-4 text-white h-8 w-8 lg:h-12 lg:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -191,7 +149,7 @@ $infoText = get_field('info_banner_text');
               <img x-show="!showIngredients" src="@asset('images/ingredients@2x.webp')" class="absolute h-auto" alt="">
               <img x-show="showIngredients" src="@asset('images/nutritional-values@2x.webp')" class="absolute h-auto" alt="">
               <img x-show="!showNutrition && !showIngredients" src="@asset('images/nutritional-values@2x.webp')" class="absolute h-auto" alt="">
-              <span class="relative font-ga text-white text-2xl lg:text-35px ">
+              <span class="relative font-ga font-bold text-white text-2xl lg:text-35px ">
                 {{ __('Nutrition', 'code') }}<br>
                 {{ __('facts', 'code') }}
               </span>
@@ -203,7 +161,7 @@ $infoText = get_field('info_banner_text');
         </div>
         <div x-show="showIngredients" x-collapse>
           @if($ingredientsGroup)
-            <h4 class="font-ga text-xl lg:text-25px mb-5 xl:mb-7">
+            <h4 class="font-ga font-bold text-xl lg:text-25px mb-5 xl:mb-7">
               {{ $ingredientsGroup['title'] }}
             </h4>
             <div class="font-comf text-base lg:text-lg leading-relaxed flex">
@@ -229,7 +187,7 @@ $infoText = get_field('info_banner_text');
             <img src="@asset('images/options-shape@2x.webp')" class="absolute left-0 right-0 top-0 bottom-0 w-full sm:max-w-[223px] m-auto" alt="">
             <div class="relative h-full flex flex-col items-center justify-center">
               <img src="@asset('images/001-jar.webp')" class="h-[35px] sm:h-auto" alt="">
-              <p class="relative font-ga text-base sm:text-2xl mt-4 mb-1 text-center leading-none">
+              <p class="relative font-ga font-bold text-base sm:text-2xl mt-4 mb-1 text-center leading-none">
                 {!! $size['title'] !!}
               </p>
               <p class="max-w-[132px] mx-auto text-xs sm:text-sm text-center">
@@ -243,7 +201,7 @@ $infoText = get_field('info_banner_text');
             <img src="@asset('images/options-shape@2x.webp')" class="absolute left-0 right-0 top-0 bottom-0 w-full sm:max-w-[223px] m-auto" alt="">
             <div class="relative h-full flex flex-col items-center justify-center">
               <img src="@asset('images/002-temperature.webp')" class="h-[35px] sm:h-auto" alt="">
-              <p class="relative font-ga text-base sm:text-2xl mt-4 mb-1 text-center leading-none">
+              <p class="relative font-ga font-bold text-base sm:text-2xl mt-4 mb-1 text-center leading-none">
                 {!! $temperature['title'] !!}
               </p>
               <p class="max-w-[132px] mx-auto text-xs sm:text-sm text-center">
@@ -259,7 +217,7 @@ $infoText = get_field('info_banner_text');
           <div class="absolute left-0 right-0 mx-auto max-w-[700px]">
             @include('svg.info-banner')
           </div>
-          <div class="text-white text-xs md:text-lg font-ga min-h-[90px] sm:min-h-[150px] w-full max-w-[500px] relative flex items-center pl-20 sm:pl-28 mx-auto">
+          <div class="text-white text-xs md:text-lg font-ga font-bold min-h-[90px] sm:min-h-[150px] w-full max-w-[500px] relative flex items-center pl-20 sm:pl-28 mx-auto">
             {!! $infoText !!}
           </div>
         </div>

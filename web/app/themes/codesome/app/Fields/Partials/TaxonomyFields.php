@@ -7,8 +7,7 @@ use StoutLogic\AcfBuilder\FieldsBuilder;
 
 class TaxonomyFields extends Partial
 {
-
-    public function fields()
+    public function fields(): FieldsBuilder
     {
         $fields = new FieldsBuilder('taxonomyFields');
 

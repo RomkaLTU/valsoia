@@ -14,7 +14,7 @@
           <nav class="nav-primary" aria-label="{{ wp_get_nav_menu_name('primary_navigation') }}">
             {!! wp_nav_menu([
               'theme_location' => 'primary_navigation',
-              'menu_class' => 'nav hidden xl:flex gap-2 text-2xl font-ga',
+              'menu_class' => 'nav hidden xl:flex gap-2 text-2xl font-ga font-bold',
               'echo' => false,
             ]) !!}
           </nav>
@@ -34,7 +34,7 @@
       <div>
         {!! wp_nav_menu([
         'theme_location' => 'primary_navigation',
-        'menu_class' => 'nav gap-2 text-45px font-ga',
+        'menu_class' => 'nav gap-2 text-45px font-ga font-bold',
         'echo' => false,
       ]) !!}
         <div class="relative h-[67px] mt-8">

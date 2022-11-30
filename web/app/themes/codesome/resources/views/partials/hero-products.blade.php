@@ -8,7 +8,7 @@
         src="@asset('images/tmp/3D-frontale-VALSOIA_STECCO_CROCCANTINO_BAR_USA.webp')"
         alt="{{ $siteName }}"
         class="logo group-hover:-translate-y-6 transition-transform duration-1000 h-[225px] sm:h-[370px] xl:h-[420px] mx-auto object-contain">
-      <h3 class="text-center text-4xl lg:text-45px font-ga leading-none">Gelato</h3>
+      <h3 class="text-center text-4xl lg:text-45px font-ga font-bold leading-none">Gelato</h3>
     </a>
   </div>
   <div class="flex-1 relative">
@@ -20,7 +20,7 @@
         src="@asset('images/tmp/3D_USA_La_Crema_397g_mag020_MR.webp')"
         alt="{{ $siteName }}"
         class="logo group-hover:-translate-y-6 transition-transform duration-1000 h-[225px] sm:h-[370px] xl:h-[420px] mx-auto object-contain">
-      <h3 class="text-center text-4xl lg:text-45px font-ga leading-none">Hazelnut spread</h3>
+      <h3 class="text-center text-4xl lg:text-45px font-ga font-bold leading-none">Hazelnut spread</h3>
     </a>
   </div>
 </div>

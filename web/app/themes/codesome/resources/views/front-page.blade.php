@@ -19,7 +19,7 @@ $slide4url = $hero['slide_4']['url'] ?? null;
               style="background-image: url(@asset('images/tmp/hero-slider-bg.webp'))">
             </div>
             <div class="w-full">
-              <div class="relative z-10 font-ga text-brown-1 max-w-[770px] flex flex-col items-center lg:pl-4">
+              <div class="relative z-10 font-ga font-bold text-brown-1 max-w-[770px] flex flex-col items-center lg:pl-4">
                 <div class="text-45px leading-14 text-center">
                   <?php _e('Blending', 'code'); ?> <span class="text-70px"><?php _e('Italian', 'code'); ?></span> <?php _e('tradition', 'code'); ?><br>
                   <?php _e('and', 'code'); ?> <span class="text-70px"><?php _e('plant-based', 'code'); ?></span> <?php _e('ingredients to', 'code'); ?>
@@ -28,7 +28,7 @@ $slide4url = $hero['slide_4']['url'] ?? null;
                   <?php _e('perfection', 'code'); ?>
                 </div>
                 @if($slide1url)
-                  <a href="{{ $slide1url }}" class="block hover:bg-black-1 transition-colors duration-500 mt-10 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
+                  <a href="{{ $slide1url }}" class="block hover:bg-black-1 transition-colors duration-500 mt-10 font-ga font-bold text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
                     {{ __('Read more', 'code') }}
                   </a>
                 @endif
@@ -36,7 +36,7 @@ $slide4url = $hero['slide_4']['url'] ?? null;
             </div>
           </div>
           <div class="lg:hidden">
-            <div class="font-ga text-brown-1">
+            <div class="font-ga font-bold text-brown-1">
               <div class="bg-yellow-1 pt-8">
                 <div class="text-2xl leading-10 text-center">
                   <?php _e('Blending', 'code'); ?> <span class="text-5xl"><?php _e('Italian tradition', 'code'); ?></span>
@@ -47,7 +47,7 @@ $slide4url = $hero['slide_4']['url'] ?? null;
                 </div>
 
                 @if($slide1url)
-                  <a href="{{ $slide1url }}" class="block hover:bg-black-1 transition-colors duration-500 mx-auto mt-10 font-ga text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
+                  <a href="{{ $slide1url }}" class="block hover:bg-black-1 transition-colors duration-500 mx-auto mt-10 font-ga font-bold text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
                     <?php _e('Read more', 'code') ?>
                   </a>
                 @endif
@@ -63,14 +63,14 @@ $slide4url = $hero['slide_4']['url'] ?? null;
               style="background-image: url(@asset('images/tmp/ice-cream-hero.png'))">
             </div>
             <div class="w-full">
-              <div class="relative z-10 font-ga text-brown-1 max-w-[770px] mx-auto flex flex-col items-center">
+              <div class="relative z-10 font-ga font-bold text-brown-1 max-w-[770px] mx-auto flex flex-col items-center">
                 <p class="text-center leading-[5rem]">
                   <span class="text-6xl"><?php _e('Authentic', 'code') ?></span>
                   <span class="text-[5.937rem] ml-4"><?php _e('Italian', 'code') ?><br></span>
                   <span class="text-[7.5rem]"><?php _e('gelato', 'code') ?></span>
                 </p>
                 @if($slide2url)
-                  <a href="{{ $slide2url }}" class="block hover:bg-black-1 transition-colors duration-500 mt-10 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
+                  <a href="{{ $slide2url }}" class="block hover:bg-black-1 transition-colors duration-500 mt-10 font-ga font-bold text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
                     <?php _e('Read more', 'code') ?>
                   </a>
                 @endif
@@ -79,7 +79,7 @@ $slide4url = $hero['slide_4']['url'] ?? null;
           </div>
           <div class="lg:hidden">
             <div>
-              <div class="font-ga text-brown-1 bg-brown-3 pt-8">
+              <div class="font-ga font-bold text-brown-1 bg-brown-3 pt-8">
                 <p class="text-center">
                   <span class="text-4xl"><?php _e('Authentic', 'code'); ?></span><br>
                   <span class="text-7xl"><?php _e('Italian', 'code'); ?></span><br>
@@ -88,7 +88,7 @@ $slide4url = $hero['slide_4']['url'] ?? null;
               </div>
 
               @if($slide2url)
-                <a href="{{ $slide2url }}" class="block hover:bg-black-1 transition-colors duration-500 mx-auto mt-10 font-ga text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
+                <a href="{{ $slide2url }}" class="block hover:bg-black-1 transition-colors duration-500 mx-auto mt-10 font-ga font-bold text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
                   <?php _e('Read more', 'code'); ?>
                 </a>
               @endif
@@ -104,14 +104,14 @@ $slide4url = $hero['slide_4']['url'] ?? null;
               style="background-image: url(@asset('images/tmp/la-creme-banner.webp'))">
             </div>
             <div class="w-full">
-              <div class="relative z-10 font-ga text-sand-1 max-w-[800px] mx-auto flex flex-col items-center">
+              <div class="relative z-10 font-ga font-bold text-sand-1 max-w-[800px] mx-auto flex flex-col items-center">
                 <p class="text-center leading-[5rem]">
                   <span class="text-[4.5rem]"><?php _e('A', 'code'); ?></span> <span class="text-[5.937rem]"><?php _e('perfect explosion', 'code') ?> </span>
                   <span class="text-5xl mr-4"><?php _e('of', 'code'); ?></span> <span class="text-[7.5rem]"><?php _e('creaminess', 'code'); ?></span> <span class="text-5xl ml-4"><?php _e('and', 'code'); ?></span>
                   <span class="text-[7.5rem]"><?php _e('goodness', 'code'); ?></span>
                 </p>
                 @if($slide3url)
-                <a href="{{ $slide3url }}" class="block hover:bg-black-1 transition-colors duration-500 mt-10 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
+                <a href="{{ $slide3url }}" class="block hover:bg-black-1 transition-colors duration-500 mt-10 font-ga font-bold text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
                   <?php _e('Read more', 'code') ?>
                 </a>
                 @endif
@@ -120,14 +120,14 @@ $slide4url = $hero['slide_4']['url'] ?? null;
           </div>
           <div class="lg:hidden">
             <div class="bg-brown-4">
-              <p class="text-center text-sand-1 font-ga text-3xl pt-10">
+              <p class="text-center text-sand-1 font-ga font-bold text-3xl pt-10">
                 <?php _e('A perfect', 'code') ?><br>
                 <span class="text-5xl"><?php _e('explosion', 'code') ?></span> <?php _e('of', 'code') ?><br>
                 <span class="text-5xl"><?php _e('creaminess', 'code') ?></span><br>
                 <?php _e('and', 'code') ?> <span class="text-5xl"><?php _e('goodness', 'code') ?></span>!
               </p>
               @if($slide3url)
-                <a href="{{ $slide3url }}" class="block hover:bg-black-1 transition-colors duration-500 mb-8 mx-auto mt-10 font-ga text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
+                <a href="{{ $slide3url }}" class="block hover:bg-black-1 transition-colors duration-500 mb-8 mx-auto mt-10 font-ga font-bold text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
                   <?php _e('Read more', 'code'); ?>
                 </a>
               @endif
@@ -142,10 +142,10 @@ $slide4url = $hero['slide_4']['url'] ?? null;
               style="background-image: url(@asset('images/tmp/100-Baneris@2x.webp'));">
             </div>
             <div class="w-full mx-auto">
-              <div class="relative z-10 font-ga text-sand-1 max-w-[770px] mx-auto flex flex-col items-center lg:justify-end lg:mb-[6vw]">
+              <div class="relative z-10 font-ga font-bold text-sand-1 max-w-[770px] mx-auto flex flex-col items-center lg:justify-end lg:mb-[6vw]">
                 <p class="text-5xl xl:text-6xl"><?php _e('Plant-based', 'code') ?></p>
                 @if($slide4url)
-                  <a href="{{ $slide4url }}" class="block hover:bg-black-1 transition-colors duration-500 mt-2 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
+                  <a href="{{ $slide4url }}" class="block hover:bg-black-1 transition-colors duration-500 mt-2 font-ga font-bold text-25px bg-green-1 text-white text-center w-full max-w-[348px] py-3 rounded-full">
                     <?php _e('Read more', 'code') ?>
                   </a>
                 @endif
@@ -155,11 +155,11 @@ $slide4url = $hero['slide_4']['url'] ?? null;
           <div class="lg:hidden">
             <div class="bg-green-2 h-[75vh] flex flex-col items-center justify-center">
               <img src="@asset('images/tmp/plant-based-banner-m.webp')" alt="">
-              <p class="text-center text-sand-1 font-ga text-5xl">
+              <p class="text-center text-sand-1 font-ga font-bold text-5xl">
                 <?php _e('Plant-based', 'code') ?>
               </p>
               @if($slide4url)
-                <a href="{{ $slide4url }}" class="block hover:bg-black-1 transition-colors duration-500 mx-auto mt-4 font-ga text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
+                <a href="{{ $slide4url }}" class="block hover:bg-black-1 transition-colors duration-500 mx-auto mt-4 font-ga font-bold text-xl bg-green-1 text-white text-center w-full max-w-[287px] py-3 rounded-full">
                   <?php _e('Read more', 'code') ?>
                 </a>
               @endif
@@ -186,10 +186,10 @@ $slide4url = $hero['slide_4']['url'] ?? null;
     <section class="bg-white text-center lg:text-left py-10 pt-18 px-8 flex flex-col lg:flex-row-reverse items-center lg:gap-24 max-w-[1110px] mx-auto">
       <main>
         <header>
-          <h2 class="text-6xl font-ga mb-6">
+          <h2 class="text-6xl font-ga font-bold mb-6">
             @sub('title')
           </h2>
-          <h4 class="font-ga text-2xl lg:text-3xl mb-6 max-w-[573px]">
+          <h4 class="font-ga font-bold text-2xl lg:text-3xl mb-6 max-w-[573px]">
             @sub('subtitle')
           </h4>
         </header>
@@ -197,7 +197,7 @@ $slide4url = $hero['slide_4']['url'] ?? null;
           @sub('content')
         </div>
         @hassub('link', 'url')
-          <a href="@sub('link', 'url')" class="block hover:bg-black-1 transition-colors duration-500 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[297px] h-[60px] mx-auto lg:mx-0 py-3 rounded-full">
+          <a href="@sub('link', 'url')" class="block hover:bg-black-1 transition-colors duration-500 font-ga font-bold text-25px bg-green-1 text-white text-center w-full max-w-[297px] h-[60px] mx-auto lg:mx-0 py-3 rounded-full">
             @sub('link', 'title')
           </a>
         @endsub
@@ -210,12 +210,12 @@ $slide4url = $hero['slide_4']['url'] ?? null;
 
   <section class="bg-yellow-1 min-h-[700px] pt-20 pb-32">
     <img src="@asset('images/shape-1.webp')" class="w-full -mt-20" alt="" />
-    <h2 class="font-ga text-45px leading-12 lg:text-6xl text-center mb-16 mt-6 lg:mt-0 px-16 lg:px-0">
+    <h2 class="font-ga font-bold text-45px leading-12 lg:text-6xl text-center mb-16 mt-6 lg:mt-0 px-16 lg:px-0">
       <?php _e('Product categories', 'code') ?>
     </h2>
     @include('partials.hero-products')
   </section>
-  
+
   <section class="relative">
     <div class="w-full z-10 overflow-hidden">
       <div class="">
@@ -234,7 +234,7 @@ $slide4url = $hero['slide_4']['url'] ?? null;
           </a>
         </div>
         <div class="order-1 lg:order-2">
-          <h2 class="font-ga text-45px leading-12 lg:text-6xl text-center mb-16 mt-24 lg:mt-[9vw] lg:mt-0 px-4 sm:px-16 lg:px-0">
+          <h2 class="font-ga font-bold text-45px leading-12 lg:text-6xl text-center mb-16 mt-24 lg:mt-[9vw] lg:mt-0 px-4 sm:px-16 lg:px-0">
             <?php _e('Learn more<br> about us!', 'code') ?>
           </h2>
         </div>
@@ -250,7 +250,7 @@ $slide4url = $hero['slide_4']['url'] ?? null;
     <div class="w-full z-10 overflow-hidden mb-14">
       <div class="relative grid grid-cols-1 lg:grid-cols-3 items-center max-w-[1540px] mx-auto mt-[5vw] px-4">
         <div>
-          <h2 class="font-ga text-45px leading-12 lg:text-6xl text-center mb-16 mt-6 lg:mt-0 px-4 sm:px-16 lg:px-0">
+          <h2 class="font-ga font-bold text-45px leading-12 lg:text-6xl text-center mb-16 mt-6 lg:mt-0 px-4 sm:px-16 lg:px-0">
             <?php _e('Learn more about our dairy-free gelato!', 'code') ?>
           </h2>
         </div>
@@ -277,13 +277,13 @@ $slide4url = $hero['slide_4']['url'] ?? null;
   </section>
 
   <section class="relative pt-10 bg-yellow-2">
-    <h2 class="font-ga text-45px leading-12 lg:text-6xl text-center mb-16 mt-6 lg:mt-0 px-10 sm:px-16 lg:px-0">
+    <h2 class="font-ga font-bold text-45px leading-12 lg:text-6xl text-center mb-16 mt-6 lg:mt-0 px-10 sm:px-16 lg:px-0">
       <?php _e('Try our authentic Italian gelato', 'code') ?>
     </h2>
     @include('partials.product-slider')
 
     <div class="flex justify-center mt-12 mb-10">
-      <a href="{{ get_term_link('gelato', 'product_categories') }}" class="block hover:bg-black-1 transition-colors duration-500 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[296px] h-[60px] mx-auto lg:mx-0 py-3 rounded-full">
+      <a href="{{ get_term_link('gelato', 'product_categories') }}" class="block hover:bg-black-1 transition-colors duration-500 font-ga font-bold text-25px bg-green-1 text-white text-center w-full max-w-[296px] h-[60px] mx-auto lg:mx-0 py-3 rounded-full">
         <?php _e('All products', 'code') ?>
       </a>
     </div>
@@ -303,7 +303,7 @@ $slide4url = $hero['slide_4']['url'] ?? null;
   </section>
 
   <section class="py-10 pb-24 2xl:pb-52 bg-yellow-1">
-    <h2 class="font-ga text-45px leading-12 lg:text-6xl text-center mb-16 mt-6 lg:mt-0 px-16 lg:px-0">
+    <h2 class="font-ga font-bold text-45px leading-12 lg:text-6xl text-center mb-16 mt-6 lg:mt-0 px-16 lg:px-0">
       <?php _e('Let\'s meet on Instagram!', 'code'); ?>
     </h2>
 
@@ -314,7 +314,7 @@ $slide4url = $hero['slide_4']['url'] ?? null;
     @endif
 
     <div class="flex justify-center mt-12 mb-10">
-      <a href="https://www.instagram.com/valsoia_international/" target="_blank" class="block hover:bg-black-1 transition-colors duration-500 font-ga text-25px bg-green-1 text-white text-center w-full max-w-[297px] h-[60px] mx-auto lg:mx-0 py-3 rounded-full">
+      <a href="https://www.instagram.com/valsoia_international/" target="_blank" class="block hover:bg-black-1 transition-colors duration-500 font-ga font-bold text-25px bg-green-1 text-white text-center w-full max-w-[297px] h-[60px] mx-auto lg:mx-0 py-3 rounded-full">
         <?php _e('Follow us on instagram', 'code') ?>
       </a>
     </div>

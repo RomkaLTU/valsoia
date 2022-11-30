@@ -7,6 +7,6 @@
     @endif
   </div>
   <div class="flex flex-col justify-end">
-    <h2 class="text-center font-ga text-3xl mt-4">@php(the_title())</h2>
+    <h2 class="text-center font-ga font-bold text-3xl mt-4">@php(the_title())</h2>
   </div>
 </a>

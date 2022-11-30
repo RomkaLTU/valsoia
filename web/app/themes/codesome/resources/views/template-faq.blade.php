@@ -18,7 +18,7 @@ $items = get_field('items');
         <img src="@asset('images/page-shape-1.webp')" class="w-full" alt="">
         <div class="relative relative max-w-[249px] mx-auto mt-12">
           <img src="@asset('images/faq-header-shape@2x.webp')" class="absolute w-full" alt="">
-          <h1 class="relative font-ga text-45px text-center pt-1">
+          <h1 class="relative font-ga font-bold text-45px text-center pt-1">
             @php(the_title())
           </h1>
         </div>
@@ -33,7 +33,7 @@ $items = get_field('items');
             class="relative w-full max-w-[930px] px-4 lg:px-0 mx-auto mt-14 space-y-4 pb-72 sm:pb-28">
             @foreach($items as $key => $item)
               <div class="bg-white px-8 py-4 rounded-[33px]">
-                <button @click="toggleShow({{ $key }})" class="relative block w-full font-ga text-xl sm:text-3xl text-left pr-8">
+                <button @click="toggleShow({{ $key }})" class="relative block w-full font-ga font-bold text-xl sm:text-3xl text-left pr-8">
                   {{ $item['question'] }}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

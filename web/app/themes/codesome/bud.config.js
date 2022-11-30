@@ -37,5 +37,5 @@ module.exports = async(app) => {
     /**
      * Development URL
      */
-    .serve('http://valsoia-dev.test:3000');
+    .serve('http://localhost:3000');
 };

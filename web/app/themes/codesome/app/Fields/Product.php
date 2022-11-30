@@ -25,23 +25,6 @@ class Product extends Field
             ]);
 
         $fields
-            ->addTab('Badgets')
-            ->addChoiceField('badgets', 'checkbox', [
-                'label' => '',
-                'multiple' => 1,
-                'allow_null' => 1,
-                'choices' => [
-                    'oat' => 'Made with oat',
-                    'almond' => 'Almond',
-                    'gluten_free' => 'Gluten free',
-                    'palm_oil_free' => 'Palm oil free',
-                    'dairy' => 'Dairy free',
-                    'certified_plant' => 'Certified plant based',
-                    'non_gmo' => 'Non GMO',
-                ],
-            ]);
-
-        $fields
             ->addTab('Intro text')
             ->addWysiwyg('intro', [
                 'label' => '',

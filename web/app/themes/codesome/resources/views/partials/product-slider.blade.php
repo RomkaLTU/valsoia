@@ -1,5 +1,5 @@
 <div class="swiper-products overflow-hidden relative sm:w-[95%] max-w-[1557px] mx-auto px-4 py-6">
-  <div class="swiper-wrapper items-baseline font-ga text-3xl">
+  <div class="swiper-wrapper items-baseline font-ga font-bold text-3xl">
     @foreach($products as $product)
       <?php
         $originalTaxonomyId = apply_filters('wpml_object_id', \Illuminate\Support\Arr::first(get_the_terms($product->id, 'product_categories'))?->term_id, 'product_categories', false, 'en');

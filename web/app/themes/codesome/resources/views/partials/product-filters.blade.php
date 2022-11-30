@@ -1,6 +1,6 @@
 <div x-data="{show: false}"
      :class="[show ? '' : '-ml-[75vw]']"
-     class="fixed lg:hidden top-0 left-0 mt-72 transition-all z-20 bg-white left-0 top-0 bg-whtie rounded-br-[50px] font-ga" style="box-shadow: 0 5px 20px #C2790059;">
+     class="fixed lg:hidden top-0 left-0 mt-72 transition-all z-20 bg-white left-0 top-0 bg-whtie rounded-br-[50px] font-ga font-bold" style="box-shadow: 0 5px 20px #C2790059;">
   <div
     class="p-4 py-6 sm:p-8 w-[75vw] z-20 bg-white relative rounded-br-[50px]">
     <div class="flex flex-col space-y-4 sm:space-y-8">
@@ -53,7 +53,7 @@
 <div
   x-data="{show: false}"
   :class="[show ? '' : '-ml-[75vw] sm:-ml-[35vw] lg:ml-0']"
-  class="hidden lg:block absolute transition-all xl:transition-none z-20 bg-white left-0 top-0 bg-whtie rounded-br-[50px] lg:rounded-r-[50px] p-4 py-6 sm:p-8 w-[75vw] sm:w-[35vw] lg:w-[27vw] sm:max-w-[470px] font-ga" style="box-shadow: 0 5px 20px #C2790059;">
+  class="hidden lg:block absolute transition-all xl:transition-none z-20 bg-white left-0 top-0 bg-whtie rounded-br-[50px] lg:rounded-r-[50px] p-4 py-6 sm:p-8 w-[75vw] sm:w-[35vw] lg:w-[27vw] sm:max-w-[470px] font-ga font-bold" style="box-shadow: 0 5px 20px #C2790059;">
   <div class="flex flex-col space-y-4 sm:space-y-8">
     @foreach(get_terms(['taxonomy' => 'product_categories', 'hide_empty' => false]) as $term)
       <a href="{{ get_term_link($term) }}" class="relative flex items-center gap-6">

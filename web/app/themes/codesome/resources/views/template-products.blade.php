@@ -13,7 +13,7 @@
     </figure>
     <header class="relative">
       <img src="@asset('images/page-title-bg.webp')" class="absolute top-0 bottom-0 left-0 right-0 m-auto" alt="">
-      <h1 class="relative font-ga text-3xl lg:text-6xl text-white block max-w-[940px] text-center mx-auto mt-10 mb-4">
+      <h1 class="relative font-ga font-bold text-3xl lg:text-6xl text-white block max-w-[940px] text-center mx-auto mt-10 mb-4">
         {!! get_field('title') !!}
       </h1>
     </header>
