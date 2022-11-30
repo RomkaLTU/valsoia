@@ -4,15 +4,15 @@
  * @param {bud} app
  */
 module.exports = async(app) => {
-  app
+    app
     /**
      * Application entrypoints
      *
      * Paths are relative to your resources directory
      */
     .entry({
-      app: ['@scripts/app', '@styles/app'],
-      editor: ['@scripts/editor', '@styles/editor'],
+        app: ['@scripts/app', '@styles/app'],
+        editor: ['@scripts/editor', '@styles/editor'],
     })
 
     /**
@@ -32,10 +32,10 @@ module.exports = async(app) => {
      *
      * This is your local dev server.
      */
-    .proxy('https://valsoia.test')
+    .proxy('https://valsoia-dev.test')
 
     /**
      * Development URL
      */
-    .serve('http://valsoia.test:3000');
+    .serve('http://valsoia-dev.test:3000');
 };

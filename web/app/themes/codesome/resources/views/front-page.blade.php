@@ -215,7 +215,7 @@ $slide4url = $hero['slide_4']['url'] ?? null;
     </h2>
     @include('partials.hero-products')
   </section>
-
+  
   <section class="relative">
     <div class="w-full z-10 overflow-hidden">
       <div class="">
